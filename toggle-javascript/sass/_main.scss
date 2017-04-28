@@ -1,67 +1,66 @@
 // BRAND PAGE CUSTOM STYLING
 
 .manufacturer-intro {
-    padding-top: 0 !important;
+  padding-top: 0 !important;
 }
 
 .img100, .imgProducts {
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 #imgContLogo {
-    position: absolute;
-    width: 20%;
-    left: 8%;
+  position: absolute;
+  width: 20%;
+  left: 8%;
 }
 
 .orange {
-    color: #FA9D00;    
+  color: #FA9D00;
 }
 
 .orangeBox {
-    padding: 20px;
-    background-color: #FA9D00;
-    color: #FFFFFF;
-    border-top: 3px solid #FFFFFF;
+  padding: 20px;
+  background-color: #FA9D00;
+  color: #FFFFFF;
+  border-top: 3px solid #FFFFFF;
 }
 
 .minus100 {
-    position: relative;
-    margin-top: -100px;
+  position: relative;
+  margin-top: -100px;
 }
 
 .minus150 {
-    position: relative;
-    margin-top: -150px;
+  position: relative;
+  margin-top: -150px;
 }
 
 #tyreTypes {
-    overflow: hidden;
-    background: url('http://stream-ltd.com/dev/continental_brand_page/final/img/tyres-bg.jpg') no-repeat bottom center scroll;    
+  overflow: hidden;
+  background: url('http://stream-ltd.com/dev/continental_brand_page/final/img/tyres-bg.jpg') no-repeat bottom center scroll;
 }
 
 #products-tabs {
-    padding: 30px 0;
-    text-align: center;
+  padding: 30px 0;
+  text-align: center;
 }
 
 .products-tab {
-    width: 100px;
-    height: 100px;
-    position: relative;
-    display: inline-block;
-    border: 3px solid #FA9D00;
-    border-radius: 50%;
-    background-color: #000000;
-    text-align: center;
-    margin: 10px;  
-}
-
-.products-tab img {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  display: inline-block;
+  border: 3px solid #FA9D00;
+  border-radius: 50%;
+  background-color: #000000;
+  text-align: center;
+  margin: 10px;
+  img {
     width: 80px;
     margin-top: 30px;
+  }
 }
 
 .prod-cat {
@@ -70,10 +69,9 @@
   color: #000000;
   text-align: left;
   padding: 5px;
-}
-
-.prod-cat h3 {
-  padding-bottom: 5px;
+  h3 {
+    padding-bottom: 5px;
+  }
 }
 
 .prod-section {
@@ -85,113 +83,105 @@
 }
 
 .active-tab {
-    background: rgba(0,0,0, 0.5) !important;
-    border: 3px solid #FFFFFF;    
+  background: rgba(0, 0, 0, 0.5) !important;
+  border: 3px solid #FFFFFF;
 }
 
-.products-tab:active, .products-tab:hover {
-  background: rgba(255, 255, 255, 0.6);
-  cursor: pointer !important;
+.products-tab {
+  &:active, &:hover {
+    background: rgba(255, 255, 255, 0.6);
+    cursor: pointer !important;
+  }
 }
-
 
 .prod-section {
-    padding: 30px 0;
+  padding: 30px 0;
 }
 
 .prod-left {
-    background-color: rgba(240, 240, 240, 0.9);
+  background-color: rgba(240, 240, 240, 0.9);
 }
 
 .prod-right {
-    background-color: rgba(232, 232, 232, 0.9);
+  background-color: rgba(232, 232, 232, 0.9);
 }
 
 .catWrapper {
-    padding: 50px 0 30px 0;    
+  padding: 50px 0 30px 0;
 }
 
 .padding30 {
-    padding: 0 30px;
+  padding: 0 30px;
 }
 
 .listConti li {
-    list-style: initial;
-    margin: 10px 0 10px 20px;
+  list-style: initial;
+  margin: 10px 0 10px 20px;
 }
 
 .awardsBlock {
-    overflow: hidden;
-    text-align: center;
+  overflow: hidden;
+  text-align: center;
+  h1, h2 {
+    color: #FFFFFF;
+  }
 }
 
-.awardsBlock h1, .awardsBlock h2, .awardedTyre {
-    color: #FFFFFF;
+.awardedTyre {
+  color: #FFFFFF;
 }
 
 #socialSection {
-    background: url('http://stream-ltd.com/dev/continental_brand_page/final/img/bg-main.jpg') no-repeat bottom center scroll;
-    color: #FFFFFF;
+  background: url('http://stream-ltd.com/dev/continental_brand_page/final/img/bg-main.jpg') no-repeat bottom center scroll;
+  color: #FFFFFF;
 }
 
 .social-logos {
-    padding: 30px;
+  padding: 30px;
 }
 
 .iconSocial {
-    width: 10%;
+  width: 10%;
 }
 
 #getYourGrip {
-    background-color: #000000;
-}
-
-#getYourGrip h3, #getYourGrip p {
+  background-color: #000000;
+  h3, p {
     color: #FFFFFF;
+  }
 }
 
 #imgGetYourGrip {
-    padding-top: 50px;
-    text-align: center;
-}
-
-#imgGetYourGrip img {
+  padding-top: 50px;
+  text-align: center;
+  img {
     width: 60%;
+  }
 }
-
 
 // Small Devices, Tablets
 @media only screen and (min-width: 768px) {
-
-    .products-tab {
-        width: 160px;
-        height: 160px; 
+  .products-tab {
+    width: 160px;
+    height: 160px;
+    img {
+      width: 120px;
+      margin-top: 55px;
     }
-
-    .products-tab img {
-        width: 120px;
-        margin-top: 55px;
-    }
-
+  }
 }
 
 // Medium Devices, Desktops
 @media only screen and (min-width: 992px) {
-
-    #tyreTypes {
-        background: url('http://stream-ltd.com/dev/continental_brand_page/final/img/bg-main.jpg') no-repeat bottom center scroll;    
-    }
-
+  #tyreTypes {
+    background: url('http://stream-ltd.com/dev/continental_brand_page/final/img/bg-main.jpg') no-repeat bottom center scroll;
+  }
 }
 
 // Large Devices, Wide Screens
 
 @media only screen and (min-width: 1200px) {
-
-    .prod-section {
-        min-height: 500px;
-    }
-
+  .prod-section {
+    min-height: 500px;
+  }
 }
-
-

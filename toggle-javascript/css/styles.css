@@ -103,7 +103,6 @@ ul, li {
   text-align: center;
   margin: 10px;
 }
-
 .products-tab img {
   width: 80px;
   margin-top: 30px;
@@ -116,7 +115,6 @@ ul, li {
   text-align: left;
   padding: 5px;
 }
-
 .prod-cat h3 {
   padding-bottom: 5px;
 }
@@ -168,8 +166,11 @@ ul, li {
   overflow: hidden;
   text-align: center;
 }
+.awardsBlock h1, .awardsBlock h2 {
+  color: #FFFFFF;
+}
 
-.awardsBlock h1, .awardsBlock h2, .awardedTyre {
+.awardedTyre {
   color: #FFFFFF;
 }
 
@@ -189,7 +190,6 @@ ul, li {
 #getYourGrip {
   background-color: #000000;
 }
-
 #getYourGrip h3, #getYourGrip p {
   color: #FFFFFF;
 }
@@ -198,7 +198,6 @@ ul, li {
   padding-top: 50px;
   text-align: center;
 }
-
 #imgGetYourGrip img {
   width: 60%;
 }
@@ -208,7 +207,6 @@ ul, li {
     width: 160px;
     height: 160px;
   }
-
   .products-tab img {
     width: 120px;
     margin-top: 55px;
