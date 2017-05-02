@@ -16,19 +16,19 @@
         <div class="row products-row-1">
             <div id="products-tabs" class="col-xs-12">
                 <div id="tab-mini" class="products-tab active-tab" data-tab="compact-mini">
-                    <img class="centered" src="http://stream-ltd.com/dev/continental_brand_page/final/img/compact-mini.png" alt="" />
+                    <img class="centered" src="img/compact-mini.png" alt="" />
                 </div>
                 <div id="tab-mid" class="products-tab" data-tab="mid-sized">
-                    <img class="centered" src="http://stream-ltd.com/dev/continental_brand_page/final/img/mid-sized.png" alt="" />
+                    <img class="centered" src="img/mid-sized.png" alt="" />
                 </div>
                 <div id="tab-exec" class="products-tab" data-tab="executive">
-                    <img class="centered" src="http://stream-ltd.com/dev/continental_brand_page/final/img/executive.png" alt="" />
+                    <img class="centered" src="img/executive.png" alt="" />
                 </div>
                 <div id="tab-suv" class="products-tab" data-tab="suv-4x4">
-                    <img class="centered" src="http://stream-ltd.com/dev/continental_brand_page/final/img/suv.png" alt="" />
+                    <img class="centered" src="img/suv.png" alt="" />
                 </div>
                 <div id="tab-performance" class="products-tab" data-tab="high-performance">
-                    <img class="centered" src="http://stream-ltd.com/dev/continental_brand_page/final/img/high-performance.png" alt="" />
+                    <img class="centered" src="img/high-performance.png" alt="" />
                 </div>
             </div>            
         </div>
@@ -42,14 +42,14 @@
             
 <!--                         <div class="col-xs-12 catWrapper">
                 <div class="imgCategory">
-                    <img src="http://stream-ltd.com/dev/continental_brand_page/final/img/compact-mini.png" alt="">
+                    <img src="img/compact-mini.png" alt="">
                 </div>
             </div> -->
 
             <div class="col-lg-6 prod-section prod-left">
                 <div class="row">
                     <div class="col-xs-3 center padding30">
-                        <img class="imgProducts" src="http://stream-ltd.com/dev/continental_brand_page/final/img/summer-contact5.png" alt="summer tyre mini compact" />
+                        <img class="imgProducts" src="img/summer-contact5.png" alt="summer tyre mini compact" />
                     </div>
                     <div class="col-xs-9 padding30">
                         <h3>Summer: ContiEcoContact5</h3>
@@ -61,8 +61,8 @@
             <div class="col-lg-6 prod-section prod-right">
                 <div class="row">
                     <div class="col-xs-3 center padding30">
-                        <img class="imgProducts" src="http://stream-ltd.com/dev/continental_brand_page/final/img/winter-ts860.png" alt="winter tyre" />
-                        <img class="imgProducts" src="http://stream-ltd.com/dev/continental_brand_page/final/img/auto-express-2016.png" alt="Auto Express Awards logo" />
+                        <img class="imgProducts" src="img/winter-ts860.png" alt="winter tyre" />
+                        <img class="imgProducts" src="img/auto-express-2016.png" alt="Auto Express Awards logo" />
                     </div>
                     <div class="col-xs-9 padding30">
                         <h3>Winter: WinterContact TS 860</h3>
@@ -78,14 +78,14 @@
 
 <!--                         <div class="col-xs-12 catWrapper">
                 <div class="imgCategory">
-                    <img src="http://stream-ltd.com/dev/continental_brand_page/final/img/mid-sized.png" alt="">
+                    <img src="img/mid-sized.png" alt="">
                 </div>
             </div> -->
 
             <div class="col-lg-6 prod-section prod-left">
                 <div class="row">
                     <div class="col-xs-3 center padding30">
-                        <img class="imgProducts" src="http://stream-ltd.com/dev/continental_brand_page/final/img/summer-contact6.png" alt="summer tyre mini compact" />
+                        <img class="imgProducts" src="img/summer-contact6.png" alt="summer tyre mini compact" />
                     </div>
                     <div class="col-xs-9 padding30">
                         <h3>Summer: PremiumContact 6</h3>
@@ -103,8 +103,8 @@
             <div class="col-lg-6 prod-section prod-right">
                 <div class="row">
                     <div class="col-xs-3 center padding30">
-                        <img class="imgProducts" src="http://stream-ltd.com/dev/continental_brand_page/final/img/winter-ts860.png" alt="winter tyre" />
-                        <img class="imgProducts" src="http://stream-ltd.com/dev/continental_brand_page/final/img/auto-express-2016.png" alt="Auto Express Awards logo" />
+                        <img class="imgProducts" src="img/winter-ts860.png" alt="winter tyre" />
+                        <img class="imgProducts" src="img/auto-express-2016.png" alt="Auto Express Awards logo" />
                     </div>
                     <div class="col-xs-9 padding30">
                         <h3>Winter: WinterContact TS 860</h3>
@@ -121,14 +121,14 @@
 
 <!--                         <div class="col-xs-12 catWrapper">
                 <div class="imgCategory">
-                    <img src="http://stream-ltd.com/dev/continental_brand_page/final/img/executive.png" alt="">
+                    <img src="img/executive.png" alt="">
                 </div>
             </div> -->
 
             <div class="col-lg-6 prod-section prod-left">
                 <div class="row">
                     <div class="col-xs-3 center padding30">
-                        <img class="imgProducts" src="http://stream-ltd.com/dev/continental_brand_page/final/img/summer-contact6.png" alt="summer tyre mini compact" />
+                        <img class="imgProducts" src="img/summer-contact6.png" alt="summer tyre mini compact" />
                     </div>
                     <div class="col-xs-9 padding30">
                         <h3>Summer: PremiumContact 6</h3>
@@ -146,8 +146,8 @@
             <div class="col-lg-6 prod-section prod-right">
                 <div class="row">
                     <div class="col-xs-3 center padding30">
-                        <img class="imgProducts" src="http://stream-ltd.com/dev/continental_brand_page/final/img/winter-ts860.png" alt="winter tyre" />
-                        <img class="imgProducts" src="http://stream-ltd.com/dev/continental_brand_page/final/img/auto-express-2016.png" alt="Auto Express Awards logo" />
+                        <img class="imgProducts" src="img/winter-ts860.png" alt="winter tyre" />
+                        <img class="imgProducts" src="img/auto-express-2016.png" alt="Auto Express Awards logo" />
                     </div>
                     <div class="col-xs-9 padding30">
                         <h3>Winter: WinterContact TS 860</h3>
@@ -165,14 +165,14 @@
 <!-- 
             <div class="col-xs-12 catWrapper">
                 <div class="imgCategory">
-                    <img src="http://stream-ltd.com/dev/continental_brand_page/final/img/suv.png" alt="">
+                    <img src="img/suv.png" alt="">
                 </div>
             </div> -->
 
             <div class="col-lg-6 prod-section prod-left">
                 <div class="row">
                     <div class="col-xs-3 center padding30">
-                        <img class="imgProducts" src="http://stream-ltd.com/dev/continental_brand_page/final/img/summer-lx2.png" alt="summer tyre mini compact" />
+                        <img class="imgProducts" src="img/summer-lx2.png" alt="summer tyre mini compact" />
                     </div>
                     <div class="col-xs-9 padding30">
                         <h3>Summer: ContiCrossContact LX2</h3>
@@ -190,7 +190,7 @@
             <div class="col-lg-6 prod-section prod-right">
                 <div class="row">
                     <div class="col-xs-3 center padding30">
-                        <img class="imgProducts" src="http://stream-ltd.com/dev/continental_brand_page/final/img/winter-lx2p.png" alt="winter tyre" />
+                        <img class="imgProducts" src="img/winter-lx2p.png" alt="winter tyre" />
                     </div>
                     <div class="col-xs-9 padding30">
                         <h3>Winter: ContiWinterContact LX2 P SUV</h3>
@@ -217,15 +217,15 @@
 
 <!--                         <div class="col-xs-12 catWrapper">
                 <div class="imgCategory">
-                    <img src="http://stream-ltd.com/dev/continental_brand_page/final/img/high-performance.png" alt="">
+                    <img src="img/high-performance.png" alt="">
                 </div>
             </div> -->
 
             <div class="col-lg-6 prod-section prod-left">
                 <div class="row">
                     <div class="col-xs-3 center padding30">
-                        <img class="imgProducts" src="http://stream-ltd.com/dev/continental_brand_page/final/img/summer-sportContact6.png" alt="summer tyre mini compact" />
-                        <img class="imgProducts" src="http://stream-ltd.com/dev/continental_brand_page/final/img/evo2016_540x640.png" alt="Evo 2016 Tyre test winner logo" />
+                        <img class="imgProducts" src="img/summer-sportContact6.png" alt="summer tyre mini compact" />
+                        <img class="imgProducts" src="img/evo2016_540x640.png" alt="Evo 2016 Tyre test winner logo" />
                     </div>
                     <div class="col-xs-9 padding30">
                         <h3>Summer: SportContact 6</h3>
@@ -242,8 +242,8 @@
             <div class="col-lg-6 prod-section prod-right">
                 <div class="row">
                     <div class="col-xs-3 center padding30">
-                        <img class="imgProducts" src="http://stream-ltd.com/dev/continental_brand_page/final/img/winter-ts850p.png" alt="winter tyre" />
-                        <img class="imgProducts imgProductsXS" src="http://stream-ltd.com/dev/continental_brand_page/final/img/auto-express-2016.png" alt="Auto Express Awards logo" />
+                        <img class="imgProducts" src="img/winter-ts850p.png" alt="winter tyre" />
+                        <img class="imgProducts imgProductsXS" src="img/auto-express-2016.png" alt="Auto Express Awards logo" />
                     </div>
                     <div class="col-xs-9 padding30">
                         <h3>Winter: ContiWinterContact TS 850 P</h3>

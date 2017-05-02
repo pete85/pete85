@@ -39,7 +39,7 @@
 
 #tyreTypes {
   overflow: hidden;
-  background: url('http://stream-ltd.com/dev/continental_brand_page/final/img/tyres-bg.jpg') no-repeat bottom center scroll;
+  background: url('../img/tyres-bg.jpg') no-repeat bottom center scroll;
 }
 
 #products-tabs {
@@ -132,7 +132,7 @@
 }
 
 #socialSection {
-  background: url('http://stream-ltd.com/dev/continental_brand_page/final/img/bg-main.jpg') no-repeat bottom center scroll;
+  background: url('../img/bg-main.jpg') no-repeat bottom center scroll;
   color: #FFFFFF;
 }
 
@@ -174,7 +174,7 @@
 // Medium Devices, Desktops
 @media only screen and (min-width: 992px) {
   #tyreTypes {
-    background: url('http://stream-ltd.com/dev/continental_brand_page/final/img/bg-main.jpg') no-repeat bottom center scroll;
+    background: url('../img/bg-main.jpg') no-repeat bottom center scroll;
   }
 }
 
