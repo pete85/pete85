@@ -55,6 +55,9 @@
         <!-- *** BOOLEANS *** -->
 
         <div id="booleans" class="block">
+
+            <h3>Booleans</h3>
+
             <div class="row video-row">
                 <video controls width="100%" poster="http://placehold.it/1200x675/A92222/FFFFFF?text=Video1 - booleans">
                     <source src="http://pete85.com/courses/javascript/videos/part1/v1_booleans.mp4" type="video/mp4" />
