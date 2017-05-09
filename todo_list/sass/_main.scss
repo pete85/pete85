@@ -1,118 +1,86 @@
-// HOMEPAGE MIDDLE SECTION
-
-.text-vertical-center {
-  display: table-cell;
-  width: 800px;
-  max-width: 90%;
-  text-align: center;
-  vertical-align: middle;
-  h1 {
-    margin: 0;
-    padding: 0;
-  }
-}
-
-.headCenter {
-  position: absolute;
-  margin: auto;
-  top: 10%; left: 0; right: 0;
-  width: 900px;
-  max-width: 90%;
-  text-align: center;
-  h1 {
-    margin: 0;
-    padding: 0;
-  }
-}
-
-.blur {
-  width:100%;
-  height:100%;
-  position: absolute;
-  background-image:url('../img/bg-transparent.png');
-  background-size:cover;
-  @include blur;
-}
-
-// Custom Horizontal Rule
-
-hr.small {
-  max-width: 100px;
-}
-
-/* Side Menu */
-
-#sidebar-wrapper {
-  z-index: 1000;
-  position: fixed;
-  right: 0;
-  width: 250px;
+body {
+  width: 100%;
   height: 100%;
-  transform: translateX(250px);
-  overflow-y: auto;
-  background: #222;
-  -webkit-transition: all 0.4s ease 0s;
-  -moz-transition: all 0.4s ease 0s;
-  -ms-transition: all 0.4s ease 0s;
-  -o-transition: all 0.4s ease 0s;
-  transition: all 0.4s ease 0s;
+  font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+  background-color: #DEDEDE;
 }
 
-.sidebar-nav {
-  position: absolute;
-  top: 0;
-  width: 250px;
-  margin: 0;
-  padding: 0;
+.container {
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+#todoForm {
+  width: 100%;
+}
+
+label {
+  font-size: 26px;
+  color: #C2C2C2;
+}
+
+#todoForm input[type="text"], #todoForm textarea, #todoForm button[type="submit"] {
+  font: 400 12px/16px "Lato", Helvetica, Arial, sans-serif;
+  float: right;
+  width: 70%;
+  max-width: 70%;
+}
+
+fieldset {
+  margin-bottom: 15px;
+  border: none;
+}
+
+#todo, #todoList {
+  background-color: #FFFFFF;
+  padding: 25px;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+#todoForm input[type="text"], #todoForm textarea {
+  width: 100%;
+  border: 1px solid #BFBFBF;
+  background: #FFFFFF;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#insert {
+  cursor: pointer;
+  border: none;
+  float: right;
+  background: #4463AD;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#insert:hover {
+  background: #658CE6;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#insert:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#tasksList {
   list-style: none;
-  li {
-    text-indent: 20px;
-    line-height: 40px;
-    a {
-      display: block;
-      text-decoration: none;
-      color: #999;
-      &:hover {
-        text-decoration: none;
-        color: #fff;
-        background: rgba(255, 255, 255, 0.2);
-      }
-      &:active, &:focus {
-        text-decoration: none;
-      }
-    }
-  }
-  > .sidebar-brand {
-    height: 55px;
-    font-size: 18px;
-    line-height: 55px;
-    a {
-      color: #999;
-      &:hover {
-        color: #fff;
-        background: none;
-      }
-    }
-  }
 }
 
-#menu-toggle {
-  z-index: 1;
-  position: fixed;
-  top: 0;
-  right: 0;
+#tasksList li {
+  padding: 15px;
+  border: 2px solid #DADADA;
+  margin-bottom: 30px;
 }
 
-#sidebar-wrapper.active {
-  right: 250px;
-  width: 250px;
-  -webkit-transition: all 0.4s ease 0s;
-  -moz-transition: all 0.4s ease 0s;
-  -ms-transition: all 0.4s ease 0s;
-  -o-transition: all 0.4s ease 0s;
-  transition: all 0.4s ease 0s;
-}
-
-.toggle {
-  margin: 5px 5px 0 0;
+.remove {
+  color: #A92222;
 }
