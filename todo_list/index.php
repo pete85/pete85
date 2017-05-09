@@ -9,7 +9,7 @@
 
     <div class="container"> 
         <div id="todo">
-            <form id="todoForm" method="POST">
+            <form id="todoForm">
                 <fieldset>
                     <label for="todoTitle">Title</label>
                     <input name="todoTitle" id="todoTitle" type="text">
@@ -19,7 +19,7 @@
                     <textarea name="todoContent" id="todoContent"></textarea>
                 </fieldset>
                 <fieldset>
-                    <button name="submit" type="submit" id="insert" onclick='clearForm(this.form);'>ADD TASK</button>
+                    <button name="submit" type="button" id="insert" onclick='clearForm(this.form);'>ADD TASK</button>
                 </fieldset>
             </form>
         </div>
