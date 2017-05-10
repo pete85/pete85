@@ -138,14 +138,58 @@
 
     <!-- ************************************************************************************************ -->
 
-    <section id="imprints" class="container content-section text-center">
+    <section id="imprints" class="container content-section">
         <div class="row">
-            <div class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
+            <div class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1 text-center">
                 <h2>Our Imprints</h2>
                 <p>Bonnier Zaffre combines brand new voices with established storytellers to bring a broad spectrum of high quality and innovative fiction to all ages.</p>
             </div>
         </div>
+        <div class="row">
+            <div class="imprintsLogos text-center">
+                <img src="img/zaffre_160x77.jpg" alt="Zaffre logo">
+                <img src="img/twenty7_160x77.jpg" alt="Twenty 7 logo">
+                <img src="img/hotkey_160x77.jpg" alt="Hot Key logo">
+                <img src="img/piccadilly_160x77.jpg" alt="Piccadilly logo">
+                <img src="img/totally_160x77.jpg" alt="Totally Entwined logo">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="impMain" id="impZaffre">
+                <div class="col-md-5 impDesc">
+                    <img src="img/zaffrewhite_160x77.png" alt="Zaffre logo">
+                    <p>
+                        Zaffre is the main imprint of Bonnier Zaffre’s adult fiction business and publishes established authors with a track record of strong sales in hardback, paperback, ebook and audio. Focusing on a wide range of crime, thrillers and women’s fiction, we pride ourselves on publishing commercial fiction with strong narratives and compelling storylines.
+                    </p>
+                    <a href="#">Visit site</a>
+                </div>
+                <div class="col-md-1 hidden-sm hidden-xs"></div>
+                <div class="col-md-6 impBooks">
+                    
+                </div>
+            </div>
+        </div>
+
     </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- Contact Section -->
     <section id="contact" class="container content-section text-center">

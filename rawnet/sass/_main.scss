@@ -112,12 +112,42 @@ body {
 
 /***********************************************************************************************/
 
-                                            /* BOOKS */
+                                            /* IMPRINTS */
                                             
 /***********************************************************************************************/
 
 #imprints {
   background-color: $white;
+  & .row {
+    & .imprintsLogos {
+      & img {
+        margin: 5px;
+      }
+    }
+  }
+}
+
+.impMain {
+  padding: 15px;
+  margin: 15px;
+  overflow: hidden;
+  & p {
+    color: $white;
+  }
+  & .impDesc {
+    margin: 50px 0;
+    & a {
+      color: $white;
+      text-decoration: underline;
+      &:hover, &:focus, &:active {
+        color: $light-grey;
+      }
+    }
+  }
+}
+
+#impZaffre {
+  background: url(../img/imprints_zaffre.jpg) no-repeat top center scroll;
 }
 
 
