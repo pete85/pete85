@@ -4,7 +4,7 @@
 <meta name="description" content="ESTABLISHED IN 1998, STREAM IS AN INDEPENDENT, PRIVATELY OWNED, FULL SERVICE CREATIVE AGENCY THAT’S PASSIONATE ABOUT BUILDING BRANDS AND SALES. EXCELLENCE IS AT THE HEART OF WHAT WE DO">
 <meta name="author" content="Stream Ltd">
 
-<title>Stream Ltd | Intelligent thinking Inspired ideas </title>
+<title>Rawnet Test</title>
 
 <!-- Bootstrap Core CSS -->
 <link href="css/bootstrap.min.css" rel="stylesheet">

@@ -1,131 +1,144 @@
-// HOMEPAGE MIDDLE SECTION
-
-.text-vertical-center {
-  display: table-cell;
-  width: 800px;
-  max-width: 90%;
-  text-align: center;
-  vertical-align: middle;
-  h1 {
-    margin: 0;
-    padding: 0;
-  }
+.container {
+  width: 100%;
+  max-width: 100%;
 }
 
-.headCenter {
-  position: absolute;
-  margin: auto;
-  top: 10%; left: 0; right: 0;
-  width: 900px;
-  max-width: 90%;
-  text-align: center;
-  h1 {
-    margin: 0;
-    padding: 0;
-  }
+.light {
+    font-weight: 400;
 }
 
-.blur {
-  width:100%;
-  height:100%;
-  position: absolute;
-  background-image:url('../img/bg-transparent.png');
-  background-size:cover;
-  @include blur;
-}
-
-// Custom Horizontal Rule
-
-hr.small {
-  max-width: 100px;
-}
-
-/* Side Menu */
-
-#sidebar-wrapper {
-  z-index: 1000;
-  position: fixed;
-  right: 0;
-  width: 250px;
-  height: 100%;
-  transform: translateX(250px);
-  overflow-y: auto;
-  background: #222;
-  -webkit-transition: all 0.4s ease 0s;
-  -moz-transition: all 0.4s ease 0s;
-  -ms-transition: all 0.4s ease 0s;
-  -o-transition: all 0.4s ease 0s;
-  transition: all 0.4s ease 0s;
-}
-
-.sidebar-nav {
-  position: absolute;
-  top: 0;
-  width: 250px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  li {
-    text-indent: 20px;
-    line-height: 40px;
-    a {
-      display: block;
-      text-decoration: none;
-      color: #999;
-      &:hover {
-        text-decoration: none;
-        color: #fff;
-        background: rgba(255, 255, 255, 0.2);
-      }
-      &:active, &:focus {
-        text-decoration: none;
-      }
+.intro {
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    background: url(../img/header-banner.jpg) no-repeat top center scroll;
+    background-color: $white;
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    background-size: auto;
+    -o-background-size: auto;
+    .intro-header {
+        margin: 0 auto;
+        padding-top: 12%;
+        .brand-heading {
+            font: 200 30px/40px "Fremont", sans-serif;
+            text-shadow: 1px 1px 5px $grey;
+            color: $white;
+        }
+        .intro-first {
+            font: 600 18px/30px "Cyntho light", Helvetica, Arial, sans-serif;
+            color: $white;
+            letter-spacing: 8px;
+            margin-bottom: 30px;
+        }
     }
-  }
-  > .sidebar-brand {
-    height: 55px;
-    font-size: 18px;
-    line-height: 55px;
-    a {
-      color: #999;
-      &:hover {
-        color: #fff;
-        background: none;
-      }
+    & #imgZ {
+      width: 120px;
+      max-width: 120px;
+      margin: 70px auto;
+      box-shadow: 2px 2px 20px $grey;
     }
-  }
 }
 
-#menu-toggle {
-  z-index: 1;
-  position: fixed;
-  top: 0;
-  right: 0;
+
+
+
+
+
+
+
+
+
+.content-section {
+    padding-top: 100px;
 }
 
-#sidebar-wrapper.active {
-  right: 250px;
-  width: 250px;
-  -webkit-transition: all 0.4s ease 0s;
-  -moz-transition: all 0.4s ease 0s;
-  -ms-transition: all 0.4s ease 0s;
-  -o-transition: all 0.4s ease 0s;
-  transition: all 0.4s ease 0s;
+.download-section {
+    width: 100%;
+    padding: 50px 0;
+    color: white;
+    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
 
-.toggle {
-  margin: 5px 5px 0 0;
+#map {
+    width: 100%;
+    height: 200px;
+    margin-top: 100px;
 }
 
-header, section {
-  height: 100vh;
+
+.btn {
+    text-transform: uppercase;
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    border-radius: 0;
 }
 
-#top, #services, #contact {
-  background-color: #000000;
+.btn-default {
+    border: 1px solid $primary;
+    color: $primary;
+    background-color: transparent;
+    &:hover,
+    &:focus {
+        border: 1px solid $primary;
+        outline: none;
+        color: black;
+        background-color: $primary;
+    }
 }
 
-#about, #portfolio {
-  background-color: #A92222;
+ul.banner-social-buttons {
+    margin-top: 0;
+    @media(max-width:1199px) {
+        margin-top: 15px;
+    }
+    @media(max-width:767px) {
+        li {
+            display: block;
+            margin-bottom: 20px;
+            padding: 0;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
 }
 
+footer {
+    padding: 50px 0;
+    p {
+        margin: 0;
+    }
+}
+
+::-moz-selection {
+    text-shadow: none;
+    background: #fcfcfc;
+    background: rgba(white, 0.2);
+}
+
+::selection {
+    text-shadow: none;
+    background: #fcfcfc;
+    background: rgba(white, 0.2);
+}
+
+img::selection {
+    background: transparent;
+}
+
+img::-moz-selection {
+    background: transparent;
+}
+
+body {
+    -webkit-tap-highlight-color: rgba(white, 0.2);
+}
