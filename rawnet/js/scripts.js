@@ -1,13 +1,3 @@
-// Closes the sidebar menu
-$("#menu-close").click(function(e) {
-    e.preventDefault();
-    $("#sidebar-wrapper").toggleClass("active");
-});
-// Opens the sidebar menu
-$("#menu-toggle").click(function(e) {
-    e.preventDefault();
-    $("#sidebar-wrapper").toggleClass("active");
-});
 // Scrolls to the selected menu item on the page
 $(function() {
     $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
@@ -48,6 +38,32 @@ $(document).scroll(function() {
         }
     }
 });
+
+// navbar bg colour change on scroll
+$(function () {
+  $(document).scroll(function () {
+    var $nav = $(".navbar-fixed-top");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  });
+});
+
+//wow anmation
+var wow = new WOW(
+        {
+            boxClass: 'wow', // animated element css class (default is wow)
+            animateClass: 'animated', // animation css class (default is animated)
+            offset: 100, // distance to the element when triggering the animation (default is 0)
+            mobile: false        // trigger animations on mobile devices (true is default)
+        }
+);
+wow.init();
+
+
+
+
+
+
+
 // Disable Google Maps scrolling
 // See http://stackoverflow.com/a/25904582/1607849
 // Disable scroll zooming and bind back the click event

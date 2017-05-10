@@ -12,15 +12,27 @@
 // Extra Small Devices, Phones
 @media only screen and (min-width: 480px) {
 
+	.overlay {
+	  height: 93%;
+	}
+
+}
+
+@media only screen and (min-width: 580px) {
+
+	#books {
+	  & .bookWrapper {
+	    & p {
+	      font: 400 18px/22px "Cyntho light", Helvetica, Arial, sans-serif;
+	      margin: 30px 0;
+	    }
+	  }
+	}
 
 }
 
 // Small Devices, Tablets
 @media only screen and (min-width: 768px) {
-
-    .content-section {
-        padding-top: 250px;
-    }
 
     .download-section {
         padding: 100px 0;
@@ -32,7 +44,6 @@
     }
 
     .intro {
-    	height: 100%;
         padding: 0;
         .intro-header {
             .brand-heading {
@@ -43,6 +54,28 @@
 	      margin: 30px auto 50px auto;
 	    }
     }
+
+	#books {
+	  & .bookWrapper {
+	    & .imgBook {
+	      width: 150px;
+	    }
+	    & p {
+	      font: 400 10px/11px "Cyntho light", Helvetica, Arial, sans-serif;
+	      margin: 10px 0;
+	    }
+	  }
+	}
+
+	.overlay {
+	  width: 150px;
+	  height: 230px;
+	  & img {
+	    width: 50px;
+	    margin-top: 0;
+	  }
+	}
+
 
 }
 
@@ -59,6 +92,10 @@
 
 	.container {
 	  width: 1170px;
+	}
+
+	.content-section {
+	    padding-top: 130px;
 	}
 
 }

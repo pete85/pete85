@@ -26,14 +26,20 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
+                    <li class="hvr-underline-from-left ">
+                        <a class="page-scroll" href="#page-top">About Us</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#download">Download</a>
+                    <li class="hvr-underline-from-left ">
+                        <a class="page-scroll" href="#books">Spotlight Books</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                    <li class="hvr-underline-from-left ">
+                        <a class="page-scroll" href="#imprints">Our Imprints</a>
+                    </li>
+                    <li class="hvr-underline-from-left ">
+                        <a class="page-scroll" href="#team">Our Team</a>
+                    </li>
+                    <li class="hvr-underline-from-left ">
+                        <a class="page-scroll" href="#contact">Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -42,7 +48,13 @@
         <!-- /.container -->
     </nav>
 
-    <!-- Intro Header -->
+
+    <!-- ************************************************************************************************ -->
+
+                                            <!-- Intro Header -->
+
+    <!-- ************************************************************************************************ -->
+    
     <header class="intro container">
         <div class="intro-header">
             <div class="row">
@@ -53,7 +65,7 @@
         <img id="imgZ" src="img/logo-blue.jpg" alt="Blue centered logo">
         <div class="intro-desc">
             <div class="row">
-                <div class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1 intro-text">
+                <div class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1 intro-text">
                     <p>Zaffre Publishing is an imprint of Bonnier Publishing Fiction, a division of the internationally renowned Bonnier Publishing. Started in 2014 by Mark Smith, the founder of Quercus, it will publish commercial fiction of all genres, taking established authors and finding innovative ways to reach readers.</p>
                 </div>
             </div>            
@@ -61,41 +73,76 @@
     </header>
 
 
+    <!-- ************************************************************************************************ -->
 
+                                            <!-- Books section -->
 
+    <!-- ************************************************************************************************ -->
 
-
-
-
-
-
-
-
-
-
-
-
-    <!-- About Section -->
-    <section id="about" class="container content-section text-center">
+    <section id="books" class="container content-section text-center">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>About Grayscale</h2>
-                <p>Grayscale is a free Bootstrap 3 theme created by Start Bootstrap. It can be yours right now, simply download the template on <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
-                <p>This theme features stock photos by <a href="http://gratisography.com/">Gratisography</a> along with a custom Google Maps skin courtesy of <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
-                <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with LESS files for easy customization.</p>
+            <div class="">
+                <h2>Spotlight Books</h2>
             </div>
+
+            <!-- Books -->
+            <div class="col-lg-1 hidden-xs hidden-sm hidden-md"></div>
+            <div class="col-lg-2 col-sm-3 bookWrapper" id="book1">
+                <img src="img/book1.jpg" class="imgBook" alt="Book 1">
+                <div class="overlay" id="ov1">
+                    <img src="img/overlay-logo.jpg" alt="Overlay Logo">
+                    <p>Unlucky in love once again after her sort of boyfriend and possible marriage partner to be proves a little too close to his parents, Sofia Khan is ready to renounce men for good.</p>
+                    <button class="btnOverlay" type="button">View book</button>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-3 bookWrapper" id="book2">
+                <img src="img/book2.jpg" class="imgBook" alt="Book 2">
+                <div class="overlay" id="ov2">
+                    <img src="img/overlay-logo.jpg" alt="Overlay Logo">
+                    <p>Unlucky in love once again after her sort of boyfriend and possible marriage partner to be proves a little too close to his parents, Sofia Khan is ready to renounce men for good.</p>
+                    <button class="btnOverlay" type="button">View book</button>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-3 bookWrapper" id="book3">
+                <img src="img/book3.jpg" class="imgBook" alt="Book 3">
+                <div class="overlay" id="ov3">
+                    <img src="img/overlay-logo.jpg" alt="Overlay Logo">
+                    <p>Unlucky in love once again after her sort of boyfriend and possible marriage partner to be proves a little too close to his parents, Sofia Khan is ready to renounce men for good.</p>
+                    <button class="btnOverlay" type="button">View book</button>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-3 bookWrapper" id="book4">
+                <img src="img/book4.jpg" class="imgBook" alt="Book 4">
+                <div class="overlay" id="ov4">
+                    <img src="img/overlay-logo.jpg" alt="Overlay Logo">
+                    <p>Unlucky in love once again after her sort of boyfriend and possible marriage partner to be proves a little too close to his parents, Sofia Khan is ready to renounce men for good.</p>
+                    <button class="btnOverlay" type="button">View book</button>
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-3 bookWrapper" id="book5">
+                <img src="img/book5.jpg" class="imgBook" alt="Book 5">
+                <div class="overlay" id="ov5">
+                    <img src="img/overlay-logo.jpg" alt="Overlay Logo">
+                    <p>Unlucky in love once again after her sort of boyfriend and possible marriage partner to be proves a little too close to his parents, Sofia Khan is ready to renounce men for good.</p>
+                    <button class="btnOverlay" type="button">View book</button>
+                </div>
+            </div>
+            <div class="col-lg-1 hidden-xs hidden-sm hidden-md"></div>
         </div>
     </section>
 
-    <!-- Download Section -->
-    <section id="download" class="content-section text-center">
-        <div class="download-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Download Grayscale</h2>
-                    <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
-                    <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
-                </div>
+
+    <!-- ************************************************************************************************ -->
+
+                                            <!-- Imprints section -->
+
+    <!-- ************************************************************************************************ -->
+
+    <section id="imprints" class="container content-section text-center">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
+                <h2>Our Imprints</h2>
+                <p>Bonnier Zaffre combines brand new voices with established storytellers to bring a broad spectrum of high quality and innovative fiction to all ages.</p>
             </div>
         </div>
     </section>

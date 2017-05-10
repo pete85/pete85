@@ -53,9 +53,22 @@ a {
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
-    &:hover,
-    &:focus {
+    &:hover, &:focus, &:active {
         text-decoration: none;
         color: darken($primary,20%);
     }
+}
+
+button {
+	background-color: $primary;
+	color: $white;
+	padding: 10px 20px 7px 20px;
+	border: none;
+	font: 400 12px/14px "Cyntho light", Helvetica, Arial, sans-serif;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+	&:hover, &:focus, &:active {
+		background-color: rgba($primary,0.6);
+	}
 }

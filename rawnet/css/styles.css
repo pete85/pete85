@@ -103,13 +103,31 @@ a {
   color: #235895;
   transition: all .2s ease-in-out;
 }
-a:hover, a:focus {
+a:hover, a:focus, a:active {
   text-decoration: none;
   color: #102742;
 }
 
+button {
+  background-color: #235895;
+  color: #FFFFFF;
+  padding: 10px 20px 7px 20px;
+  border: none;
+  font: 400 12px/14px "Cyntho light", Helvetica, Arial, sans-serif;
+  transition: all .2s ease-in-out;
+}
+button:hover, button:focus, button:active {
+  background-color: rgba(35, 88, 149, 0.6);
+}
+
 .navbar {
   min-height: 70px;
+}
+
+/* Bg colour change on scroll */
+.navbar-fixed-top.scrolled {
+  background-color: rgba(35, 88, 149, 0.8);
+  transition: background-color 200ms linear;
 }
 
 .navbar-custom {
@@ -151,15 +169,6 @@ a:hover, a:focus {
   outline: none;
   background-color: transparent;
 }
-.navbar-custom .nav li.active {
-  outline: none;
-}
-.navbar-custom .nav li.active a {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-.navbar-custom .nav li.active a:hover {
-  color: white;
-}
 @media (min-width: 768px) {
   .navbar-custom {
     padding: 20px 0;
@@ -175,6 +184,47 @@ a:hover, a:focus {
   }
 }
 
+.hvr-underline-from-left {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.6);
+  height: 2px;
+  transition-property: right;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+  right: 0;
+}
+
+.active:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.6);
+  height: 2px;
+  transition-property: right;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
 .container {
   width: 100%;
   max-width: 100%;
@@ -184,6 +234,13 @@ a:hover, a:focus {
   font-weight: 400;
 }
 
+body {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
+}
+
+/***********************************************************************************************/
+/* HEADER */
+/***********************************************************************************************/
 .intro {
   height: auto;
   padding: 100px 0;
@@ -215,105 +272,94 @@ a:hover, a:focus {
   box-shadow: 2px 2px 20px #706F6F;
 }
 
-.content-section {
-  padding-top: 100px;
+/***********************************************************************************************/
+/* BOOKS */
+/***********************************************************************************************/
+#books {
+  background-color: #FFFFFF;
+}
+#books .bookWrapper {
+  text-align: center;
+}
+#books .bookWrapper .imgBook {
+  width: 60%;
+  max-width: 90%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  box-shadow: 2px 2px 20px #706F6F;
+}
+#books .bookWrapper:hover, #books .bookWrapper:active, #books .bookWrapper:focus {
+  cursor: pointer;
+}
+#books .bookWrapper p {
+  font: 400 12px/14px "Cyntho light", Helvetica, Arial, sans-serif;
+  margin: 10px 0;
+  color: #000000;
 }
 
-.download-section {
-  width: 100%;
-  padding: 50px 0;
-  color: white;
-  background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
-  background-color: black;
-  background-size: cover;
-  -o-background-size: cover;
+.overlay {
+  position: absolute;
+  margin: 0 auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 58%;
+  height: 89%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #FFFFFF;
+  border: 2px solid rgba(112, 111, 111, 0.6);
+  text-align: center;
+  padding: 10px;
+}
+.overlay img {
+  width: 75px;
+  margin-top: 30px;
+}
+.overlay .btnOverlay {
+  width: 90%;
 }
 
-#map {
-  width: 100%;
-  height: 200px;
-  margin-top: 100px;
+#book1:hover #ov1 {
+  opacity: 1;
 }
 
-.btn {
-  text-transform: uppercase;
-  font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-weight: 400;
-  transition: all .3s ease-in-out;
-  border-radius: 0;
+#book2:hover #ov2 {
+  opacity: 1;
 }
 
-.btn-default {
-  border: 1px solid #235895;
-  color: #235895;
-  background-color: transparent;
-}
-.btn-default:hover, .btn-default:focus {
-  border: 1px solid #235895;
-  outline: none;
-  color: black;
-  background-color: #235895;
+#book3:hover #ov3 {
+  opacity: 1;
 }
 
-ul.banner-social-buttons {
-  margin-top: 0;
+#book4:hover #ov4 {
+  opacity: 1;
 }
-@media (max-width: 1199px) {
-  ul.banner-social-buttons {
-    margin-top: 15px;
+
+#book5:hover #ov5 {
+  opacity: 1;
+}
+
+/***********************************************************************************************/
+/* BOOKS */
+/***********************************************************************************************/
+#imprints {
+  background-color: #FFFFFF;
+}
+
+@media only screen and (min-width: 480px) {
+  .overlay {
+    height: 93%;
   }
 }
-@media (max-width: 767px) {
-  ul.banner-social-buttons li {
-    display: block;
-    margin-bottom: 20px;
-    padding: 0;
-  }
-  ul.banner-social-buttons li:last-child {
-    margin-bottom: 0;
+@media only screen and (min-width: 580px) {
+  #books .bookWrapper p {
+    font: 400 18px/22px "Cyntho light", Helvetica, Arial, sans-serif;
+    margin: 30px 0;
   }
 }
-
-footer {
-  padding: 50px 0;
-}
-footer p {
-  margin: 0;
-}
-
-::-moz-selection {
-  text-shadow: none;
-  background: #fcfcfc;
-  background: rgba(255, 255, 255, 0.2);
-}
-
-::selection {
-  text-shadow: none;
-  background: #fcfcfc;
-  background: rgba(255, 255, 255, 0.2);
-}
-
-img::-moz-selection {
-  background: transparent;
-}
-
-img::selection {
-  background: transparent;
-}
-
-img::-moz-selection {
-  background: transparent;
-}
-
-body {
-  -webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
-}
-
 @media only screen and (min-width: 768px) {
-  .content-section {
-    padding-top: 250px;
-  }
-
   .download-section {
     padding: 100px 0;
   }
@@ -324,7 +370,6 @@ body {
   }
 
   .intro {
-    height: 100%;
     padding: 0;
   }
   .intro .intro-header .brand-heading {
@@ -333,9 +378,30 @@ body {
   .intro #imgZ {
     margin: 30px auto 50px auto;
   }
+
+  #books .bookWrapper .imgBook {
+    width: 150px;
+  }
+  #books .bookWrapper p {
+    font: 400 10px/11px "Cyntho light", Helvetica, Arial, sans-serif;
+    margin: 10px 0;
+  }
+
+  .overlay {
+    width: 150px;
+    height: 230px;
+  }
+  .overlay img {
+    width: 50px;
+    margin-top: 0;
+  }
 }
 @media only screen and (min-width: 1200px) {
   .container {
     width: 1170px;
+  }
+
+  .content-section {
+    padding-top: 130px;
   }
 }
