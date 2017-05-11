@@ -282,7 +282,7 @@ body {
   text-align: center;
 }
 #books .bookWrapper .imgBook {
-  width: 60%;
+  width: 45%;
   max-width: 90%;
   margin: 0 auto;
   margin-bottom: 50px;
@@ -304,8 +304,8 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  width: 58%;
-  height: 89%;
+  width: 43%;
+  height: 88%;
   opacity: 0;
   transition: .5s ease;
   background-color: #FFFFFF;
@@ -355,12 +355,14 @@ body {
   padding: 15px;
   margin: 15px;
   overflow: hidden;
+  min-height: 500px;
+  position: relative;
 }
 .impMain p {
   color: #FFFFFF;
 }
 .impMain .impDesc {
-  margin: 50px 0;
+  margin: 30px 0;
 }
 .impMain .impDesc a {
   color: #FFFFFF;
@@ -369,14 +371,39 @@ body {
 .impMain .impDesc a:hover, .impMain .impDesc a:focus, .impMain .impDesc a:active {
   color: #CCCCCC;
 }
+.impMain .impBooks {
+  margin: 30px 0;
+  text-align: center;
+}
+.impMain .impBooks img {
+  width: 28%;
+  margin: 5px;
+  box-shadow: 2px 2px 20px #706F6F;
+}
 
 #impZaffre {
   background: url(../img/imprints_zaffre.jpg) no-repeat top center scroll;
 }
 
+#impTwenty7 {
+  background: url(../img/imprints_twenty7.jpg) no-repeat top center scroll;
+}
+
+#impTotally {
+  background: url(../img/imprints_totally.jpg) no-repeat top center scroll;
+}
+
+@media only screen and (max-width: 480px) {
+  .overlay p {
+    display: none;
+  }
+  .overlay button {
+    margin-top: 30px;
+  }
+}
 @media only screen and (min-width: 480px) {
   .overlay {
-    height: 93%;
+    height: 90%;
   }
 }
 @media only screen and (min-width: 580px) {
@@ -386,10 +413,6 @@ body {
   }
 }
 @media only screen and (min-width: 768px) {
-  .download-section {
-    padding: 100px 0;
-  }
-
   #map {
     height: 400px;
     margin-top: 250px;
@@ -420,6 +443,29 @@ body {
   .overlay img {
     width: 50px;
     margin-top: 0;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .impMain {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .impMain .impDesc {
+    padding-right: 70px;
+  }
+
+  #impTwenty7 .impDesc {
+    -ms-flex-order: 2;
+    order: 2;
+  }
+
+  #impTwenty7 .impBooks {
+    -ms-flex-order: 1;
+    order: 1;
   }
 }
 @media only screen and (min-width: 1200px) {

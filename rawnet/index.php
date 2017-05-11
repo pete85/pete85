@@ -155,18 +155,56 @@
             </div>
         </div>
 
+        <!-- ZAFFRE BOOKS -->
         <div class="row">
             <div class="impMain" id="impZaffre">
-                <div class="col-md-5 impDesc">
+                <div class="col-lg-6 impDesc">
                     <img src="img/zaffrewhite_160x77.png" alt="Zaffre logo">
                     <p>
                         Zaffre is the main imprint of Bonnier Zaffre’s adult fiction business and publishes established authors with a track record of strong sales in hardback, paperback, ebook and audio. Focusing on a wide range of crime, thrillers and women’s fiction, we pride ourselves on publishing commercial fiction with strong narratives and compelling storylines.
                     </p>
                     <a href="#">Visit site</a>
                 </div>
-                <div class="col-md-1 hidden-sm hidden-xs"></div>
-                <div class="col-md-6 impBooks">
-                    
+                <div class="col-lg-6 impBooks">
+                    <img src="img/books/book1.jpg" alt="Book one">
+                    <img src="img/books/book2.jpg" alt="Book two">
+                    <img src="img/books/book3.jpg" alt="Book three">
+                </div>
+            </div>
+        </div>
+
+        <!-- TWENTY7 BOOKS -->
+        <div class="row">
+            <div class="impMain" id="impTwenty7">
+                <div class="col-lg-6 impDesc">
+                    <img src="img/twenty7white_160x77.png" alt="Twenty7 logo">
+                    <p>
+                        Twenty7 Books specialises in debut fiction from every genre, but especially crime and women’s fiction. We’re incredibly passionate about supporting the best new authors and finding innovative ways of bringing their books to readers across the world, with a particular focus on using early ebook publication to launch the careers of authors in all formats.
+                    </p>
+                    <a href="#">Visit site</a>
+                </div>
+                <div class="col-lg-6 impBooks">
+                    <img src="img/books/book4.jpg" alt="Book one">
+                    <img src="img/books/book5.jpg" alt="Book two">
+                    <img src="img/books/book6.jpg" alt="Book three">
+                </div>
+            </div>
+        </div>
+
+        <!-- TOTALLY BOOKS -->
+        <div class="row">
+            <div class="impMain" id="impTotally">
+                <div class="col-lg-6 impDesc">
+                    <img src="img/totallywhite_160x77.png" alt="Totally logo">
+                    <p>
+                        Passion for sizzling stories, powerful plot lines and compelling characters. We aim to give our readers a totally delicious escape when they pick up one of our books and indulge in a little stimulation for the imagination.
+                    </p>
+                    <a href="#">Visit site</a>
+                </div>
+                <div class="col-lg-6 impBooks">
+                    <img src="img/books/book1.jpg" alt="Book one">
+                    <img src="img/books/book2.jpg" alt="Book two">
+                    <img src="img/books/book3.jpg" alt="Book three">
                 </div>
             </div>
         </div>

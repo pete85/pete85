@@ -62,7 +62,7 @@ body {
   & .bookWrapper {
     text-align: center;
     & .imgBook {
-      width: 60%;
+      width: 45%;
       max-width: 90%;
       margin: 0 auto;
       margin-bottom: 50px;
@@ -86,8 +86,8 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  width: 58%;
-  height: 89%;
+  width: 43%;
+  height: 88%;
   opacity: 0;
   transition: .5s ease;
   background-color: $white;
@@ -131,11 +131,13 @@ body {
   padding: 15px;
   margin: 15px;
   overflow: hidden;
+  min-height: 500px;
+  position: relative;
   & p {
     color: $white;
   }
   & .impDesc {
-    margin: 50px 0;
+    margin: 30px 0;
     & a {
       color: $white;
       text-decoration: underline;
@@ -144,12 +146,28 @@ body {
       }
     }
   }
+  & .impBooks {
+    margin: 30px 0;
+    text-align: center;
+    & img {
+      width: 28%;
+      margin: 5px;
+      box-shadow: 2px 2px 20px $grey;
+    }
+  }
 }
 
 #impZaffre {
   background: url(../img/imprints_zaffre.jpg) no-repeat top center scroll;
 }
 
+#impTwenty7 {
+  background: url(../img/imprints_twenty7.jpg) no-repeat top center scroll;
+}
+
+#impTotally {
+  background: url(../img/imprints_totally.jpg) no-repeat top center scroll;
+}
 
 
 
