@@ -3,13 +3,19 @@
 
 
 ## Technologies used
-
-..* HTML5
-
+* HTML5
+* CSS3
+* Sass
+* JavaScript
+* jQuery
+* Bootstrap
+* Gulp
+* Github
 
 ## Creator
+Piotr Furmanek
 
 
 ## Copyright and License
 
-Copyright 2017 Stream Ltd
+MIT
