@@ -170,6 +170,43 @@ body {
 }
 
 
+/***********************************************************************************************/
+
+                                            /* TEAM */
+                                            
+/***********************************************************************************************/
+
+#team {
+  background-color: $primary;
+  background: url(../img/team-bg.jpg) no-repeat top center scroll;
+  color: $white;
+  & h2 {
+    color: $white;
+  }
+  & p {
+    margin: 50px auto;
+  }
+  & .btnRow {
+    padding: 50px;
+  }
+}
+
+/* Slider */
+.one-time {
+  & div {
+    & img {
+      width: 90%;
+      max-width: 90%;
+      margin: 0 auto;
+    }
+  }
+}
+
+.slick-prev, .slick-next {
+  z-index: 1000;
+}
+
+
 
 
 

@@ -72,3 +72,17 @@ button {
 		background-color: rgba($primary,0.6);
 	}
 }
+
+#btnWhite {
+	background-color: $white;
+	color: $primary;
+	padding: 15px 50px 12px 50px;
+	border: none;
+	font: 400 16px/18px "Cyntho light", Helvetica, Arial, sans-serif;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+	&:hover, &:focus, &:active {
+		background-color: $light-grey;
+	}
+}

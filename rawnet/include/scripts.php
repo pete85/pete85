@@ -10,6 +10,9 @@
     <!-- WOW JS -->
     <script src="js/wow.min.js"></script>
 
+    <!-- SLICK Slider -->
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
     <script>
         new WOW().init();
     </script>

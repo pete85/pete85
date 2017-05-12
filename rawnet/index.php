@@ -211,6 +211,27 @@
 
     </section>
 
+    <section id="team" class="container content-section">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1 text-center">
+                <h2>Our Team</h2>
+                <p>Zaffre Publishing is an imprint of Bonnier Publishing Fiction, a division of the internationally renowned Bonnier Publishing. Started in 2014 by Mark Smith, </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="one-time">
+                <div><img src="img/slider1.png" alt="slide 1"></div>
+                <div><img src="img/slider2.png" alt="slide 2"></div>
+                <div><img src="img/slider1.png" alt="slide 1"></div>
+            </div>
+        </div>
+
+        <div class="row btnRow text-center">
+            <button type="button" id="btnWhite">Join the team</button>
+        </div>
+    </section>
+
 
 
 
