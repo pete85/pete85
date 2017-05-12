@@ -1,19 +1,6 @@
 // FONTS
 
-@font-face {
-  font-family: 'Cyntho light';
-  src: url('../fonts/Fontspring-DEMO-CynthoPro-ExtraLight.otf');
-}
-
-@font-face {
-  font-family: 'Cyntho medium';
-  src: url('../fonts/Fontspring-DEMO-CynthoPro-Medium.otf');
-}
-
-@font-face {
-  font-family: 'Cyntho bold';
-  src: url('../fonts/Fontspring-DEMO-CynthoPro-Bold.otf');
-}
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
 
 @font-face {
   font-family: 'Fremont';
@@ -25,7 +12,7 @@
 body {
     width: 100%;
     height: 100%;
-    font-family: "Cyntho light", Helvetica, Arial, sans-serif;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
     color: $grey;
     background-color: $light-grey;
 }
@@ -44,7 +31,7 @@ h1,h2,h3,h4,h5,h6 {
 
 p {
     margin: 0 0 15px;
-    font: 400 16px/24px "Cyntho light", Helvetica, Arial, sans-serif;
+    font: 300 16px/24px "Montserrat", Helvetica, Arial, sans-serif;
 
 }
 
@@ -64,7 +51,7 @@ button {
 	color: $white;
 	padding: 10px 20px 7px 20px;
 	border: none;
-	font: 400 12px/14px "Cyntho light", Helvetica, Arial, sans-serif;
+	font: 300 12px/14px "Montserrat", Helvetica, Arial, sans-serif;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -78,7 +65,7 @@ button {
 	color: $primary;
 	padding: 15px 50px 12px 50px;
 	border: none;
-	font: 400 16px/18px "Cyntho light", Helvetica, Arial, sans-serif;
+	font: 400 16px/18px "Montserrat", Helvetica, Arial, sans-serif;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;

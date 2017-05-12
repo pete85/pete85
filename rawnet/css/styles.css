@@ -3,6 +3,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -60,27 +61,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 @font-face {
-  font-family: 'Cyntho light';
-  src: url("../fonts/Fontspring-DEMO-CynthoPro-ExtraLight.otf");
-}
-@font-face {
-  font-family: 'Cyntho medium';
-  src: url("../fonts/Fontspring-DEMO-CynthoPro-Medium.otf");
-}
-@font-face {
-  font-family: 'Cyntho bold';
-  src: url("../fonts/Fontspring-DEMO-CynthoPro-Bold.otf");
-}
-@font-face {
   font-family: 'Fremont';
   src: url("../fonts/Fontspring-DEMO-Fremont-Regular.otf");
 }
 body {
   width: 100%;
   height: 100%;
-  font-family: "Cyntho light", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
   color: #706F6F;
-  background-color: #E3E2E1;
+  background-color: #F0F0F0;
 }
 
 html {
@@ -97,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   margin: 0 0 15px;
-  font: 400 16px/24px "Cyntho light", Helvetica, Arial, sans-serif;
+  font: 300 16px/24px "Montserrat", Helvetica, Arial, sans-serif;
 }
 
 a {
@@ -114,7 +103,7 @@ button {
   color: #FFFFFF;
   padding: 10px 20px 7px 20px;
   border: none;
-  font: 400 12px/14px "Cyntho light", Helvetica, Arial, sans-serif;
+  font: 300 12px/14px "Montserrat", Helvetica, Arial, sans-serif;
   transition: all .2s ease-in-out;
 }
 button:hover, button:focus, button:active {
@@ -126,11 +115,11 @@ button:hover, button:focus, button:active {
   color: #235895;
   padding: 15px 50px 12px 50px;
   border: none;
-  font: 400 16px/18px "Cyntho light", Helvetica, Arial, sans-serif;
+  font: 400 16px/18px "Montserrat", Helvetica, Arial, sans-serif;
   transition: all .2s ease-in-out;
 }
 #btnWhite:hover, #btnWhite:focus, #btnWhite:active {
-  background-color: #E3E2E1;
+  background-color: #F0F0F0;
 }
 
 .navbar {
@@ -172,6 +161,7 @@ button:hover, button:focus, button:active {
 }
 .navbar-custom .nav li a {
   transition: background .3s ease-in-out;
+  padding: 15px 10px;
 }
 .navbar-custom .nav li a:hover {
   color: rgba(255, 255, 255, 0.8);
@@ -401,6 +391,20 @@ body {
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
 }
 
+#socialTop {
+  position: fixed;
+  top: 10px;
+  right: 90px;
+  z-index: 2000;
+  margin-top: 15px;
+}
+#socialTop a {
+  margin-left: 8px;
+}
+#socialTop .fa {
+  color: #FFFFFF;
+}
+
 /***********************************************************************************************/
 /* HEADER */
 /***********************************************************************************************/
@@ -532,7 +536,7 @@ body {
   text-decoration: underline;
 }
 .impMain .impDesc a:hover, .impMain .impDesc a:focus, .impMain .impDesc a:active {
-  color: #E3E2E1;
+  color: #F0F0F0;
 }
 .impMain .impBooks {
   margin: 30px 0;
@@ -585,6 +589,85 @@ body {
   z-index: 1000;
 }
 
+/***********************************************************************************************/
+/* CONTACT */
+/***********************************************************************************************/
+#contact {
+  background-color: #FFFFFF;
+  padding: 50px 30px;
+}
+#contact .contactIntro iframe {
+  margin: 30px 0;
+}
+
+#contactForm .form-control {
+  border-radius: 0;
+  background-color: #F0F0F0;
+  height: 45px;
+}
+#contactForm button {
+  width: 100%;
+  padding: 15px;
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  border-left: 0 !important;
+}
+
+.input-group-addon {
+  background-color: #F0F0F0;
+  border-radius: 0;
+}
+
+/***********************************************************************************************/
+/* FOOTER */
+/***********************************************************************************************/
+footer {
+  background-color: #1d2831;
+  padding: 60px 30px;
+  color: #FFFFFF;
+}
+footer .copyright {
+  text-align: center;
+}
+footer .copyright p {
+  font-size: 12px;
+}
+footer .social {
+  text-align: center;
+}
+footer .social a {
+  margin: 10px;
+}
+footer .social .fa {
+  color: #FFFFFF;
+  transition: all .2s ease-in-out;
+}
+footer .social .fa:hover, footer .social .fa:active, footer .social .fa:focus {
+  color: #F0F0F0;
+  font-size: 2.5em;
+  cursor: pointer;
+}
+
+#to-top {
+  color: #235895;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  font-size: 30px;
+  text-shadow: 1px 1px 1px #FFFFFF;
+}
+
+@media only screen and (max-width: 310px) {
+  #socialTop {
+    display: none;
+  }
+}
 @media only screen and (max-width: 480px) {
   .overlay p {
     display: none;
@@ -636,6 +719,11 @@ body {
     width: 50px;
     margin-top: 0;
   }
+
+  #socialTop {
+    right: 30px;
+    margin-top: 0;
+  }
 }
 @media only screen and (min-width: 992px) {
   .impMain {
@@ -659,6 +747,13 @@ body {
     -ms-flex-order: 1;
     order: 1;
   }
+
+  footer .copyright {
+    text-align: left;
+  }
+  footer .social {
+    text-align: right;
+  }
 }
 @media only screen and (min-width: 1200px) {
   .container {
@@ -667,5 +762,22 @@ body {
 
   .content-section {
     padding-top: 130px;
+  }
+
+  #contact {
+    padding: 50px 150px;
+  }
+  #contact .contactIntro {
+    padding-right: 60px;
+  }
+  #contact .formWrapper {
+    padding-left: 60px;
+  }
+
+  #socialTop {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    margin-left: 1080px;
   }
 }
