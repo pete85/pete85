@@ -1,5 +1,7 @@
 # Rawnet test
-
+Responsive single page website built with Bootstrap. 
+[WowJS](http://mynameismatthieu.com/WOW/) used for animations together with [animate.css](https://daneden.github.io/animate.css/).
+[Slick slider](http://kenwheeler.github.io/slick/) used for Team page slider.
 
 ## Technologies used
 * HTML5
