@@ -21,9 +21,3 @@
 
 <!-- Custom CSS -->
 <link href="css/styles.css" rel="stylesheet">
-
-<script>
-	$(window).on('beforeunload', function(){
-	  $(window).scrollTop(0);
-	});
-</script>
