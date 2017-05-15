@@ -91,6 +91,7 @@ p {
 
 a {
   color: #235895;
+  -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 }
 a:hover, a:focus, a:active {
@@ -104,6 +105,7 @@ button {
   padding: 10px 20px 7px 20px;
   border: none;
   font: 300 12px/14px "Montserrat", Helvetica, Arial, sans-serif;
+  -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 }
 button:hover, button:focus, button:active {
@@ -116,6 +118,7 @@ button:hover, button:focus, button:active {
   padding: 15px 50px 12px 50px;
   border: none;
   font: 400 16px/18px "Montserrat", Helvetica, Arial, sans-serif;
+  -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 }
 #btnWhite:hover, #btnWhite:focus, #btnWhite:active {
@@ -129,6 +132,7 @@ button:hover, button:focus, button:active {
 /* Bg colour change on scroll */
 .navbar-fixed-top.scrolled {
   background-color: rgba(35, 88, 149, 0.8);
+  -webkit-transition: background-color 200ms linear;
   transition: background-color 200ms linear;
 }
 
@@ -160,6 +164,7 @@ button:hover, button:focus, button:active {
   color: white;
 }
 .navbar-custom .nav li a {
+  -webkit-transition: background .3s ease-in-out;
   transition: background .3s ease-in-out;
   padding: 15px 10px;
 }
@@ -178,6 +183,7 @@ button:hover, button:focus, button:active {
     border-bottom: none;
     letter-spacing: 1px;
     background: transparent;
+    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
     transition: background .5s ease-in-out,padding .5s ease-in-out;
   }
   .navbar-custom.top-nav-collapse {
@@ -190,8 +196,10 @@ button:hover, button:focus, button:active {
 .hvr-underline-from-left {
   display: inline-block;
   vertical-align: middle;
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
+  -webkit-transform: perspective(1px) translateZ(0);
+          transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px transparent;
+          box-shadow: 0 0 1px transparent;
   position: relative;
   overflow: hidden;
 }
@@ -205,9 +213,12 @@ button:hover, button:focus, button:active {
   bottom: 0;
   background: rgba(255, 255, 255, 0.6);
   height: 2px;
+  -webkit-transition-property: right;
   transition-property: right;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-out;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
 }
 
 .hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
@@ -223,9 +234,12 @@ button:hover, button:focus, button:active {
   bottom: 0;
   background: rgba(255, 255, 255, 0.6);
   height: 2px;
+  -webkit-transition-property: right;
   transition-property: right;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-out;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
 }
 
 /* Slider */
@@ -254,7 +268,8 @@ button:hover, button:focus, button:active {
   background: transparent;
   color: transparent;
   top: 50%;
-  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
   padding: 0;
   border: none;
   outline: none;
@@ -436,7 +451,8 @@ body {
   width: 120px;
   max-width: 120px;
   margin: 70px auto;
-  box-shadow: 2px 2px 20px #706F6F;
+  -webkit-box-shadow: 2px 2px 20px #706F6F;
+          box-shadow: 2px 2px 20px #706F6F;
 }
 
 /***********************************************************************************************/
@@ -453,7 +469,8 @@ body {
   max-width: 90%;
   margin: 0 auto;
   margin-bottom: 50px;
-  box-shadow: 2px 2px 20px #706F6F;
+  -webkit-box-shadow: 2px 2px 20px #706F6F;
+          box-shadow: 2px 2px 20px #706F6F;
 }
 #books .bookWrapper:hover, #books .bookWrapper:active, #books .bookWrapper:focus {
   cursor: pointer;
@@ -474,6 +491,7 @@ body {
   width: 43%;
   height: 88%;
   opacity: 0;
+  -webkit-transition: .5s ease;
   transition: .5s ease;
   background-color: #FFFFFF;
   border: 2px solid rgba(112, 111, 111, 0.6);
@@ -545,7 +563,8 @@ body {
 .impMain .impBooks img {
   width: 28%;
   margin: 5px;
-  box-shadow: 2px 2px 20px #706F6F;
+  -webkit-box-shadow: 2px 2px 20px #706F6F;
+          box-shadow: 2px 2px 20px #706F6F;
 }
 
 #impZaffre {
@@ -645,6 +664,7 @@ footer .social a {
 }
 footer .social .fa {
   color: #FFFFFF;
+  -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 }
 footer .social .fa:hover, footer .social .fa:active, footer .social .fa:focus {
@@ -728,11 +748,14 @@ footer .social .fa:hover, footer .social .fa:active, footer .social .fa:focus {
 @media only screen and (min-width: 992px) {
   .impMain {
     display: -ms-flexbox;
+    display: -webkit-box;
     display: flex;
     -ms-flex-align: center;
-        align-items: center;
+        -webkit-box-align: center;
+            align-items: center;
     -ms-flex-pack: center;
-        justify-content: center;
+        -webkit-box-pack: center;
+            justify-content: center;
   }
   .impMain .impDesc {
     padding-right: 70px;
@@ -740,12 +763,14 @@ footer .social .fa:hover, footer .social .fa:active, footer .social .fa:focus {
 
   #impTwenty7 .impDesc {
     -ms-flex-order: 2;
-    order: 2;
+    -webkit-box-ordinal-group: 3;
+            order: 2;
   }
 
   #impTwenty7 .impBooks {
     -ms-flex-order: 1;
-    order: 1;
+    -webkit-box-ordinal-group: 2;
+            order: 1;
   }
 
   footer .copyright {
