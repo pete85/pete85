@@ -1,3 +1,8 @@
+.img100 {
+  width: 100%;
+  max-width: 100%;
+}
+
 // TOP BAR
 
 .top-left, .top-right {
@@ -12,6 +17,7 @@
   background-color: $purple-light;
   color: $btn-purple-txt;
   padding: 5px;
+  font-weight: 800;
 }
 
 #menu-toggle {
@@ -21,4 +27,98 @@
 
 .fa-bars {
   color: $purple-light;
+}
+
+// WINNERS
+
+.winners {
+  background-color: $purple;
+  color: $txt-purple-light;
+  padding: 15px;
+  & .txtWhite {
+    color: $white;
+    font-weight: 800;
+  }
+  & .txtYellow {
+    color: $txt-yellow;
+  }
+}
+
+// MAIN
+
+.main {
+  background-color: $purple-light;
+  color: $txt-purple-light;
+  & .txtWhite {
+    color: $white;
+    font-weight: 800;
+  }
+  & .txtYellow {
+    color: $txt-yellow;
+  }
+}
+
+.tabWrapper {
+  padding-top: 5px;
+}
+
+.tabPurple {
+  color: $white;
+  padding: 5px;
+  &:hover, &:active, &:focus {
+    color: $txt-purple-light;
+  }
+  & img {
+    width: 80%;
+    max-width: 100%;
+  }
+}
+
+.activeTab {
+  box-shadow: 2px 2px 50px #333333;
+  border-bottom: 3px solid $red;
+}
+
+.txtGreen {
+  color: $green;
+}
+
+.threeBoxes {
+  color: $white;
+  & .box {
+    overflow: hidden;
+    padding: 30px 15px;
+    & img {
+      max-width: 100%;
+    }
+  }
+}
+
+.redStripe {
+  background-color: $red;
+  color: $white;
+  padding: 5px;
+  & img {
+    display: inline-block;
+  }
+  & p {
+    color: $white;
+    display: inline-block;
+  }
+}
+
+footer {
+  padding: 30px 15px;
+  & img {
+    margin: 5px;
+  }
+  & .legalInfo {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    & p {
+      color: $white;
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
 }

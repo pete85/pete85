@@ -66,29 +66,29 @@ html {
 body {
   width: 100%;
   height: 100%;
-  font-size: 18px;
+  font-size: 16px;
   font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
   background-color: #E3E2E1;
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 2.6em;
 }
 
 h2 {
-  font-size: 2.5em;
-}
-
-h3 {
   font-size: 2em;
 }
 
+h3 {
+  font-size: 1.6em;
+}
+
 h4 {
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 p {
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 .container {
@@ -96,6 +96,18 @@ p {
   max-width: 100%;
   background-color: #341F4A;
   margin: 0 auto;
+}
+
+a {
+  color: #FFFFFF;
+}
+a:hover, a:active, a:focus {
+  color: #C4AEE0;
+}
+
+.img100 {
+  width: 100%;
+  max-width: 100%;
 }
 
 .top-left, .top-right {
@@ -110,6 +122,7 @@ p {
   background-color: #6E5883;
   color: #E9E6EC;
   padding: 5px;
+  font-weight: 800;
 }
 
 #menu-toggle {
@@ -121,6 +134,112 @@ p {
   color: #6E5883;
 }
 
+.winners {
+  background-color: #43225E;
+  color: #C4AEE0;
+  padding: 15px;
+}
+.winners .txtWhite {
+  color: #FFFFFF;
+  font-weight: 800;
+}
+.winners .txtYellow {
+  color: #FBE134;
+}
+
+.main {
+  background-color: #6E5883;
+  color: #C4AEE0;
+}
+.main .txtWhite {
+  color: #FFFFFF;
+  font-weight: 800;
+}
+.main .txtYellow {
+  color: #FBE134;
+}
+
+.tabWrapper {
+  padding-top: 5px;
+}
+
+.tabPurple {
+  color: #FFFFFF;
+  padding: 5px;
+}
+.tabPurple:hover, .tabPurple:active, .tabPurple:focus {
+  color: #C4AEE0;
+}
+.tabPurple img {
+  width: 80%;
+  max-width: 100%;
+}
+
+.activeTab {
+  box-shadow: 2px 2px 50px #333333;
+  border-bottom: 3px solid #FF3250;
+}
+
+.txtGreen {
+  color: #85FC33;
+}
+
+.threeBoxes {
+  color: #FFFFFF;
+}
+.threeBoxes .box {
+  overflow: hidden;
+  padding: 30px 15px;
+}
+.threeBoxes .box img {
+  max-width: 100%;
+}
+
+.redStripe {
+  background-color: #FF3250;
+  color: #FFFFFF;
+  padding: 5px;
+}
+.redStripe img {
+  display: inline-block;
+}
+.redStripe p {
+  color: #FFFFFF;
+  display: inline-block;
+}
+
+footer {
+  padding: 30px 15px;
+}
+footer img {
+  margin: 5px;
+}
+footer .legalInfo {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+footer .legalInfo p {
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+@media only screen and (max-width: 320px) {
+  .oddBox .boxImage {
+    -ms-flex-order: 2;
+    order: 2;
+  }
+
+  .oddBox .boxDesc {
+    -ms-flex-order: 1;
+    order: 1;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .top-right {
+    padding-right: 15px;
+  }
+}
 @media only screen and (min-width: 1200px) {
   .container {
     width: 1170px;
