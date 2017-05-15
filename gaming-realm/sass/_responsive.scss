@@ -4,23 +4,31 @@
 
 //*****************************************************************************************************
 
-// Custom, iPhone Retina
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 767px) {
 
-	.oddBox .boxImage {
-		-webkit-box-ordinal-group: 2;
-		-moz-box-ordinal-group: 2;
-		-ms-flex-order: 2;
-		-webkit-order: 2;
-		order: 2;
-	}
+  #oddBox {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column-reverse;
+  }
 
-	.oddBox .boxDesc {
+	#oddBox .boxDesc {
 		-webkit-box-ordinal-group: 1;
 		-moz-box-ordinal-group: 1;
 		-ms-flex-order: 1;
 		-webkit-order: 1;
 		order: 1;
+	}
+
+	#oddBox .boxImage {
+		-webkit-box-ordinal-group: 2;
+		-moz-box-ordinal-group: 2;
+		-ms-flex-order: 2;
+		-webkit-order: 2;
+		order: 2;
 	}
 }
 
@@ -37,11 +45,20 @@
 	  padding-right: 15px;
 	}
 
+	.btnOne {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 200px;
+	}
 }
 
 // Medium Devices, Desktops
 @media only screen and (min-width: 992px) {
 
+	.btnOne {
+		top: 220px;
+	}
 }
 
 
@@ -52,6 +69,10 @@
 	.container {
 		width: 1170px;
 	}
+
+	.btnOne {
+		top: 250px;
+	}	
 }
 
 @media only screen and (min-width: 1650px) {
