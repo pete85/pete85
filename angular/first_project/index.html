@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="store">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=viewport-width, initial-scale=1">
+    <meta name="description" content="My first Angular project">
+    
+	<title>Angular Project</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <!-- Custom Fonts -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/animate.css">
+
+
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Josefin+Slab');
+	</style>
+
+</head>
+<body ng-controller="StoreController as store">
+
+	
+	<ul class="list-group">
+		<li class="list-group-item" ng-repeat="product in store.products | orderBy:'name'" ng-show="product.images.length">
+			
+
+<!-- 			<h3 ng-include="'product-title.html'"></h3> -->
+			
+
+			<product-title></product-title> <!-- Element directive definition -->
+
+			<img ng-src="{{product.images[0].full}}"/>
+			<button ng-show="store.products.canPurchase">Add to cart</button>
+			
+
+			<ul class="img-thumbnails clearfix">
+				<li class="small-image pull-left thumbnail" ng-repeat="image in product.images">
+					<img ng-src="{{image.thumb}}"/>
+				</li>
+			</ul>
+			
+			
+			<product-panels></product-panels>
+		</li>
+	</ul>
+
+	<a href="todo.html">To Do list</a>
+
+
+
+	<script type="text/javascript" src="js/angular.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript" src="js/products.js"></script>
+</body>
+</html>
