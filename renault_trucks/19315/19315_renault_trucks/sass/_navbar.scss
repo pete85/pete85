@@ -1,0 +1,200 @@
+//*****************************************************************************************************
+
+//                                              NAV-BAR
+
+//*****************************************************************************************************
+
+.navbar {
+  margin-bottom: 0;
+  border: none;
+}
+
+.navbar-brand {
+  height: 56px;
+  padding: 0;
+}
+
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+  max-height: 100%;
+}
+
+.navbar-collapse {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navbar-inverse {
+  background-color: $nav;
+  border-color: transparent;
+  text-transform: uppercase;
+}
+
+.navbar-toggle {
+  padding: 0;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  margin-right: 40px;
+  border: none !important;
+}
+
+.navbar-inverse .navbar-toggle {
+  border-radius: 0;
+  border-color: transparent;
+  color: $red;
+  font-size: 30px;
+}
+
+.navbar-fixed-left {
+  @include transitions;
+  position: fixed;
+  display: block;
+  border-radius: 0;
+  height: 360px;
+  top: 30%;
+  z-index: 990;
+}
+
+.navbar-fixed-top, .navbar-fixed-bottom {
+  z-index: 990;
+}
+
+.navbar-nav {
+  margin: 8px 10px;
+}
+
+.nav > li > a {
+  padding: 8px 0;
+}
+
+.navbar-fixed-left {
+  .navbar-nav > li {
+    float: none;
+  }
+  + .container {
+    padding-left: 10px;
+  }
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: $white;
+  cursor: pointer;
+}
+
+.container-fluid > {
+  .navbar-collapse, .navbar-header {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.container > {
+  .navbar-collapse, .navbar-header {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.navbar-header img {
+  // width: 60px;
+  // max-width: 100%;
+  height: 46px;
+  min-height: 46px;
+  margin: 5px;
+}
+
+.navbar-inverse .navbar-nav > {
+  li > a {
+    &:hover, &:focus {
+      color: $red;
+      background-color: transparent;
+      cursor: pointer;
+    }
+  }
+  .active > a {
+    color: $red;
+    background-color: transparent;
+    cursor: pointer;
+    &:hover, &:focus {
+      color: $red;
+      background-color: transparent;
+      cursor: pointer;
+    }
+  }
+}
+
+.txtMenu {
+  display: block;
+  font-size: 18px;
+  position: absolute;
+  left: 40px;
+  top: 14px;
+}
+
+.light {
+  font-weight: 400;
+}
+
+.navbar-inverse {
+  .navbar-toggle {
+    &:focus, &:active {
+      outline: none;
+    }
+  }
+  .navbar-brand {
+    font-weight: 700;
+    &:focus {
+      outline: none;
+    }
+  }
+  a {
+    color: $link;
+  }
+  .nav li {
+    a {
+      -webkit-transition: background 0.3s ease-in-out;
+      -moz-transition: background 0.3s ease-in-out;
+      transition: background 0.3s ease-in-out;
+      &:hover {
+        color: $link-hover;
+        outline: none;
+      }
+      &:focus, &:active {
+        outline: none;
+      }
+    }
+    &.active {
+      outline: none;
+      a:hover {
+        color: $white;
+      }
+    }
+  }
+}
+
+// Medium Devices, Desktops
+@media only screen and (min-width: 992px) {
+
+  .navbar-inverse {
+    border-bottom: none;
+    -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    &.top-nav-collapse {
+      padding: 0;
+      background-color: rgba(34, 34, 34, 0.5);
+    }
+  }
+
+  .navMinimised {
+    width: 50px;
+  }
+
+  .navFull {
+    width: 360px;
+  }
+
+  .navbar-fixed-top, .navbar-fixed-bottom, .navbar-brand {
+    display: none;
+  }
+
+}  

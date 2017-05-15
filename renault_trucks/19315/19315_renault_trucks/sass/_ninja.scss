@@ -1,0 +1,332 @@
+#ninja-slider {
+  width: 100%;
+  padding: 10px;
+  margin: 0 auto;
+  overflow: hidden;
+  box-sizing: border-box;
+  &.fullscreen {
+    background: black;
+  }
+  .fs-icon {
+    top: 10px;
+    right: 6px;
+    width: 60px;
+    height: 26px;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    color: white;
+    text-align: center;
+    font: bold 11px/26px arial;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 2px;
+    opacity: 0;
+    -webkit-transition: opacity 0.8s;
+    transition: opacity 0.8s;
+  }
+  .slider-inner:hover .fs-icon, &.fullscreen .fs-icon {
+    opacity: 1;
+  }
+  .fs-icon::before {
+    content: "EXPAND";
+    display: block;
+  }
+  &.fullscreen .fs-icon::before {
+    content: "CLOSE";
+  }
+  .slider-inner {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 0px;
+    position: relative;
+    box-sizing: border-box;
+  }
+  &.fullscreen .slider-inner {
+    width: 100%;
+    max-width: 950px;
+  }
+  ul {
+    position: relative;
+    list-style: none;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  li {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    font-size: 12px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    &.ns-show {
+      opacity: 1;
+    }
+  }
+  .ns-img {
+    background-color: rgba(0, 0, 0, 0.3);
+    background-size: contain;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.8), inset 0 0 2px rgba(255, 255, 255, 0.4);
+    border-radius: 4px;
+    cursor: default;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .caption {
+    display: none;
+    padding: 20px 40px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: auto;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 2em;
+    line-height: 1.5;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 4px;
+    position: absolute;
+    box-sizing: border-box;
+    opacity: 0;
+    -webkit-transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in;
+    & span {
+      color: $red;
+    }
+  }
+  li[class*='-s'] .caption {
+    opacity: 1;
+  }
+  .video {
+    top: 0;
+    left: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: black;
+    position: absolute;
+  }
+}
+
+@media only screen and (min-width: 680px) {
+  #ninja-slider .caption {
+    display: block;
+  }
+}
+
+
+// * ---------If there are videos -------
+
+#ninja-slider .video, .video-playbutton-layer, .yt-playbutton-layer
+{
+    top:0; left:0; border:0;
+    width: 100%;height: 100%;
+    text-align: center;
+    background: $black;
+    position: absolute;    
+}
+
+.video-playbutton-layer, .yt-playbutton-layer {
+  top: 0;
+  left: 0;
+  border: 0;
+  text-align: center;
+  background: $black;
+  position: absolute;
+  cursor: pointer;
+}
+
+.video-playbutton-layer {
+  background: transparent url(../vendor/ninja-slider/video-btn.png) no-repeat center center;
+}
+
+.yt-playbutton-layer {
+  background: transparent url(../vendor/ninja-slider/yt-btn.png) no-repeat center center;
+}
+
+// * And if you have added the HTML: <div class="video-playbutton-layer"></div>
+
+// * And if you have YouTube or Vimeo
+
+#ninja-slider div.stopVideoIcon {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  right: 0px;
+  margin: 0 0 6px 6px;
+  background: rgba(0, 0, 0, 0.7);
+  border-bottom-left-radius: 4px;
+  cursor: pointer;
+  &::before {
+    content: "+";
+    color: $white;
+    font-size: 2.5em;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    display: block;
+  }
+}
+
+// * ---------Arrow buttons -------
+
+#ninja-slider-pause-play {
+  display: none;
+}
+
+#ninja-slider-prev, #ninja-slider-next {
+  position: absolute;
+  display: inline-block;
+  width: 60px;
+  height: 100px;
+  line-height: 100px;
+  top: 50%;
+  margin: 0;
+  margin-top: -65px;
+  background-color: none;
+  background-color: #ccc\9;
+  backface-visibility: hidden;
+  color: $white;
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  user-select: none;
+  border-radius: 3px;
+  z-index: 10;
+  opacity: 0.8;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-size: 11px;
+  cursor: pointer;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+  -webkit-transform: scale(1, 1.3);
+  transform: scale(1, 1.3);
+}
+
+#ninja-slider-prev:hover, #ninja-slider-next:hover {
+  opacity: 1;
+}
+
+#ninja-slider-prev {
+  left: -70px;
+}
+
+#ninja-slider-next {
+  right: -70px;
+}
+
+// * pagination within the prev/next buttons
+
+#ninja-slider-prev div {
+  opacity: 1;
+  margin-left: 30px;
+  transition: opacity 0.7s;
+}
+
+#ninja-slider-next div {
+  opacity: 1;
+  float: right;
+  margin-right: 30px;
+  transition: opacity 0.7s;
+}
+
+#ninja-slider-prev:hover div, #ninja-slider-next:hover div {
+  opacity: 1;
+}
+
+// arrows
+
+#ninja-slider-prev::before, #ninja-slider-next::before {
+  position: absolute;
+  top: 25px;
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-left: 3px solid $white;
+  border-top: 3px solid $white;
+}
+
+#ninja-slider-prev::before {
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  backface-visibility: hidden;
+  right: -16px;
+}
+
+#ninja-slider-next::before {
+  -ms-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+  backface-visibility: hidden;
+  left: -16px;
+}
+
+//------ pager(nav bullets) ------
+
+
+#ninja-slider-pager {
+  padding-top: 30px;
+  margin: 0 auto;
+  text-align: center;
+  display: none;
+  font-size: 0;
+  a {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #888;
+    font-size: 0;
+    margin: 2px 6px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: inset 0 1px 3px #666666;
+    &:hover {
+      opacity: 0.6;
+    }
+    &.active {
+      background-color: #ccc;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+    }
+  }
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#ninja-slider-prev, #ninja-slider-next, #ninja-slider-pause-play {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+// ------ Responsive settings ------
+@media only screen and (max-width: 950px) {
+  #ninja-slider-prev {
+    left: -12px;
+  }
+  #ninja-slider-next {
+    right: -12px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #ninja-slider-prev, #ninja-slider-next, #ninja-slider-pager {
+    display: none;
+  }
+}

@@ -1,0 +1,1260 @@
+@font-face {
+  font-family: 'StagSansWeb';
+  src: url('../fonts/StagSans-Light-Web.eot');
+  src: url('../fonts/StagSans-Light-Web.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/StagSans-Light-Web.woff2') format('woff2'),
+       url('../fonts/StagSans-Light-Web.woff') format('woff');
+  font-weight:  300;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+
+body {
+  position: relative;
+  width: 100vw;
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
+  font-family: 'StagSansWeb', Helvetica, Arial, sans-serif;
+  background-color: #000000;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  line-height: 1.5;
+  font-family: 'StagSansWeb', Helvetica, Arial, sans-serif;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+h1 {font-size: 2.8vh;}
+h2 {font-size: 2.4vh;}
+h3 {font-size: 2vh;}
+h4 {font-size: 1.6vh;}
+p {font-size: 1.6vh;}
+
+a {
+  color: #42DCA3;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #1d9b6c;
+}
+
+.hidden {
+  display: none;
+}
+
+.imgResponsive100 {
+  width: 100%;
+  max-width: 100%;
+}
+
+.displayBlock {
+  display: block;
+}
+
+.container {
+  position: relative;
+  width: inherit;
+  padding: 0;
+  margin: auto;
+}
+
+.orange {color: #FA9D00;}
+.white {color: #FFFFFF;}
+
+.center {
+  text-align: center;
+}
+
+.list {
+  list-style-type: none;
+  padding-left: 10px;
+  font-size: 1.6vh;
+}
+
+.list li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 5px;
+}
+
+.list li:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: 'FontAwesome';
+  content: "\f054";
+  color: #FFFFFF;
+}
+
+/*****************************************************************************************************
+
+                                              NAV-BAR
+
+******************************************************************************************************/
+
+.navbar {
+  margin-bottom: 0;
+  border: none;
+}
+
+.navbar-brand {
+  height: 56px;
+  padding: 0;
+}
+
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+  max-height: 550px;
+}
+
+.navbar-collapse {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navbar-inverse {
+  background-color: rgba(34, 34, 34, 0.7);
+  border-color: transparent;
+  text-transform: uppercase;
+}
+
+.navbar-toggle {
+  padding: 0;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  margin-right: 40px;
+  
+}
+
+.navbar-inverse .navbar-toggle {
+  border-radius: 0;
+  border-color: transparent;
+  color: #FA9D00;
+  font-size: 30px;
+}
+
+
+.navbar-fixed-left {
+  position: fixed;
+  border-radius: 0;
+  height: 435px;
+  top:28%;
+  z-index: 999;
+}
+
+.navMinimised {
+  width: 60px;
+}
+
+.navFull {
+  width: 250px;
+}
+
+.navbar-nav {
+  margin: 8px 15px;
+}
+
+.nav>li>a {
+  padding: 15px 0;
+}
+
+.navbar-fixed-left .navbar-nav > li {
+  float: none;  /* Cancel default li float: left */
+}
+
+.navbar-fixed-left + .container {
+  padding-left: 0;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #FA9D00;
+  cursor: pointer;
+}
+
+
+.container-fluid>.navbar-collapse,
+.container-fluid>.navbar-header, 
+.container>.navbar-collapse, 
+.container>.navbar-header {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #FFFFFF;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.txtMenu {
+  display: none;
+  font-size: 18px;
+  position: absolute;
+  left:40px;
+  top:20px;
+}
+
+.light {
+  font-weight: 400;
+}
+.navbar-inverse .navbar-toggle:focus,
+.navbar-inverse .navbar-toggle:active {
+  outline: none;
+}
+.navbar-inverse .navbar-brand {
+  font-weight: 700;
+}
+.navbar-inverse .navbar-brand:focus {
+  outline: none;
+}
+.navbar-inverse a {
+  color: #FFFFFF;
+}
+.navbar-inverse .nav li a {
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+.navbar-inverse .nav li a:hover {
+  color: rgba(255, 255, 255, 0.8);
+  outline: none;
+}
+.navbar-inverse .nav li a:focus,
+.navbar-inverse .nav li a:active {
+  outline: none;
+
+}
+.navbar-inverse .nav li.active {
+  outline: none;
+}
+
+.navbar-inverse .nav li.active a:hover {
+  color: #FFFFFF;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
+/*****************************************************************************************************
+
+                                              PAGES
+
+******************************************************************************************************/
+
+// *** PRELOADER START *** //
+
+.js div#preloader { 
+  position: fixed; 
+  left: 0; 
+  top: 0; 
+  z-index: 1000; 
+  width: 100%; 
+  height: 100%; 
+  overflow: visible; 
+  background: #333333; 
+  text-align: center;
+}
+
+.js div#preloader #loading-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top:30%;
+  bottom:0;
+  margin: auto;
+}
+
+.sk-rotating-plane {
+  width: 250px;
+  height: 250px;
+  background-color: transparent;
+  background: url('../img/loading-logo-large.png') no-repeat center center scroll;
+  margin: 40px auto;
+  -webkit-animation: sk-rotatePlane 1.2s infinite ease-in-out;
+          animation: sk-rotatePlane 1.2s infinite ease-in-out; }
+
+@-webkit-keyframes sk-rotatePlane {
+  0% {
+    -webkit-transform: perspective(500px) rotateX(0deg) rotateY(0deg);
+            transform: perspective(500px) rotateX(0deg) rotateY(0deg); }
+  50% {
+    -webkit-transform: perspective(500px) rotateX(-180.1deg) rotateY(0deg);
+            transform: perspective(500px) rotateX(-180.1deg) rotateY(0deg); }
+  100% {
+    -webkit-transform: perspective(500px) rotateX(-180deg) rotateY(-179.9deg);
+            transform: perspective(500px) rotateX(-180deg) rotateY(-179.9deg); } }
+
+@keyframes sk-rotatePlane {
+  0% {
+    -webkit-transform: perspective(500px) rotateX(0deg) rotateY(0deg);
+            transform: perspective(500px) rotateX(0deg) rotateY(0deg); }
+  50% {
+    -webkit-transform: perspective(500px) rotateX(-180.1deg) rotateY(0deg);
+            transform: perspective(500px) rotateX(-180.1deg) rotateY(0deg); }
+  100% {
+    -webkit-transform: perspective(500px) rotateX(-180deg) rotateY(-179.9deg);
+            transform: perspective(500px) rotateX(-180deg) rotateY(-179.9deg); } }
+
+
+// *** PRELOADER END *** //
+
+
+/* ALL PAGES */
+
+section {
+  width: 100vw;
+  background-color: #000000;
+} 
+
+.topStripe {
+  background-color: #000000;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 56px;
+  z-index: 990;
+}
+
+.bottomStripe {
+  background: transparent;
+  position: absolute;
+  bottom: 3%;
+  width: 100vw;
+  margin-top: 20px;
+  z-index: 998;
+}
+
+.conti-logo-top-stripe {
+  width: 230px;
+  background-color: #FA9D00;
+  height: 56px;
+}
+
+.orangePanel {
+  color: #000000;
+  padding: 20px;
+  background-color: #FA9D00;
+  text-align: center;
+}
+
+.orangePanel h3 {
+  text-shadow: 1px 1px #33333;
+}
+
+/* YT Video */
+
+#brand-videos {
+  width: 100vw;
+  display: table;
+  height: 80vh;
+}
+
+#hash2 img, #hash3 img {
+  width: 140px;
+  display: inline-block;
+  margin: 20px 10px;
+}
+
+#video-player-param {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  width: 100vw;
+}
+
+#hash2 {
+  display: table-cell;
+  vertical-align: top;
+  text-align: center;
+  width: 100vw;
+}
+
+#video-player-param li {
+  display: inline-block;
+  margin: 40px 10px;
+}
+
+#hash img {
+  width: 40vw;
+}
+
+/*** NAVIGATION BUTTONS BOTTOM ***/
+
+.btn-circle {
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  padding: 5px 10px;
+  border: 2px solid #FFFFFF;
+  border-radius: 100% !important;
+  font-size: 30px;
+  color: #FFFFFF;
+  background: transparent;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn-circle:hover,
+.btn-circle:focus {
+  outline: none;
+  color: #FFFFFF;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.btn-circle i.animated {
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-duration: 1s;
+  -moz-transition-property: -moz-transform;
+  -moz-transition-duration: 1s;
+}
+
+.btn-circle:hover i.animated {
+  -webkit-animation-name: pulse;
+  -moz-animation-name: pulse;
+  -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@-moz-keyframes pulse {
+  0% {
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  100% {
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.topPanel {
+  border-bottom: 5px solid #FFFFFF;
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+}
+
+.leftPanel {
+  border-bottom: 5px solid #FFFFFF;
+}
+
+.rightPanel {
+  border-top: 5px solid #FFFFFF;
+}
+
+.marginTop {
+  margin-top: 56px;
+}
+
+
+
+
+/********************************************** PAGE 1 - Home **********************************************/
+
+section#homePage {
+  width: 100vw;
+  background: url('../img/bg-1a.jpg') no-repeat center center scroll;
+  background-color: #000000;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+#homeLogo {
+  position: absolute;
+  display: block;
+  top: 0;
+  width: 100vw;
+  height: 20vh;
+  z-index: 990;
+  background-color: #000000;
+  background: -moz-linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 4%, rgba(0,0,0,0) 12%, rgba(0,0,0,1) 69%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(31%, rgba(0,0,0,1)), color-stop(88%, rgba(0,0,0,0)), color-stop(96%, rgba(0,0,0,0)), color-stop(100%, rgba(0,0,0,0)));
+  background: -webkit-linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 4%, rgba(0,0,0,0) 12%, rgba(0,0,0,1) 69%);
+  background: -o-linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 4%, rgba(0,0,0,0) 12%, rgba(0,0,0,1) 69%);
+  background: -ms-linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 4%, rgba(0,0,0,0) 12%, rgba(0,0,0,1) 69%);
+  background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 4%, rgba(0,0,0,0) 12%, rgba(0,0,0,1) 69%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=0 );
+}
+
+#homeHeaderMobile, #homeHeader {
+  margin-top: 56px;
+  text-align: center;
+}
+
+#homeHeaderMobile {
+  background-color: rgba(34, 34, 34, 0.7);
+}
+
+#homeHeaderMobile h1, #homeHeader h1 {
+  margin-top: 10px;
+  font-size: 2vh;
+  letter-spacing: 3px;
+}
+
+.continental-logo-home img {
+  width: 258px;
+  max-width: 100%;
+}
+
+#homeDesc {
+  border-top: 5px solid #FFFFFF;
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+  height: 30vh;
+}
+
+#home-video-wrapper {
+  display: flex;
+  align-items: flex-end;
+}
+
+
+/********************************************** PAGE 2 - Products **********************************************/
+
+section#products, section#socialMedia, section#brandVideos {
+  width: 100vw;
+  background: url('../img/bg-main.jpg') no-repeat bottom center scroll;
+  background-color: #000000;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+} 
+
+.prod-cat {
+  display: none;
+  height: auto;
+  background: rgba(250, 157, 0, 0.9);
+  color: #000000;
+  text-align: left;
+  padding: 5px;
+}
+
+.prod-cat h3 {
+  padding-bottom: 5px;
+}
+
+.prod-section {
+  padding: 20px;
+}
+
+.active-cat {
+  display: inherit;
+}
+
+.active-tab {
+  background: rgba(255,255,255, 0.3) !important;  
+}
+
+#products-tabs, #products-headings {
+    display: flex;
+    justify-content: space-between;
+}
+
+#products-tabs {
+  padding: 30px;
+}
+
+#products-headings {
+  padding-left: 0;
+  padding-right: 0;
+  padding: 20px;
+}
+
+.products-tab {
+  display: inline-block;
+  *display: inline;
+  background: rgba(0,0,0, 0.5);
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #FA9D00;
+  border-radius: 50%;
+  margin-top: 80px;
+}
+
+.products-tab:active, .products-tab:hover {
+  background: rgba(255, 255, 255, 0.6);
+  cursor: pointer !important;
+}
+
+.products-heading {
+  color: #FA9D00;
+  display: inline-block;
+  *display: inline;
+  width: 40px;
+  height: 50px;
+  background: rgba(0,0,0, 0.5);
+  padding: 11px;
+  text-align: center;
+}
+
+.centered {
+  width: 80%;
+  max-width: 80%;
+  display: block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%); /* Safari and Chrome */
+  -moz-transform: translate(-50%, -50%); /* Firefox */
+  -ms-transform: translate(-50%, -50%); /* IE 9 */
+  -o-transform: translate(-50%, -50%); /* Opera */
+}
+
+.imgProducts {
+  width: 100%;
+  max-width: 100%;
+}
+
+.imgProductsXS {
+  margin-top: 10px;
+  width: 60%;
+  max-width: 60%;
+}
+
+.prodLastParagraph {
+  padding-bottom: 10px;
+}
+
+
+/********************************************** PAGE 3 - Social Media **********************************************/
+
+#socialTop {
+  border-bottom: 5px solid #FFFFFF;
+  padding: 2%;
+}
+
+#socialTop h2 {
+  padding: 40px;
+}
+
+
+
+.social-row-2 {
+  height: 590px;
+  background-color: rgba(0,0,0, 0.6);
+}
+
+.awards {
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 20px;
+}
+
+.awards img {
+  width: 50%;
+  max-width: 100%;
+}
+
+.txtSocial {
+  color: #FFFFFF;
+  padding: 20px;
+}
+
+.txtSocial, .social-logos {
+  height: 300px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.txtSocial div, .social-logos div {
+  display: table;
+  height: 100%;
+}
+
+.txtSocial div {
+  padding: 15px 35px;
+}
+
+#social-media-logos, #social-media-text {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.txtSocial h1, .txtSocial h3 {
+  text-align: left;
+}
+
+.social-logos img {
+  width: 20%;
+  max-width: 100%;
+}
+
+
+
+
+/********************************************** PAGE 4 - Brand Videos **********************************************/
+
+#hash2 {
+  vertical-align: middle;
+}
+
+/********************************************** PAGE 5 - Get Your Grip **********************************************/
+
+section#getYourGrip {
+  background: #000000;
+}
+
+.getYourGrip-main {
+  height: 400px;
+}
+
+.grip-desc h1, .grip-desc h2 {
+  text-align: left;
+}
+
+.grip-desc h1 {
+  padding-bottom: 15px;
+}
+
+.grip-desc-main {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+#imgGetYourGrip {
+  margin-top: 0px;
+}
+
+#imgGetYourGrip img {
+  width: 80%;
+  max-width: 100%;
+  margin-top: 40px;
+}
+
+.grip-desc {
+  display: table;
+  padding: 20px;
+  z-index: 900;
+  text-align: left;
+}
+
+.grip-desc div {
+  display:  table-cell;
+  vertical-align: middle;
+  padding: 10% 10% 5%;
+}
+
+#imgGetYourGrip, #grip-videos {
+  display: table;
+  height: auto;
+}
+
+#imgGetYourGrip div {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#hash3 {
+  display: table-cell;
+  vertical-align: top;
+}
+
+
+/********************************************** PAGE 6 - Mercedes **********************************************/
+
+section#mercedes {
+/*   padding-left: 0;
+  padding-right: 0; */
+  background: url('../img/bg-3c.jpg') no-repeat center center scroll;
+  background-color: #000000;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+#mercedesMain {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#mercedesMain img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.mercedesDesc h1, .mercedesDesc h2 {
+  text-align: right;
+}
+
+.mercedesDesc h1 {
+  padding-bottom: 30px;
+}
+
+.mercedesDesc {
+  display: table;
+  padding: 20px;
+  z-index: 900;
+  text-align: right;
+}
+
+.mercedesDesc div {
+  display:  table-cell;
+  vertical-align: middle;
+  padding: 10%;
+}
+
+/********************************************** PAGE 7 - Summary **********************************************/
+
+.summary-row-1 {
+  height: 40vh;
+  min-height: 40vh;
+}
+
+.summary-row-1 {
+  background: url('../img/bg-4a.jpg') no-repeat bottom center scroll;
+  background-color: #000000;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+#summaryDesc {
+  border-top: 5px solid #FFFFFF;
+  display: flex;
+  justify-content: center; /* align horizontal */
+  align-items: center; /* align vertical */
+  height: 40vh;
+}
+
+.whitePanel {
+  background-color: #FFFFFF;
+  color: #000000;
+  padding: 60px 20px;
+  height: 20vh;
+  min-height: 20vh;
+}
+
+
+
+/*****************************************************************************************************
+
+                                            MEDIA QUERIES
+
+******************************************************************************************************/
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+  .products-tab {
+    width: 60px;
+    height: 60px;
+  }
+
+  .products-heading {
+    width: 60px;
+  }
+
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
+  #hash2 img, #hash3 img {
+    width: 220px;
+  }
+
+  .products-tab {
+    width: 80px;
+    height: 80px;
+  }
+
+  .products-heading {
+    width: 90px;
+  }
+
+  /* Products height */
+
+  .products-row-1 {
+    height: 30vh;
+    min-height: 30vh;
+  }
+
+  .products-row-3 {
+    height: 70vh;
+    min-height: 70vh;
+  }
+
+}
+
+@media only screen and (min-width : 680px) {
+
+  h1 {font-size: 3vh;}
+  h2 {font-size: 2.6vh;}
+  h3 {font-size: 2.2vh;}
+  h4 {font-size: 2vh;}
+  p {font-size: 2vh;}
+
+
+  .products-tab {
+    width: 120px;
+    height: 120px;
+  }
+
+  .products-heading {
+    width: 120px;
+  }
+
+  .getYourGrip-main {
+    height: 530px;
+  }
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+  #hash img {
+    width: 160px;
+  }
+
+  #video-player-param {
+    vertical-align: bottom;
+  }
+
+  #hash2 img {
+    width: 30vw;
+  }
+
+  #hash3 img {
+    width: 90%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .intro {
+    padding: 0;
+  }
+
+  .products-tab {
+    width: 130px;
+    height: 130px;
+  }
+
+  .products-heading {
+    width: 130px;
+  }
+
+  /* Home height */
+  #home-video-wrapper {
+    height: 70vh;
+    min-height: 70vh;
+  }
+
+  #homeDesc {
+    height: 30vh;
+    min-height: 30vh;
+  }
+}
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 1005px) {
+
+  .navbar-inverse {
+    border-bottom: none;
+    -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+  }
+  .navbar-inverse.top-nav-collapse {
+    padding: 0;
+    background-color: rgba(34, 34, 34, 0.5);
+  }
+
+  #homeHeaderMobile, #homeHeader {
+    margin-top: 0;
+  }
+
+  #homeHeaderMobile h1, #homeHeader h1 {
+    font-size: 2vh;
+  }
+
+  .navbar-brand {
+    display: none;
+  }
+
+  #hash3 img {
+    width: 16vw;
+  }
+
+  #homeHeaderMobile h1, #homeHeader h1 {
+    font-size: 3.5vh;
+  }
+
+  #imgGetYourGrip, #grip-videos {
+    width: 100%;
+  }
+
+  #imgGetYourGrip img {
+    width: 50%;
+  }
+
+  .social-row-2 {
+    height: 500px;
+  }
+
+  .getYourGrip-main {
+    height: 820px;
+  }
+
+  /* Brand videos height */
+  .topPanel {
+    height: 30vh;
+    min-height: 30vh;    
+  }
+
+  .row-brand-videos {
+    height: 70vh;
+    min-height: 70vh;
+  }
+
+  #brand-videos {
+    height: 70vh;
+    min-height: 70vh;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+  h1 {font-size: 2.8vh;}
+  h2 {font-size: 2.4vh;}
+  h3 {font-size: 2vh;}
+  h4 {font-size: 1.6vh;}
+  p {font-size: 1.6vh;}
+
+  .products-tab {
+    width: 180px;
+    height: 180px;
+  }
+
+  .products-heading {
+    width: 180px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .prod-right {
+    border-left: 2px solid #000000;
+  }
+
+  .awards img {
+    width: 80%;
+    max-width: 100%;
+  }
+
+  .social-logos img {
+    width: 20%;
+  }
+
+  .grip-desc div {
+    padding: 0 2%;
+  }
+
+  #hash img {
+    width: 250px;
+  }
+
+  #hash3 img {
+    width: 12vw;
+  }
+
+  .mercedesDesc div {
+    padding: 0 2%;
+  }
+
+  .leftPanel {
+    border-right: 5px solid #FFFFFF;
+    border-bottom: none;
+  }
+
+  .rightPanel {
+    border-left: 5px solid #FFFFFF;
+    border-top: none;
+  }
+
+  .getYourGrip-main {
+    height: 950px;
+  }
+
+  #imgGetYourGrip img {
+    width: 50%;
+  }  
+
+  /* Products height */
+
+  .products-row-1 {
+    height: 25vh;
+    min-height: 25vh;
+  }
+
+  .products-row-2 {
+    height: 15vh;
+    min-height: 15vh;
+  }
+
+  .products-row-3 {
+    height: 60vh;
+    min-height: 60vh;
+  }
+
+  /* Social media height */
+
+  .social-row-1 {
+    height: 60vh;
+    min-height: 60vh;
+  }
+
+  .social-row-2 {
+    height: 40vh;
+    min-height: 40vh;
+  }
+
+  /* Get your grip height */
+
+  .grip-desc, .grip-desc-main {
+    height: 100vh;
+    min-height: 100vh;
+  }
+
+  #imgGetYourGrip {
+    height: 70vh;
+    min-height: 70vh;
+  }
+
+  #grip-videos {
+    height: 30vh;
+    min-height: 30vh;
+  }
+
+  /* Mercedes height */
+
+  .mercedes-row {
+    height: 100vh;
+    min-height: 100vh;
+  }
+
+  /* Summary height */
+
+  .summary-row-1 {
+    height: 70vh;
+    min-height: 70vh;
+  }
+
+  #summaryDesc {
+    height: 20vh;
+    min-height: 20vh;
+  }
+
+  .whitePanel {
+    height: 10vh;
+    min-height: 10vh;
+    padding: 10px;
+  }
+
+  /***/
+
+  .grip-desc {
+    padding: 0 20px 0 80px;
+  }
+
+  .mercedesDesc {
+    padding: 0 80px 0 20px;
+  }
+
+ .mercedesDesc, .mercedesMain {
+    height: 100vh;
+    min-height: 100vh;
+  }
+
+  #hash2 img {
+    width: 25vw;
+  }
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1500px) {
+
+  .products-tab {
+    width: 200px;
+    height: 200px;
+  }
+
+  .products-heading {
+    width: 200px;
+  }
+
+  .summary-row-1 {
+    background: url('../img/bg-4.jpg') no-repeat bottom center scroll;
+    background-color: #000000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
+
+}

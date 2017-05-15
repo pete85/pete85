@@ -1,0 +1,68 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3330541, 2017-01-12T06:38:11-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: FF DIN Web Pro Bold by FontFont
+ * URL: http://www.myfonts.com/fonts/fontfont/ff-din/pro-bold/
+ * 
+ * Webfont: FF DIN Web Pro Medium by FontFont
+ * URL: http://www.myfonts.com/fonts/fontfont/ff-din/pro-medium/
+ * 
+ * Webfont: FF DIN Web Pro by FontFont
+ * URL: http://www.myfonts.com/fonts/fontfont/ff-din/pro-regular/
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3330541
+ * Licensed pageviews: 50,000
+ * Webfonts copyright: 2009 Albert-Jan Pool published by FSI FontShop International GmbH
+ * 
+ * © 2017 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/32d1ed");
+
+@font-face {font-family: 'FFDINWebProMedium';src: url('../fonts/32D1ED_1_0.eot');src: url('../fonts/32D1ED_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/32D1ED_1_0.woff2') format('woff2'),url('../fonts/32D1ED_1_0.woff') format('woff'),url('../fonts/32D1ED_1_0.ttf') format('truetype');}  
+
+@font-face {font-family: 'FFDINWebProBold';src: url('../fonts/32D1ED_0_0.eot');src: url('../fonts/32D1ED_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/32D1ED_0_0.woff2') format('woff2'),url('../fonts/32D1ED_0_0.woff') format('woff'),url('../fonts/32D1ED_0_0.ttf') format('truetype');}
+ 
+@font-face {font-family: 'FFDINWebPro';src: url('../fonts/32D1ED_2_0.eot');src: url('../fonts/32D1ED_2_0.eot?#iefix') format('embedded-opentype'),url('../fonts/32D1ED_2_0.woff2') format('woff2'),url('../fonts/32D1ED_2_0.woff') format('woff'),url('../fonts/32D1ED_2_0.ttf') format('truetype');}
+
+
+h1, h2, h3, h4, h5, h6, p {
+  line-height: 1.5;
+  font-family: 'FFDINWebPro', Helvetica, Arial, sans-serif;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: $white;
+}
+
+h1 {
+  font: {
+    weight: 900;
+    size: 4em;
+  }
+}
+
+h2 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+p {
+  font-size: 1.2em;
+}

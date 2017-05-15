@@ -1,0 +1,28 @@
+@mixin box-sizing($x: border-box) {
+	-webkit-box-sizing: $x;
+	-moz-box-sizing: $x;
+	box-sizing: $x;
+}
+
+@mixin bgSize($x: cover) {
+	-webkit-background-size: $x;
+	-moz-background-size: $x;
+  	-o-background-size: $x;
+  	background-size: $x;
+}
+
+@mixin marginTop {
+	margin-top: 60px;
+}
+
+@mixin verticalMiddle {
+	display: flex;
+	align-items: center;
+	justify-content: center;	
+}
+
+@mixin transitions {
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;	
+} 

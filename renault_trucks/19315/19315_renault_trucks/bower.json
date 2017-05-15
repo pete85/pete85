@@ -1,0 +1,21 @@
+{
+  "name": "19315_renault_trucks",
+  "homepage": "https://github.com/pete85/Projects",
+  "authors": [
+    "pete85 <info.pete85@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "backbone": "^1.3.3"
+  }
+}

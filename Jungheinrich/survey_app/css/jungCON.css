@@ -1,0 +1,238 @@
+@font-face {font-family: 'Museo-700';src: url('../fonts/webfonts/311102_0_0.eot');src: url('../fonts/webfonts/311102_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/webfonts/311102_0_0.woff2') format('woff2'),url('../fonts/webfonts/311102_0_0.woff') format('woff'),url('../fonts/webfonts/311102_0_0.ttf') format('truetype');}
+
+
+body {
+	background: url("../img/trucks_background-min.jpg") no-repeat;
+    background-size: cover;
+}
+
+
+img {
+	max-width: 100%;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+}
+
+.message {
+    background: white;
+    width: 90%;
+    margin: 5% 5% 0;
+    padding: 10%;
+    color: black;
+    z-index: 101;
+    position: fixed;
+    text-align: center;
+}
+
+.message button {
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    background: #ffc000;
+    padding: 14px;
+    border-radius: 10px;
+}
+
+.background {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.container {
+	background: white;
+}
+
+
+[alt="Connections"] {
+	margin-bottom: 30px;
+}
+
+
+.header {
+	background: #ffc000;
+	margin-bottom: 10px;
+	width: 100%;
+	padding: 5px 0;
+	float: left;
+}
+
+
+h1 {
+    clear: both;
+    margin-top: 60px;
+    text-align: center;
+    font-size: 4em;
+    font-family: Museo-700; 
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+h2 {
+  text-align: center;
+  font-weight: 200;
+  font-size: 1.7em;
+  margin: 0 0 35px;
+  color: grey;
+}
+
+
+h3 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 2em;
+  margin: 0 0 35px;
+  color: grey;
+}
+
+
+form {
+	font-size: 16px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+ 
+input, select, textarea {
+    margin: 10px 0px;
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+
+.enquiries {
+    margin: 10px 0px;
+    font-size: 16px;
+    background: white;
+    border color: black;
+    height: 36px;
+    border: 1px solid #ccc;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    color: #9a9a9a;
+    border-radius: 10px;    
+}
+
+.arrow {
+    position: relative;
+}
+
+.arrow:after {
+    content: '\25B9';
+    color: #9a9a9a;
+    transform: rotate(90deg);
+    font-size: 25px;
+    position: absolute;
+    margin: 8px 5px 0 0;
+    right: 10px;
+    top: 2px;
+    }
+
+.next, .next2, .next3 {
+    text-align: center;
+    display: block;
+    background: #ffc000;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 14px;
+    border-radius: 10px;
+}
+
+.next {
+    margin: 10px 0px 30px 0px;
+}
+
+
+.next3 {
+    margin: 10px 0px 20px 0px;
+	padding:30px 0 30px 0;
+}
+
+.next:hover, .next2:hover, .next3:hover, .next:visited, .next2:visited, .next3:visited, .next:selected, .next2:selected, .next3:selected {
+    text-decoration: none;
+    background: rgba(255, 192, 0, 0.5);
+}
+
+
+.back {
+    font-size: 16px;
+    font-weight: 400;
+    background: #b9bdc1;
+    padding: 5px;
+    margin: 10px 0px 60px 0px;
+    text-align: center;
+    display: block;
+    height: 32px;
+}
+
+
+textarea {
+    margin: 10px 0px;
+    font-size: 16px;
+    background: white;
+    border color: black;
+    border-radius: 0px;
+}
+
+
+a {
+	color: black;
+}
+
+
+.option-text {
+	margin: 0;
+	text-align:left;
+}
+
+
+.option-text2 {
+	margin: 0;
+	text-align:right;
+}
+
+
+
+.q-text {
+	text-align:left;
+}
+
+.bold-yellow {
+	font-weight: bold;
+	color: #ffc000;
+}
+
+.space-top {
+	margin-top:40px;
+}
+
+.space-top2 {
+	margin-top:310px;
+}
+
+.rb-bg {
+    background-color: #ffc000;
+    padding: 5px 10px 5px 28px;
+	margin-bottom:10px;
+}
+
+
+@media (min-width: 768px) {
+  
+    .container {
+        max-width: 650px;
+        height: 1000px;
+
+    }
+
+}

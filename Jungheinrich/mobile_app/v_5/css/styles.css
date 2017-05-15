@@ -1,0 +1,375 @@
+@font-face {font-family: 'Museo-700';src: url('../fonts/webfonts/311102_0_0.eot');src: url('../fonts/webfonts/311102_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/webfonts/311102_0_0.woff2') format('woff2'),url('../fonts/webfonts/311102_0_0.woff') format('woff'),url('../fonts/webfonts/311102_0_0.ttf') format('truetype');}
+
+body {
+	font-family: Museo-700;
+}
+
+/*-----------------------------------------------------------------------------------------------------------
+											Jungheinrich style
+-----------------------------------------------------------------------------------------------------------*/
+
+.ui-field-contain>label~[class*=ui-], .ui-field-contain .ui-controlgroup-controls {
+	width: 100%;
+  margin: 10px 0;
+  background: #FFFFFF;
+}
+
+.txtCentered {
+	text-align: center;
+  margin: 20px 0 0 0;
+}
+
+.introText {
+	text-align: center;
+}
+
+:-webkit-any(article,aside,nav,section) h1 {
+	font-size: 2.5em;
+}
+
+#btnLogin {
+	background-color: #CC0000;
+}
+
+.ui-btn {
+  margin: 0;
+}
+
+#enquiryType-button, #product-button, #enquiryInfo1-button, #enquiryInfo2-button, #enquiryInfo3-button {
+  text-align: left;
+}
+
+#btnLogin:hover {
+	background-color: #A92222;
+}
+
+.ui-footer-fixed {
+	padding-bottom: 0;
+}
+
+.jungheinrich_logo {
+	width: 50%;
+	max-width: 100%;
+	margin-left: 3%;
+}
+
+.ui-body-a, .ui-page-theme-a .ui-body-inherit, html .ui-bar-a .ui-body-inherit, html .ui-body-a .ui-body-inherit, html body .ui-group-theme-a .ui-body-inherit, html .ui-panel-page-container-a {
+  background-color: #FFFFFF;
+}
+
+textarea {
+  resize: none;
+}
+
+.divider {
+  width: 70%;
+  border-top: 3px solid #91989C;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.txtLarge {
+  font-size: 4em !important;
+  color: #91989C; 
+}
+
+/************************ Mobile menu ************************/
+
+.mobile-nav-button {
+  width: 35px;
+  position: absolute;
+  margin: 6%;
+  right: 0;
+  top: 0;
+  z-index: 9999;
+  cursor: pointer;
+  width: 35px;
+  height: 30px;
+}
+
+.mobile-nav-button .mobile-nav-button__line {
+  width: 100%;
+  height: 4px;
+  background: #0e0e0e;
+  position: relative;
+  transition: 1s ease;
+}
+
+.mobile-nav-button .mobile-nav-button__line:nth-of-type(2) { margin: 0.5rem 0; }
+
+.mobile-nav-button .mobile-nav-button__line--1 {
+  transform: rotate(45deg);
+  top: 13px;
+  position: absolute;
+}
+
+.mobile-nav-button .mobile-nav-button__line--2 { display: none; }
+
+.mobile-nav-button .mobile-nav-button__line--3 {
+  transform: rotate(135deg);
+  top: 13px;
+  position: absolute;
+}
+
+.mobile-menu {
+  display: block;
+  max-width: 500px;
+  width: 100%;
+  right: -100%;
+  height: 100vh;
+  background: #91989C;
+  position: absolute;
+  z-index: 9998;
+  transition: 0.6s ease;
+  top: 0;
+  opacity: 0;
+}
+
+.mobile-menu ul {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0;
+}
+
+.mobile-menu ul li { list-style: none; }
+
+.mobile-menu ul li a {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: block;
+  text-align: left;
+  text-decoration: none;
+  color: #454545;
+  font-size: 2em;
+  font-weight: bold;
+  overflow: hidden;
+  position: relative;
+  padding: 5px;
+}
+
+.mobile-menu ul li a:after {
+  content: '';
+  background: #454545;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: -100%;
+  top: 0;
+  z-index: -1;
+  transition: 0.4s ease;
+}
+
+.mobile-menu ul li a:hover { color: #fff; }
+
+.mobile-menu ul li a:hover:after { right: 0; }
+
+.mobile-menu img {
+  position: absolute;
+  width: 150px;
+  display: block;
+  left: 50%;
+  top: 3rem;
+  transform: translatex(-50%);
+  padding: 0;
+  text-align: center;
+}
+
+.mobile-menu--open {
+  right: 0;
+  opacity: 1;
+}
+
+.mobile-menu-active {
+	background-color: #454545;
+	color: #FFFFFF !important;
+}
+
+.navbar-icon {
+	width: 60px;
+	text-align: center;
+}
+
+.ui-page-theme-a a:visited, html .ui-bar-a a:visited, html .ui-body-a a:visited, html body .ui-group-theme-a a:visited {
+  color: #454545;
+}
+
+#txtThankyou {
+  margin: 30px 0;
+  color: #454545;
+}
+
+
+/*** LEADS and SALES ***/
+
+#leads-dashboard div, #sales-dashboard div {
+  text-align: center;
+}
+
+.dash {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.dash h1 {
+  margin: 15px 0;
+}
+
+.dash-accepted {
+  border-bottom: 5px solid #40CF11;
+}
+
+.dash-rejected {
+  border-bottom: 5px solid #CC0000;
+}
+
+.dash-ongoing {
+  border-bottom: 5px solid #91989C;
+}
+
+.dash-desc {
+  width: 100%;
+  color: #91989C;
+  text-align: center;
+}
+
+.leadTab {
+  margin: 5px 0;
+}
+
+.leadInfo {
+  display: none;
+}
+
+.active-lead {
+  display: block;
+}
+
+.leadInfo span, .ui-collapsible-content span, .leadsDesc {
+  font-weight: 300;
+}
+
+.lead-accepted {
+  border: 2px solid #40CF11;
+}
+
+.lead-rejected {
+  border: 2px solid #CC0000;
+}
+
+.lead-ongoing, .lead-new {
+  border:  2px solid #91989C;
+}
+
+.lead-accepted a {
+  background-color: rgba(64, 207, 17, .2) !important;
+}
+
+.lead-rejected a {
+  background-color: rgba(204, 0, 0, .2) !important;
+}
+
+.lead-ongoing a {
+  background-color: rgba(145, 152, 156, .2) !important;
+}
+
+.lead-new a {
+  background-color: rgba(238, 238, 238, .2) !important;
+}
+
+.ui-collapsible-set .ui-collapsible-inset {
+  margin: 8px 0 0 !important;
+}
+
+.active {
+  background-color: #91989C !important;
+  cursor: default;
+}
+
+.statusField {
+  display: inline-block !important;
+  margin: 0 !important;
+}
+
+.new-status #btnAccepted {
+  background-color: #40CF11 !important;
+  color: #FFFFFF;
+}
+
+.new-status #btnRejected {
+  background-color: #CC0000 !important;
+  color: #FFFFFF;
+}
+
+.new-status #btnAccepted:hover {
+  background-color: #97ED7B !important;
+}
+
+.new-status #btnRejected:hover {
+  background-color: #ED8787 !important;
+}
+
+
+
+.btn-status {
+  margin: 0 !important;
+}
+
+#statusField1 {
+  width: 65%;
+}
+
+#statusField2 {
+  width: 33%;
+}
+
+.new-status {
+  background-color: rgba(145, 152, 156, .2);
+  padding: 10px; 
+}
+
+.verifyStatus_form {
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+/************************************* Media Queries *************************************/
+
+@media only screen and (min-width: 480px) {
+	.jungheinrich_logo {
+		width: 40%;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.jungheinrich_logo {
+		width: 30%;
+	}
+
+	.mobile-nav-button {
+	  margin: 4%;
+	}
+
+  #statusField1 {
+    width: 75%;
+  }
+
+  #statusField2 {
+    width: 24%;
+  }
+
+}
+
+@media only screen and (min-width: 1024px) {
+	.jungheinrich_logo {
+		width: 15%;
+	}
+
+	.mobile-nav-button {
+	  margin: 2%;
+	}
+}
+

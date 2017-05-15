@@ -1,0 +1,123 @@
+a {
+  color: $link;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  &:hover, &:focus {
+    text-decoration: none;
+    color: $link-hover;
+  }
+}
+
+// *** NAVIGATION BUTTONS BOTTOM ***
+
+.navArrows {
+  position: absolute;
+  margin: auto;
+  left: 20px;
+  right: 0;
+  bottom: 5%;
+  width: 160px;
+  z-index: 990;
+}
+
+.navArrowsSingle {
+  width: 70px;
+}
+
+.btn-circle {
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  padding: 5px 10px;
+  border: 2px solid $white;
+  border-radius: 100% !important;
+  font-size: 30px;
+  color: $white;
+  background: transparent;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+  &:hover, &:focus {
+    outline: none;
+    color: $white;
+    background: rgba(255, 255, 255, 0.1);
+  }
+  i.animated {
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+  }
+  &:hover i.animated {
+    -webkit-animation-name: pulse;
+    -moz-animation-name: pulse;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+  }
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+
+@-moz-keyframes pulse {
+  0% {
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+
+  50% {
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  100% {
+    -moz-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+
+// *** BUTTONS ***
+
+.panel a, button {
+  color: $white;  
+  padding: 15px 30px;
+  border: 2px solid $red !important;
+  max-width: 100%;
+  background-color: transparent;
+  transition: all .2s ease-in-out;
+  &:hover {
+    background: rgba($red,0.6);
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  & i {
+    color: $red;
+  }
+}
+
+.modal button {
+  color: $black;
+}

@@ -1,0 +1,371 @@
+//*****************************************************************************************************
+
+//                                            MEDIA QUERIES
+
+//*****************************************************************************************************
+
+// Custom, iPhone Retina
+@media only screen and (max-width: 479px) {
+  .blog_mobile span {
+    font-size: 24px;
+  }
+}
+
+// Extra Small Devices, Phones
+@media only screen and (min-width: 480px) {
+
+  .products_banners_mobile {
+    & .a_first {
+      bottom: 20%; 
+    }
+  }
+}
+
+// Small Devices, Tablets
+@media only screen and (min-width: 768px) {
+
+  .js div#preloader #loading-content { 
+    top: 70%; 
+  }
+
+  .hidden-desktop {
+    display: none;
+  }
+
+  section#homePage {
+    background: url('../img/bg.jpg') no-repeat center center scroll;
+  }
+
+  #pro1-mobile, #pro4-mobile {
+    display: none;
+  }
+
+  #pro1, #pro4 {
+    display: block;
+    bottom: -150px;
+  }
+
+  #pro4 {
+    left: -250px;
+    z-index: 970;
+    width: 510px;
+    max-width: 100%;
+  }
+
+  #nominate {
+    bottom: 5%;
+    & button {
+      font-size: 2em;
+    }
+  }
+
+  .transport_solutions {
+    margin-top: 0;
+    margin-bottom: 0;   
+  }  
+
+  .solution {
+    padding: 30px;
+  }
+
+
+  // PAGE 3 BG
+  section#maintenance {
+    background: url('../img/bg_3.jpg') no-repeat center center scroll;
+  }
+
+  // PAGE 4 BG
+  section#professionals {
+    background: url('../img/bg_4.jpg') no-repeat center center scroll;
+  }
+
+  // PAGE 6 BG
+  section#blog {
+    background: url('../img/bg_5.jpg') no-repeat center center scroll;
+  }
+
+  .professionals_desc div {
+    padding: 20px;
+  }
+
+  .slider_container {
+    display: block;
+  }
+
+  .professionals_slider .slider-buttons {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 100%;
+    text-align: center;
+    & button {
+      width: 49%;
+    }
+  }
+
+  .panel .panel-heading h3, .panel .panel-heading h4 {
+    display: inline;
+  }
+
+  .products_banners_mobile {
+    & .a_first {
+      bottom: 25%; 
+    }
+  }  
+
+  .blog-first {
+    width: 95%;
+    margin-top: 60px;
+  }
+
+  #contact_intro, .form_container #contact_form {
+    width: 90%;
+  }
+
+  .contact_us {
+    margin-bottom: 150px;
+  }
+}
+
+// Medium Devices, Desktops
+@media only screen and (min-width: 992px) {
+
+  #nominate {
+    width: 900px;
+  }  
+
+  .pdf-intro, .pdf-links {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .maintenance-category {
+    padding: 70px;
+  }
+
+  .solution {
+    min-height: 900px;
+  }
+
+  .products_banners_mobile {
+    & .a_first {
+      bottom: 20%; 
+    }
+  }
+
+  .modal-dialog {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+  .transport_solutions {
+    margin-top: 60px;
+  }
+
+}
+
+
+// Large Devices, Wide Screens
+
+@media only screen and (min-width: 1200px) {
+
+  .header-main {
+    height: 10vh;
+    min-height: 10vh;
+    & h1 {
+      font-size: 60px;
+    }
+  }
+  
+  #pro1 {bottom: 0;}
+
+  #pro2, #pro3 {display: block;}
+
+  #pro4 {
+    left: 900px;
+    bottom: -5%;
+    z-index: 970;
+    width: 484px;
+    max-width: 100%;
+  }
+
+  #nominate {bottom: 10%;}
+
+  .bubble {
+    width: 730px;
+    bottom: 20%;
+  }
+
+  #bubble1 {left: 10%;}
+  #bubble4 {left: 20%;}
+
+  .transport_solutions {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .professionals_slider .slider-buttons {
+    width: 50%;
+    margin: 0 auto;
+    max-width: 100%;
+    text-align: center;
+    & button {
+      width: 49%;
+    }
+  }
+
+
+  // REMOVE .blog-1 WHEN MORE POSTS ARE ADDED
+  .pdf-intro, .blog-1 {
+    height: 15vh;
+    min-height: 15vh;    
+  }
+
+
+  // REMOVE .PANEL-GROUP WHEN MORE POSTS ARE ADDED
+  .pdf-links, .panel-group {
+    height: 75vh;
+    min-height: 75vh;   
+  }
+
+  .pdf-screenshot {
+    padding: 10px;
+    text-align: left;
+    & img {
+      width: 85%;
+      float: right;
+    }
+  }
+
+  // *** PAGE 4 SIZES *** //
+
+  .professionals_slider {
+    height: 55vh;
+    min-height: 55vh;
+    margin-top: 0;
+  }
+
+  .professionals_desc {
+    height: 35vh;
+    min-height: 35vh;
+  }
+  // ******************** //
+
+
+  // *** PAGES 2 & 5 SIZES *** //
+
+  .products_banners, .transport_solutions {
+    height: 90vh;
+    min-height: 90vh;    
+  }
+  // ************************* //
+
+  .navArrows, .social_media, .renault-logo {
+    display: block;
+  }
+
+  .contact_us {
+    margin-bottom: 300px;
+  }
+
+}
+
+@media only screen and (min-width: 1600px) {
+  .product_banner {
+    & .a_first {
+      bottom: 13%; 
+    }
+  } 
+}
+
+@media only screen and (min-width: 1900px) {
+  #pro5, #pro6 {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 2300px) {
+   #pro7, #pro8 {
+    display: block;
+  }
+}
+
+
+// Height based media queries
+
+@media only screen and (max-height: 840px) {
+  .social_media, .renault-logo {
+    display: none;
+  }
+}
+
+@media only screen and (min-height: 750px) {
+  #home-intro {
+    display: block;
+  }
+}
+
+
+@media only screen and (min-width: 1200px) and (max-height: 1060px) {
+
+  .professionals_desc {
+    display: none;
+  }
+
+  .professionals_slider {
+    height: 83vh;
+    min-height: 83vh;
+    margin-top: 0;
+  }  
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1899px) and (max-height: 900px) {
+
+  #pro1, #pro2 {
+    bottom: -25%;
+  }
+
+  #pro3, #pro4 {
+    bottom: -30%;
+  }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1899px) and (max-height: 700px) {
+
+  #pro1, #pro2 {
+    bottom: -55%;
+  }
+
+  #pro3, #pro4 {
+    bottom: -60%;
+  }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1899px) and (max-height: 550px) {
+
+  #pro1, #pro2 {
+    bottom: -95%;
+  }
+
+  #pro3, #pro4 {
+    bottom: -100%;
+  }
+
+  .home_intro {
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) and (max-height: 550px) {
+
+  #pro1, #pro4 {
+    display: none;
+  }
+}
+

@@ -1,0 +1,810 @@
+//*********************************************************************************************************
+
+//                                                  PAGES
+
+//*********************************************************************************************************
+
+//************************************************** ALL **************************************************
+
+// *** PRELOADER START *** //
+
+.js div#preloader { 
+  position: fixed; 
+  left: 0; 
+  top: 0; 
+  z-index: 999; 
+  width: 100%; 
+  height: 100%; 
+  overflow: visible; 
+  background: #333333; 
+  text-align: center;
+  & #loading-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top:30%;
+    bottom:0;
+    margin: auto;
+    & h3 {
+      color: $red;
+    }  
+  }
+}
+
+
+.sk-rotating-plane {
+  width: 250px;
+  height: 250px;
+  background-color: transparent;
+  background: url('../img/loading-logo-large.png') no-repeat center center scroll;
+  margin: 40px auto;
+  -webkit-animation: sk-rotatePlane 1.2s infinite ease-in-out;
+          animation: sk-rotatePlane 1.2s infinite ease-in-out; }
+
+@-webkit-keyframes sk-rotatePlane {
+  0% {
+    -webkit-transform: perspective(500px) rotateX(0deg) rotateY(0deg);
+            transform: perspective(500px) rotateX(0deg) rotateY(0deg); }
+  50% {
+    -webkit-transform: perspective(500px) rotateX(-180.1deg) rotateY(0deg);
+            transform: perspective(500px) rotateX(-180.1deg) rotateY(0deg); }
+  100% {
+    -webkit-transform: perspective(500px) rotateX(-180deg) rotateY(-179.9deg);
+            transform: perspective(500px) rotateX(-180deg) rotateY(-179.9deg); } }
+
+@keyframes sk-rotatePlane {
+  0% {
+    -webkit-transform: perspective(500px) rotateX(0deg) rotateY(0deg);
+            transform: perspective(500px) rotateX(0deg) rotateY(0deg); }
+  50% {
+    -webkit-transform: perspective(500px) rotateX(-180.1deg) rotateY(0deg);
+            transform: perspective(500px) rotateX(-180.1deg) rotateY(0deg); }
+  100% {
+    -webkit-transform: perspective(500px) rotateX(-180deg) rotateY(-179.9deg);
+            transform: perspective(500px) rotateX(-180deg) rotateY(-179.9deg); } }
+
+
+// *** PRELOADER END *** //
+
+
+* {
+  border-radius: 0 !important;
+}
+
+section {
+  width: 100vw;
+  background-color: $black;
+  overflow: hidden;
+}
+
+.header-main {
+  width: 100vw;
+  z-index: 990;
+  padding: 10px;
+  & img {
+    height: 8vh;
+    max-height: 8vh
+  }
+  & h1 {
+    font-size: 40px;
+    text-shadow: 2px 2px $black;
+  }
+}
+
+#social_media_mobile {
+  display: inline;
+  position: absolute;
+  top: 15px;
+  width: 110px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  & a {
+    color: $white; 
+    margin: 0 3px;
+  }
+}
+
+.social_media {
+  position: absolute;
+  margin: auto;
+  bottom: 30px;
+  left: 50px;
+  z-index: 990;
+  & h3 {
+    display: inline;
+  }
+  & a {
+    display: inline;
+    margin: 0 3px;
+    color: $white;
+    transition: all .2s ease-in-out;
+    &:hover {
+      font-size: 2.2em;
+    
+    }
+  }
+}
+
+.renault-logo {
+  position: absolute;
+  margin: auto;
+  bottom: 20px;
+  right: 30px;
+  z-index: 990; 
+  & img {
+    width: 80px;
+    max-width: 100%;
+  }
+}
+
+.navArrows, .social_media, .renault-logo {
+  display: none;
+}
+
+.flex-top {
+  align-self: flex-start;
+}
+
+.flex-bottom {
+  align-self: flex-end;
+}
+
+.mobile-header {
+  @include verticalMiddle;
+  @include marginTop;
+  & div {
+    width: 90%;
+    margin: 0 auto;
+    & p, h2, h3, a {
+    
+    }
+    & h3 {
+      margin: 15px 0;
+    }
+    & i {
+      color: $red;
+    }
+  }
+}
+
+.text-red {
+  color: $red;
+}
+
+.exposed {
+  text-shadow: 1px 1px $red;
+}
+
+.mobile-header {
+  text-align: center;
+  width: 90%;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 72px;
+  margin-bottom: 20px;
+  border: solid 1px $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & h3 {
+    text-shadow: 1px 1px $grey;
+  }
+}
+
+
+//********************************************** PAGE 1 - Home **********************************************
+
+section#homePage {
+  width: 100vw;
+  background: url('../img/bg-mobile.jpg') no-repeat center center scroll;
+  @include bgSize;
+  background-color: $black;
+  height: 100%;
+  min-height: 100%;
+}
+
+#home-intro {
+  z-index: 990;
+  display: none;
+}
+
+// Professionals images
+
+#container_professionals {
+  position: relative;
+  width: 100vw;
+  height: 90vh;
+  min-height: 90vh;
+  & img {
+    position: absolute;
+    margin: auto;
+    right: 0;
+    transition: all .2s ease-in-out;
+    &:hover {
+      z-index: 990;
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+  }
+}
+
+
+#pro1, #pro2, #pro3, #pro4, #pro5, #pro6, #pro7, #pro8 {
+  display: none;
+}
+
+#pro1 {
+  left: 300px;
+  bottom: 0;
+  z-index: 985;
+  width: 510px;
+  max-width: 100%;
+}
+
+#pro2 {
+  left: -300px;
+  bottom: 0;
+  z-index: 980;
+  width: 538px;
+  max-width: 100%;
+}
+
+#pro3 {
+  left: -1000px;
+  bottom: -5%;
+  z-index: 970;
+  width: 470px;
+  max-width: 100%;
+}
+
+#pro4 {
+  left: 1050px;
+  bottom: -5%;
+  z-index: 970;
+  width: 470px;
+  max-width: 100%;
+}
+
+#pro5 {
+  left: -1500px;
+  bottom: -10%;
+  z-index: 960;
+  width: 360px;
+  max-width: 100%;
+}
+
+#pro6 {
+  left: 1450px;
+  bottom: -5%;
+  z-index: 960;
+  width: 531px;
+  max-width: 100%;
+}
+
+#pro7 {
+  left: -2000px;
+  bottom: -15%;
+  z-index: 950;
+  width: 481px;
+  max-width: 100%;
+}
+
+#pro8 {
+  left: 2050px;
+  bottom: -15%;
+  z-index: 950;
+  width: 390px;
+  max-width: 100%;
+}
+
+// MOBILE
+
+#professionals_mobile {
+  & img {
+    position: absolute;
+    width: 50%;
+    max-width: 100%;  
+  }
+  & #pro1-mobile {
+    right: 0;
+  }
+  & #pro4-mobile {
+    left: 0;
+  }
+}
+
+
+// Professionals - info
+.bubble {
+  position: absolute;
+  bottom: 12%;
+  width: 90%;
+  max-width: 100%;
+  z-index: 996;
+  display: none;
+  & div {
+    padding: 15px;
+    max-width: 100%;
+    background-color: rgba($black,0.4);
+    & i {
+      color: $red;
+    }
+  }
+  & h3, h4 {
+    text-shadow: 2px 2px $black;
+  }
+  & p {
+    font-style: italic;
+  }
+}
+
+
+// LEFT SIDE
+
+#bubble1 {
+  left: 0;
+  margin: 0 5%;
+}
+
+#bubble4 {
+  left: 0;
+  margin: 0 5%;
+}
+
+#bubble6 {
+  left: 30%;
+}
+
+#bubble8 {
+  left: 40%;
+}
+
+// RIGHT SIDE
+
+#bubble2 {
+  right: 10%;
+}
+
+#bubble3 {
+  right: 20%;
+}
+
+#bubble5 {
+  right: 30%;
+}
+
+#bubble7 {
+  right: 40%;
+}
+
+
+.active-bubble {
+  display: table !important;
+}
+
+#nominate {
+  position: absolute;
+  bottom: 18%;
+  margin: auto;
+  left: 0;
+  right: 0;
+  width: 95%;
+  max-width: 90%;
+  height: 100px;
+  z-index: 995;
+  & button {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: 1.3em;
+    @include transitions;
+    background-color: rgba($grey,0.7);
+    &:hover {
+      background-color: rgba($grey,0.9);
+      cursor: pointer;
+      transform: scale(1.2);
+    }
+  }
+}
+
+
+//********************************************** PAGE 2 - TRANSPORT SOLUTIONS **********************************************
+
+section#transport {
+  background-color: rgba($grey,0.5);
+}
+
+.transport_solutions {
+  @include marginTop;
+  position: relative;
+  display: block;
+  width: 100vw;
+}
+
+.solution {
+  min-height: 850px;
+  padding: 10px;
+  text-align: center;
+  & img {
+    width: 85%;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    &:hover {
+      cursor: pointer;
+      opacity: 0.6;
+    }
+  }
+  & p {
+    padding: 30px;
+  }
+  & a {
+    cursor: pointer;
+    &:hover {
+
+    }
+  }
+  & i {
+    color: $red;
+  }
+}
+
+.transport_mobile {
+  padding: 20px;
+  text-align: center;
+  & div {
+    width: 90%;
+    max-width: 100%;
+    margin: 0 auto;
+    & img {
+        width: 100%;
+        max-width: 100%;
+    }
+    & h4, p {
+      text-align: left;
+      margin: 20px 0;
+    }
+    & a:hover {
+      opacity: 0.6;
+    }
+  }
+}
+
+
+//********************************************** PAGE 3 - MAINTENANCE AND REPAIR **********************************************
+
+section#maintenance {
+  background: url('../img/bg-mobile-2.jpg') no-repeat center top scroll;
+  @include bgSize;
+  width: 100vw;
+  background-color: $black;
+}
+
+.pdf-intro {
+  display: block;
+  padding: 20px 0;
+  min-height: 250px;
+
+}
+
+.pdf-links {
+  position: relative;
+  display: block;
+}
+
+.maintenance-category {
+  padding: 30px;
+  min-height: 600px;
+  & img {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  & p {
+    margin: 15px 0;
+  }
+}
+
+// .pdf-screenshot {
+//   padding: 20px;
+//   position: relative;
+//   text-align: center;
+//   & img {
+//     position: relative;
+//     width: 60%;
+//     max-width: 100%;
+//     margin: 0 auto;
+//     // &:hover {
+//     //   cursor: pointer;
+//     //   opacity: 0.6;
+//     // }
+//   }
+//   & h4 {
+  
+//     margin-top: 10px;
+//   }
+//   & p {
+  
+//     margin: 20px 0;
+//   }
+//   & i {
+//     color: $red;
+//   }
+// }
+
+// .pdf_mobile img {
+//   width: 100vw;
+//   max-width: 100vw;
+// }
+
+
+//********************************************** PAGE 4 - PROFESSIONALS UPLOADED **********************************************
+
+section#professionals {
+  background: url('../img/bg_4.jpg') no-repeat center center scroll;
+  @include bgSize;
+  width: 100vw;
+  background-color: $black;
+}
+
+.professionals_slider {
+  display: block;
+  & .slider-buttons {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 100%;
+    text-align: center;
+    & h4 {
+      margin: 20px 0;
+    }
+    & button {
+      width: 100%;
+      margin: 10px 0;
+    }
+  }
+  & p, h2, h3, a {
+  
+  }
+  & h3 {
+    margin: 15px 0;
+  }
+  & i {
+    color: $red;
+  }
+}
+
+.professionals_desc {
+  @include verticalMiddle;
+  align-items: flex-start;
+  & div {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 80px 20px;
+    & p {
+    
+    }
+  }
+}
+
+
+
+// *** MODAL ***
+
+.modal-dialog {
+  width: 98%;
+  & .modal-content {
+    background-color: rgba($white,0.9);
+    & .modal-body, .modal-header, .modal-footer {
+      padding: 30px;
+    }
+    & .modal-title, h2, h3, h4, p {
+      color: $black;
+      text-align: center;
+    }
+  }
+}
+
+#media_select {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  & .media-container {
+    padding: 15px;
+    text-align: center;
+    & h4 {
+      color: $black;
+      margin-top: 20px;
+    }
+    & img {
+      width: 50% !important;
+      max-width: 100%;
+      margin: 0 auto;
+      @include transitions;
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+    
+
+
+#upload_wrapper, #img-upload, #yt-upload, #video-upload, #audio-upload {
+  display: none;
+}
+
+//********************************************** PAGE 5 - PRODUCTS **********************************************
+
+section#products {
+  background-color: rgba($grey,0.5);
+}
+
+.products_banners {
+  position: relative;
+  width: 100%;
+}
+
+.product_banner {
+  padding: 10px;
+  position: relative;
+  & img {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  & a {
+    position: absolute;
+    right: 10px;
+    width: 70%;
+    color: $white;
+    background-color: $red;
+    padding: 10px;
+    &:hover {
+      color: $white;
+      background-color: rgba($red,0.8);
+    }
+    &:visited {
+      color: $white;
+      background-color: rgba($red,0.8);
+    }
+    &:focus {
+      color: $white;
+      background-color: rgba($red,0.8);
+    }
+  }
+  & .a_first {
+    bottom: 15%; 
+  }
+  & .a_second {
+    bottom: 5%;  
+  }
+}
+
+.products_banners_mobile {
+  @include verticalMiddle;
+  position: relative;
+  padding: 20px;
+  & img {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  & a {
+    position: absolute;
+    right: 20px;
+    width: 40%;
+    color: $white;
+    background-color: $red;
+    padding: 10px;
+    &:hover {
+      color: $white;
+      background-color: rgba($red,0.8);
+    }
+  }
+  & .a_first {
+    bottom: 25%; 
+  }
+  & .a_second {
+    bottom: 10%;  
+  }
+}
+
+//************************************************ PAGE 6 - BLOG ************************************************
+
+section#blog {
+  background-color: rgba($grey,0.5);
+  background: url('../img/bg-mobile-5.jpg') no-repeat center center scroll;
+  @include bgSize;
+  width: 100vw;
+}
+
+.panel {
+  width: 90%;
+  margin: 0 auto;
+  border: none;
+  border-radius: 0;
+  background-color: rgba($black,0.5);
+  & .panel-heading h3, .panel-heading h4 {
+    display: block;
+  }
+  & p {
+    margin-bottom: 15px;
+  }
+  & a {
+      transition: all .2s ease-in-out;
+    }
+}
+
+.panel-default>.panel-heading {
+  // background-color: rgba($black,0.4);
+  background-color: transparent;
+  padding: 0;
+  border-bottom: none;
+
+}
+
+.panel-group .panel-heading+.panel-collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body {
+  border-top: none;
+}
+
+.blog-intro {
+  margin: 0 auto;
+  width: 90vw;
+  margin-bottom: 80px;
+}
+
+.blog-header {
+  background-color: transparent;
+  padding: 20px 30px;
+  & p {
+    margin-bottom: 20px;
+  }
+}
+
+.blog-first {
+  margin-left: 25px;
+  width: 90%;
+  max-width: 100%;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+.post-main {
+  & img {
+    float: right;
+    display: inline;
+    margin: 0 0 15px 15px;
+    width: 40%;
+    max-width: 100%;
+  }
+}
+
+
+//*********************************************** PAGE 7 - CONTACT ***********************************************
+
+section#contact {
+  background: url('../img/bg_7.jpg') no-repeat center top scroll;
+  @include bgSize;
+  width: 100vw;
+}
+
+#contact_intro {
+  width: 90%;
+  max-width: 100%;
+  padding: 25px;
+  margin: 0 auto;
+}
+
+.form_container #contact_form {
+  max-width: 100%;
+  width: 90%;
+}
+
+

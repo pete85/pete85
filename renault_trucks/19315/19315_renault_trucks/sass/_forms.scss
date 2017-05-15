@@ -1,0 +1,111 @@
+.form_container {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  & form {
+    margin: 0 auto;
+    & span {
+      color: $red;
+    }
+    & fieldset {
+      border: medium none !important;
+      margin: 15px 0;
+      min-width: 100%;
+      padding: 0;
+      width: 100%;
+    }
+    & textarea {
+      height: 100px;
+      max-width: 100%;
+      resize: none;      
+    }
+    & input[type="text"], input[type="email"], input[type="tel"], input[type="url"], textarea {
+      width: 100%;
+      border: 1px solid #ccc;
+      background: rgba($white,0.8);
+      margin: 0 0 5px;
+      padding: 20px;
+      &:hover {
+        -webkit-transition: border-color 0.3s ease-in-out;
+        -moz-transition: border-color 0.3s ease-in-out;
+        transition: border-color 0.3s ease-in-out;
+        border: 1px solid #aaa;        
+      }
+      &:focus {
+        outline: 0;
+        border: 1px solid $grey;
+        background: rgba($white,0.9);
+      }
+    }
+    & button {
+      width: 100%;
+      &:active {
+        box-shadow: inset 0 1px 3px rgba($black,0.5);        
+      }
+    }
+  }
+  & #contact_form {
+      max-width: 90%;
+      width: 90%;
+      padding: 25px;
+  }
+}
+
+::-webkit-input-placeholder {
+  color: $grey;
+}
+
+:-moz-placeholder {
+  color: $grey;
+}
+
+::-moz-placeholder {
+  color: $grey;
+}
+
+:-ms-input-placeholder {
+  color: $grey;
+}
+
+#nominate_form, #upload_form {
+  & h3, p {
+    color: $black;
+  }
+}
+
+#contact_form label {
+  padding: 10px;
+  color: $white;
+}
+
+
+// THANK YOU MESSAGES
+
+#nominate_wrapper .thankyou, #upload_wrapper .thankyou, #contact_wrapper .thankyou {
+  display: none;
+  position: absolute;
+  background-color: rgba($black,0.8);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  margin: auto;
+  text-align: center;
+  & h3 {
+    color: $white;
+    margin-top: 200px;
+  }
+  & button {
+    color: $white;
+    margin-top: 50px;
+  }
+}
+
+
+
+
+
+
+
+
