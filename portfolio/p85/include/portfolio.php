@@ -39,7 +39,7 @@
               				<a class='btnAnchor hvr-fade' href='" . $record['link'] . "' target='_blank'>View more</a>
               			</div>
 
-                    <div class='col-xs-12 btnModal " . $record['hidden'] ."'>
+                    <div class='col-xs-12 btnModal " . $record['nogit'] ."'>
                       <a class='btnAnchor hvr-fade' href='" . $record['github'] . "' target='_blank'><i class='fa fa-github' aria-hidden='true'></i> Github</a>
                     </div>
 
