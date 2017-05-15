@@ -1,0 +1,131 @@
+// Transition Ease
+@mixin ease($time:333ms, $attr:all, $curve:ease-in-out) {
+	  -webkit-transition: $attr $time $curve;
+	  -moz-transition: $attr $time $curve;
+	  -o-transition: $attr $time $curve;
+	  -ms-transition: $attr $time $curve;
+	  transition: $attr $time $curve;
+}
+
+#contact-wrapper {
+	margin: 0 auto;
+	margin-top: 120px;
+	margin-bottom: 60px;
+	text-align:center;
+	width:100%;
+	max-width:100%;
+}
+
+
+// Form
+form {
+  	.field {
+	    width:100%;
+	    position:relative;
+	    margin-bottom:15px;
+
+		$hover-label-width:25%;
+	    $placeholder-bumper:1.5%;
+	    $label-padding:18px;
+
+		// Label
+	    label {
+		    text-transform: uppercase;
+		    position:absolute;
+		    top:0;
+		    left:0;
+		    background:$main-1;
+		    color: $white;
+		    width:100%;
+		    padding:($label-padding + 0px) 0;
+		    font-size: 1.5em;
+		    letter-spacing: 0.075em;
+	      	@include ease(333ms);
+
+		    // Checkmark
+		    + span {
+			    opacity: 0;
+			    color: $white;
+		       	display: block;
+			    position:absolute;
+			    top: 12px;
+			    left: 7%;
+			    font-size: 2.5em;
+			    text-shadow:1px 2px 0 $dark-orange;
+		        @include ease(333ms);
+	      	}
+	    }
+
+		// Fields
+    	input[type="text"],
+    	input[type="email"],
+	    textarea {
+		    border:none;
+		    background:$field-color;
+		    width:100%;
+		    margin:0;
+		    padding:$label-padding 0;
+		    padding-left:$hover-label-width + $placeholder-bumper;
+		    color:$main-1;
+		    font-size: 1.4em;
+		    letter-spacing: 0.05em;
+		    text-transform: uppercase;
+	      	&#message {
+			    height: 63px;
+			    resize: none;
+			    @include ease(333ms);
+		      }
+
+			// Focus and JS Toggle Class
+		    &:focus,
+		    &.focused {
+			    outline:none;
+				&#message {
+	          		padding-bottom:150px;
+			    }
+				+ label {
+				    width:$hover-label-width;
+				    background:$orange;
+				    color:$main-1;
+			    }
+		    }
+			// JS Toggle Class
+		    &.focused {
+			    + label {
+				    color: $white;
+			    }
+		    }
+	    }
+		// Field Hover
+	    &:hover {
+		    label {
+			    width:$hover-label-width;
+			    background:$main-2;
+			    color: $white;
+		    }
+	    }
+  	}
+
+  	// Submit Button
+  	input[type="submit"] {
+	    background:$orange;
+	    color:white;
+	    -webkit-appearance: none;
+	    border: none;
+	    text-transform: uppercase;
+		position:relative;
+    	padding: 13px 50px;
+    	font-size: 1.4em;
+    	letter-spacing: 0.1em;
+    	@include ease;
+		&:hover {
+		    background:$main-1;
+		    color:$orange;
+	    }
+
+		&:focus {
+		    outline:none;
+		    background:$dark-orange;
+	    }
+  }
+	}

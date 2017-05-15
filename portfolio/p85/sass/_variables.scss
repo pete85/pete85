@@ -1,0 +1,35 @@
+// *** COLOURS ***
+
+// BRAND
+$main-1: #161819;
+$main-2: #1E2C36;
+$main-3: #5B676F;
+$main-4: #C9D6DD;
+$main-5: #8A969D;
+
+
+// CUSTOM
+$red: #EE3124;
+$black: #000000;
+$grey: #A2A6A9;
+$white: #FFFFFF;
+
+
+// LINKS
+$link: $red;
+$link-hover: lighten($red, 15%);
+
+
+// SEQUENCE SLIDER
+$sequenceWidth: 100%;
+$sequenceMobileHeight: 400px;
+$sequenceDesktopHeight: 450px;
+$imageHeight: 500px;
+// $imageHeight: 568px;
+
+
+// CONTACT FORM
+$orange:#FD9638;
+$dark-orange:darken($orange, 20%);
+$field-color:#E8E9EA;
+

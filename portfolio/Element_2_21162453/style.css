@@ -1,0 +1,1358 @@
+body 
+
+{
+        background-color: #f2f2f0;
+        height:100%;
+    												}
+    											
+    											    											
+    											
+a 
+{
+		text-decoration: none;
+												}
+												
+												
+a:hover 
+{
+		text-decoration: underline;
+		color: red;
+												}
+
+
+
+
+
+
+											
+
+
+#container 
+
+{
+	background: url(images/background4.jpg);
+        margin:0 auto;
+        padding:0 0px 0 0px;
+        position:relative;
+        width:1000px;
+	height:100%;
+        text-align:left;
+        clear: both;
+
+    												}
+
+
+
+
+header 
+
+{
+        background-color: white;
+        width:1000px;
+        height:160px;
+        margin:0 auto;
+        text-align: center;
+
+				    								}
+				    							
+				    							
+#logo
+
+{
+	position: relative;
+	margin:0 auto;
+        text-align: center;
+	float: center;										}
+
+
+
+
+#logo_left
+
+{
+	position: absolute;	
+	top: 0px;
+	left: 40px;
+	float: left;										}
+
+
+
+
+#logo_right
+
+{
+	position: absolute;	
+	top: 0px;
+	right: 40px;
+	float: right;										}
+
+
+
+
+
+
+
+
+
+											
+.stripe 
+
+{
+        	
+        background: url(images/stripe2.jpg) no-repeat;
+        clear:both;
+	height:15px;
+
+												}
+
+
+							
+												
+												
+												
+/*-------------------------------------------------- HTML <input type="text"> styling ---------------------------------------------------------*/											
+												
+												
+input[type="text"], input[type="password"]
+
+{
+    
+	padding: 5px;
+	margin:5px;
+	border: 2px solid #5A7997;
+
+	/*Applying CSS3 gradient*/
+	background: -moz-linear-gradient(center top , #FFFFFF,  #EEEEEE 1px, #FFFFFF 20px);    
+	background: -webkit-gradient(linear, left top, left 20, from(#FFFFFF), color-stop(5%, #EEEEEE) to(#FFFFFF));
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FBFBFB', endColorstr='#FFFFFF');
+
+	/*Applying CSS3 radius*/   
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+
+	/*Applying CSS3 box shadow*/
+	-moz-box-shadow: 0 0 5px #5A7997;
+	-webkit-box-shadow: 0 0 5px #5A7997;
+	box-shadow: 0 0 5px #5A7997;
+
+												}
+
+input[type="text"]:hover
+
+{
+    	border:2px solid #9A3334;
+	/*Applying CSS3 gradient*/
+	background: -moz-linear-gradient(center top , #e0e7e9,  #d7e8ea 1px, #e0e7e9 20px);    
+	background: -webkit-gradient(linear, left top, left 20, from(#e0e7e9), color-stop(5%, #d7e8ea) to(#e0e7e9));
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d7e8ea', endColorstr='#e0e7e9');
+												}
+
+input[type="text"]:focus
+
+{
+    	box-shadow:0 0 3px #5A7997;
+												}
+
+
+
+input[type="password"]:hover
+
+{
+    	border:2px solid #9A3334;
+												}
+
+input[type="password"]:focus
+
+{
+    	box-shadow:0 0 3px #5A7997;
+												}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------Navigation bar----------------------------------------------------------------------*/
+
+
+.navigation
+
+{
+	position: relative;
+	margin-left: 0px;
+	float: left;
+	height:auto;
+	width: 200px;
+	margin-top:0px;
+
+	
+
+												}
+
+
+
+* 
+{
+  margin: 0px;
+  padding: 0px;
+												}
+ 
+body 
+{
+  background: #e5e5e7;
+  
+												}
+ 
+nav 
+{
+  font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+  line-height: 1.5;
+
+												}
+ 
+.menu-item 
+{
+  background: #fff;
+  width: 200px;
+												}
+
+
+/*Menu Header Styles*/
+.menu-item h4 
+{
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 7px 12px;
+  background: #7997B4;
+												}
+
+
+.menu-item h4 a 
+{
+  color: white;
+  display: block;
+  text-decoration: none;
+  width: 200px;
+												}
+
+
+
+/*Menu Header Styles*/
+.menu-item h4 
+{
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+  border-top: 1px solid rgba(255,255,255,0.2);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 7px 12px;
+   
+  /*Gradient*/
+  background: #7997B4; /* Old browsers */
+  background: -moz-linear-gradient(top, #141a21 0%, #283542 44%, #5A7997 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#141a21), 
+  		color-stop(44%,#283542), color-stop(100%,#5A7997)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #141a21 0%,#283542 44%,#5A7997 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #141a21 0%,#283542 44%,#5A7997 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #141a21 0%,#283542 44%,#5A7997 100%); /* IE10+ */
+  background: linear-gradient(top, #141a21 0%,#283542 44%,#5A7997 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#141a21', endColorstr='#5A7997',GradientType=0 ); /* IE6-9 */
+									
+												}
+
+
+.menu-item h4:hover 
+{ 
+  background: #3d5063; /* Old browsers */
+  background: -moz-linear-gradient(top,  #3d5063 0%, #5A7997 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3d5063), color-stop(100%,#5A7997)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #3d5063 0%,#5A7997 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #3d5063 0%,#5A7997 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #3d5063 0%,#5A7997 100%); /* IE10+ */
+  background: linear-gradient(top,  #3d5063 0%,#5A7997 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3d5063', endColorstr='#5A7997',GradientType=0 ); /* IE6-9 */
+
+												}
+
+
+/*First Item Styles*/
+.alpha p 
+{
+    font-size: 13px;
+    padding: 8px 12px;
+    color: #aaa;
+												}
+
+
+/*ul Styles*/
+.menu-item ul 
+{
+  background: #fff;
+  font-size: 13px;
+  line-height: 30px;
+  list-style-type: none;
+  overflow: hidden;
+  padding: 0px;
+												}
+ 
+.menu-item ul a 
+{
+  margin-left: 20px;
+  text-decoration: none;
+  color: #aaa;
+  display: block;
+  width: 200px;
+												}
+ 
+/*li Styles*/
+.menu-item li 
+{
+  border-bottom: 1px solid #eee;
+												}
+ 
+.menu-item li:hover 
+{
+  background: #eee;
+												}
+
+
+
+/*ul Styles*/
+.menu-item ul 
+{
+  background: #fff;
+  font-size: 13px;
+  line-height: 30px;
+  height: 0px; /*Collapses the menu*/
+  list-style-type: none;
+  overflow: hidden;
+  padding: 0px;
+												}
+
+
+/*ul Styles*/
+.menu-item ul 
+
+{
+  background: #fff;
+  font-size: 13px;
+  line-height: 30px;
+  height: 0px;
+  list-style-type: none;
+  overflow: hidden;
+  padding: 0px;
+   
+  /*Animation*/
+  -webkit-transition: height 1s ease;
+  -moz-transition: height 1s ease;
+  -o-transition: height 1s ease;
+  -ms-transition: height 1s ease;
+  transition: height 1s ease;
+												}
+
+
+.menu-item:hover ul 
+{
+  height: 93px;
+												}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------------------------------------Main section------------------------------------------------------------------*/
+											
+        /*background: url(images/white_background.jpg) no-repeat;*/											
+.middle 
+
+{
+	background-color: rgba(255, 255, 255, 0.7);
+    width:600px;
+	height:100%;
+    float:left;
+	margin-left:0px;
+	margin-top:0px;
+
+												}
+
+
+.middle h1, h2, h3, dt 
+
+{
+	padding-top:15px;
+	text-shadow:2px 2px 3px green;
+	font-weight:bold;
+	color:#0A0691;
+	text-align:center;
+	font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+	line-height:1;
+												}
+											
+.middle h1
+
+{
+	font-size:40px;
+
+												}
+																						
+											
+.middle h4 
+
+{
+	font-size:15px;
+	text-shadow:2px 2px 3px green;
+	color:#0A0691;
+	text-align: center;
+	font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+	line-height:1;
+												}
+											
+											
+					
+											
+											
+.middle p, dd 
+
+{
+		margin-bottom:8px;
+		text-indent: 15px;
+		text-align: justify;
+		padding-left:10px;
+		padding-right:10px;
+		padding-top:10px;
+		font-weight:bold;
+		padding-bottom:10px;
+		font-size:14px;
+		font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+		text-shadow:1px 1px #5A7997;
+												}
+												
+												
+
+
+
+#slideshow 
+{
+	width: 600px;
+	position:relative;
+	float: center;
+        padding: 0;
+	margin-top: 30px;
+	margin-bottom:30px;
+
+												}
+											
+											
+#slideshow img 
+
+{
+	padding:0px;
+	border:6px groove #5A7997;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	width: 320px;
+	margin-left: 140px;
+
+
+												}
+
+
+#about
+
+{
+	position:relative;
+	margin-top:50px;
+	margin-bottom:30px;
+
+												}
+
+
+.allGadgets
+{
+	position: relative;
+	text-align: center;
+}												
+
+.allGadgets img
+{
+	border-style:outset;
+}											
+
+figure
+{
+	font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-size: 14px;
+}
+
+
+/*----------------------------------------------------gadgets.php main section---------------------------------------------------------------------*/
+
+
+
+.features
+
+{
+		margin-bottom:8px;
+		padding-left:60px;
+		padding-right:10px;
+		padding-top:10px;
+		padding-bottom:10px;
+		font-size:14px;
+		font-weight:bold;
+		font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+		text-shadow:1px 1px #5A7997;
+												}
+
+#add_to_basket
+
+{
+        width:600px;
+	height:40px;
+        float: center;
+	margin-left:0px;
+	margin-top:0px;
+	margin-bottom:140px;
+												}
+
+
+#frmBasket
+
+{
+	width: 200px;
+	text-align: center;
+	margin: 0 auto;
+	float: center;
+
+												}
+												
+#qty_choice_table
+
+{
+
+	border-style:none;
+	margin-left:-40px;
+												}
+
+#qty_choice_table p
+
+{
+
+	text-align: left;
+												}
+
+
+
+
+										
+												
+
+/*------image styling in middle section of gadgets.php-------*/											
+
+
+.desc_image 
+{
+
+	position: relative;
+	margin-top: 20px;
+	margin-left: 190px;
+	margin-bottom: 80px;
+	width: 200px;
+	height: 200px;
+	float: center;
+	border-style: outset;
+	transition:		All 1s ease-in;
+	-webkit-transition:	All 1s ease-in;
+	-moz-transition:	All 1s ease-in;
+	-o-transition:		All 1s ease-in;
+	transform: scale(1) translate(10px); 
+	-webkit-transform: 	scale(1) translate(10px);
+	-moz-transform: 	scale(1) translate(10px);
+	-o-transform: 		scale(1) translate(10px);
+	-ms-transform: 		scale(1) translate(10px);
+												}
+
+.desc_image:hover
+{
+	transform:  		scale(2);
+	-webkit-transform:  	scale(2);
+	-moz-transform:  	scale(2);
+	-o-transform:  		scale(2);
+	-ms-transform: 	 	scale(2);
+												}
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------<aside class="right">------------------------------------*/
+
+
+
+
+
+.right 
+
+{
+
+        width:200px;
+	height:100%;
+        float:left;
+	margin-left:0px;
+
+												}
+												
+.right h2
+
+{
+
+	text-shadow:2px 2px 3px blue;
+	margin-top:20px;
+	font-weight:bold;
+	color:white;
+	font-size: 20px;
+	text-align: center;
+	font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+
+												}
+												
+.right h4
+
+{
+
+
+	text-shadow:2px 2px 3px blue;
+	font-weight:bold;
+	margin-top:20px;
+	color:white;
+	font-size: 20px;
+	text-align: center;
+	font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+
+												}
+												
+#gallery
+
+{
+	position: relative;
+	top: 5px;
+	margin: 5px;
+	text-align: center;
+	/*Add a height attribute and set to largest image's height to prevent overlaying*/
+												}
+												
+												
+#aside_header
+{
+    	padding:5px;
+    	text-align: center;
+    	color: white;
+    	background-color: #5A7997;
+    	opacity: 0.9;
+    	border-radius:5px;
+    	height:30px;
+     	text-align: center;
+     	font-family: Helvetica,Arial,"Lucida Grande",sans-serif;
+     	font-weight: bold;
+     	font-size: 20px;
+    	color: white;	
+												}
+												
+												
+												
+												
+												
+#aside_header h2
+{
+	margin-top:-10px;
+
+												}
+
+
+
+												
+#gallery p
+
+{
+	text-align: center;
+												}
+
+
+
+
+
+/*------------------------------------------------Logging div------------------------------------------------*/
+
+
+#logging
+
+{
+	width:200px;
+
+												}
+
+
+#logging h5
+
+{
+	
+	text-shadow:2px 2px 3px blue;
+	color:white;
+	font-size: 20px;
+	font-weight:bold;
+	font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+
+
+												}
+												
+
+
+
+.buttons 
+
+{
+	position:relative;
+	float:center;
+	-moz-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #163e66), color-stop(1, #3e88d1) );
+	background:-moz-linear-gradient( center top, #163e66 5%, #3e88d1 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#163e66', endColorstr='#3e88d1');
+	background-color:#163e66;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #84bbf3;
+	display:inline-block;
+	color:#ffffff;
+ 	font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-size:10px;
+	font-weight:bold;
+	padding:6px 14px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #528ecc;
+												}
+
+.buttons:hover 
+
+{
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #3e88d1), color-stop(1, #163e66) );
+	background:-moz-linear-gradient( center top, #3e88d1 5%, #163e66 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3e88d1', endColorstr='#163e66');
+	background-color:#3e88d1;
+												}
+
+.buttons:active 
+
+{
+	position:relative;
+	top:1px;
+												}
+
+
+
+
+
+
+#date
+{
+    	padding: 5px;
+    	text-align: center;
+    	font-family: Helvetica,Arial,"Lucida Grande",sans-serif;
+    	font-weight: bold;
+    	font-size: 15px;
+    	margin: 25px;
+    	color: white;
+    	background-color: #5A7997;
+    	opacity: 0.9;
+    	border-radius:5px;
+    	height:50px;
+												}
+
+
+
+#items_number
+{
+    	padding: 5px;
+    	text-align: center;
+    	margin: 25px;
+    	background-color: #5A7997;
+    	opacity: 0.9;
+    	border-radius:5px;
+												}
+												
+#items_number a
+{
+
+    	font-family: Helvetica,Arial,"Lucida Grande",sans-serif;
+    	font-weight: bold;
+    	font-size: 15px;
+    	color: white;
+
+												}
+														
+														
+
+
+												
+
+
+#thumb_row
+
+{
+	display: inline-block;
+												}
+												
+							
+.thumbnail
+
+{
+	margin: 2em;
+												}
+
+												
+												
+
+.thumbnail img
+{
+	border: 1px solid white;
+	margin: 0 5px 5px 0;
+												}
+												
+
+.thumbnail:hover
+{
+	background-color: transparent;
+												}
+												
+
+.thumbnail:hover img
+{
+	border: 1px solid blue;
+												}
+
+.thumbnail span
+{ 	/*CSS for enlarged image*/
+	position: absolute;
+	background-color: lightyellow;
+	padding: 5px;
+	visibility: hidden;
+	color: black;
+	text-decoration: none;
+												}
+
+.thumbnail span img
+{ 	/*CSS for enlarged image*/
+	border-width: 0;
+	padding: 2px;
+												}
+
+.thumbnail:hover span
+{ 	/*CSS for enlarged image*/
+	visibility: visible;
+	top: 0;
+	left: -600px; /*position where enlarged image should offset horizontally */
+	z-index: 200;
+												}
+  		
+  											
+											
+
+
+
+
+/*-----------------------------------------Footer---------------------------------------------*/
+											
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#registration
+
+{
+	width:600px;
+ 	margin:0 auto;
+ 
+		
+												}
+												
+
+#reg_table
+
+{
+	position: relative;
+	margin-top: 10px;
+	margin-left:50px;
+	text-align: center;
+	margin-bottom:50px;
+
+												}
+												
+										
+												
+#reg_table h2
+
+{
+	text-align: center;
+ 	font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+ 	font-weight:bold;
+ 	font-size: 20px;
+ 	color:white;
+ 	text-shadow:none;
+ 
+		
+												}
+
+
+											
+#reg_table h4
+
+{
+	text-align: left;
+	margin-left: 60px;
+ 	font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+ 	font-size: 15px;
+ 	color:black;
+ 	text-shadow:none;
+ 
+		
+												}
+												
+												
+												
+												
+												
+												
+												
+												
+							
+											
+footer 
+
+{
+        	margin-top: 370px;
+        	background: #f2f2f0 url(images/footer.jpg) no-repeat;
+        	clear:both;
+		font-size:11px;
+		font-family:Verdana, Arial, Helvetica, sans-serif;
+		height:28px;
+		color:#FFFFFF;
+
+												}
+											
+											
+footer a 
+
+{
+		color: #FFFFFF;
+												}
+											
+										
+
+											
+											
+#copyright 
+
+{
+		float:center;
+		text-align: center;
+		
+												}
+
+
+
+
+
+/*---------------------------------------basket.php--------------------------------------------*/
+
+
+												
+#basket_table th
+
+{
+	position: relative;
+	border-style:none;
+	background-color: #5a7997;
+												}
+
+
+#basket_table td
+
+{
+	position: relative;
+	margin: 0 auto;
+	border:none;
+
+												}
+												
+					
+#basket_table h2
+
+{
+	text-align: center;
+ 	font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+ 	font-weight:bold;
+ 	font-size: 20px;
+ 	color:white;
+ 	text-shadow:none;
+ 	padding:10px;
+ 
+		
+												}
+												
+												
+				
+#basket_table h4
+
+{
+	text-align: center;
+ 	font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+ 	font-size: 15px;
+ 	color:black;
+ 	text-shadow:none;
+ 
+		
+												}
+
+												
+												
+#checkout
+
+{
+
+	width:600px;
+	margin-bottom:180px;
+
+
+												}
+												
+												
+												
+#checkout h5, p
+
+{
+	text-align:center;
+
+												}
+												
+												
+												
+												
+#reg_ok
+
+{
+        position:relative;
+        width:600px;
+        float:center;
+        margin-left:0 auto;
+        											}
+        											
+        											
+#reg_ok h1, h5
+
+{
+	padding-top:15px;
+	text-shadow:2px 2px 3px rgba(255,255,255,1);
+	font-weight:bold;
+	color:#0A0691;
+	text-align:center;
+	font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+	line-height:1;
+	text-align: center;
+
+												}
+												
+												
+#login_form 
+{
+	width: 600px;
+	float: center;
+        padding:20px;
+	margin:125px 40px 125px 40px;
+												}
+												
+												
+												
+												
+												
+												
+												
+/*------------------------------------------------------------ checkout.php -------------------------------------------------------------------------*/
+
+
+											
+#personal_info
+
+{
+	width:600px;
+
+ 
+		
+												}
+
+
+#personal_details
+{
+
+	margin:10px;
+
+												}
+
+												
+#personal_details th
+
+{
+	position: relative;
+	border-style:none;
+	background-color: #5a7997;
+
+												}												
+												
+												
+#personal_details h2
+
+{
+	text-align: center;
+ 	font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+ 	font-weight:bold;
+ 	font-size: 20px;
+ 	color:white;
+ 	text-shadow:none;
+  	padding:10px;
+ 
+		
+												}
+
+
+											
+#personal_details h4
+
+{
+	text-align: center;
+	padding:10px;
+ 	font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+ 	font-size: 15px;
+ 	color:black;
+ 	text-shadow:none;
+ 
+		
+												}		
+												
+												
+												
+												
+
+
+												
+#checkout_table th
+
+{
+	position: relative;
+	border-style:none;
+	background-color: #5a7997;
+												}
+
+
+#checkout_table td
+
+{
+	position: relative;
+	margin: 0 auto;
+	border:none;
+
+												}
+												
+					
+#checkout_table h2
+
+{
+	text-align: center;
+ 	font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+ 	font-weight:bold;
+ 	font-size: 20px;
+ 	color:white;
+ 	text-shadow:none;
+ 	padding:10px;
+ 
+		
+												}
+										
+				
+#checkout_table h4
+
+{
+	text-align: center;
+ 	font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+ 	font-size: 15px;
+ 	color:black;
+ 	text-shadow:none;
+ 
+		
+												}
+
+
+												
+#bank_info
+
+{
+	width:600px;
+ 	margin:0 auto;
+ 
+		
+												}
+												
+#bank_details
+
+{
+	position: relative;
+	border-style:none;
+	float:center;
+	text-align:center;
+	margin-left:100px;
+	margin-bottom:40px;
+												}
+												
+												
+#bank_details th
+
+{
+	position: relative;
+	border-style:none;
+	background-color: #5a7997;
+												}
+												
+
+												
+												
+#bank_details h2
+
+{
+	text-align: center;
+ 	font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+ 	font-weight:bold;
+ 	font-size: 20px;
+ 	color:white;
+ 	text-shadow:none;
+  	padding:10px;
+ 
+		
+												}
+
+
+											
+#bank_details h4
+
+{
+	text-align: left;
+	padding:10px;
+ 	font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+ 	font-size: 15px;
+ 	color:black;
+ 	text-shadow:none;
+ 
+		
+												}
+												
+					
+					
+select 
+
+{
+	/*Applying CSS3 gradient*/
+	background: -moz-linear-gradient(center top , #FFFFFF,  #EEEEEE 1px, #FFFFFF 20px);    
+	background: -webkit-gradient(linear, left top, left 20, from(#FFFFFF), color-stop(5%, #EEEEEE) to(#FFFFFF));
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FBFBFB', endColorstr='#FFFFFF');
+   	padding: 5px;
+   	font-size: 16px;
+   	line-height: 1;
+   	border: 0;
+   	border-radius: 0;
+   	height: 30px;
+   	-webkit-appearance: none;
+   												}
+   												
+   												
+.valid_until
+
+{
+	width: 75px;
+   												}
+
+
+
+
+
+
+
+
+
+
+
+
+												
+												
+#clients1
+{
+        background-color: white;
+        width:700px;
+	height:auto;
+        float:left;
+	margin-left:20px;
+	margin-top:3px;
+	margin-bottom:40px;
+	-webkit-box-shadow: 10px 10px 5px #888888;
+	-moz-box-shadow: 10px 10px 5px #888888;
+        box-shadow: 10px 10px 5px #888888;
+												}
+											

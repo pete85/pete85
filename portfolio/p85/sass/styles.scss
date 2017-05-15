@@ -1,0 +1,55 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "variables";
+@import "mixins";
+
+// BASE
+@import "base";
+
+// NAVBAR
+@import "navbar";
+
+// // SLICK SLIDER
+// @import "slick";
+// @import "slick-theme";
+
+// SEQUENCE SLIDER
+@import "sequence-slider";
+
+// CONTACT FORM
+@import "form";
+
+// HOVER.CSS
+@import "hover";
+
+// MAIN
+@import "main";
+
+// MEDIA QUERIES
+@import "responsive";
+
+// ANIMATIONS
+@import "animate";
+
+
+/*!
+ * Hover.css (http://ianlunn.github.io/Hover/)
+ * Version: 2.1.0
+ * Author: Ian Lunn @IanLunn
+ * Author URL: http://ianlunn.co.uk/
+ * Github: https://github.com/IanLunn/Hover
+
+ * Made available under a MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+
+ * Hover.css Copyright Ian Lunn 2014. Generated with Sass.
+ */
+
+@import "options";
+@import "mixins";
+@import "hacks";
+

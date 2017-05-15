@@ -1,0 +1,442 @@
+/**
+ * Theme Name: Modern Slide In
+ * Version: 2.0.0
+ * Theme URL: http://sequencejs.com/themes/modern-slide-in/
+ *
+ * A minimalist theme for showcasing products
+ *
+ * This theme is powered by Sequence.js - The
+ * responsive CSS animation framework for creating unique sliders,
+ * presentations, banners, and other step-based applications.
+ *
+ * Author: Ian Lunn
+ * Author URL: http://ianlunn.co.uk/
+ *
+ * Theme License: http://sequencejs.com/licenses/#free-theme
+ * Sequence.js Licenses: http://sequencejs.com/licenses/
+ *
+ * Copyright © 2015 Ian Lunn Design Limited unless otherwise stated.
+ */
+
+
+
+
+
+.seq {
+  position: relative;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: $sequenceMobileHeight;
+  width: 100%;
+  max-width: $sequenceWidth;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0;
+
+  .seq-preloader {
+    background: #D9D9D9;
+  }
+
+  .seq-screen,
+  .seq-canvas,
+  .seq-canvas > * {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+  }
+
+  .seq-canvas > * {
+    position: absolute;
+  }
+
+  &.seq-fallback {
+    /* Fallback styles */
+
+    .seq-canvas {
+      max-width: $sequenceWidth;
+    }
+
+    .seq-pagination {
+      z-index: 1050;
+    }
+
+    .seq-pagination li {
+      position: relative;
+
+      img {
+        border: none;
+      }
+
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .seq-next:focus,
+    .seq-next:hover,
+    .seq-prev:focus,
+    .seq-prev:hover,
+    .seq-pagination li:focus,
+    .seq-pagination li:hover {
+      top: -4px;
+    }
+  }
+
+  .seq-canvas {
+    max-width: $sequenceWidth;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .seq-nav,
+  .seq-pagination {
+    /* Hide navigation when JS is disabled */
+    display: none;
+  }
+
+  &.seq-active .seq-nav {
+    /* Show navigation and pagination if JS is enabled */
+    display: block;
+  }
+
+  .seq-nav {
+    /* Styles for next/previous buttons and pagination */
+    position: absolute;
+    z-index: 1080;
+    top: 50%;
+    width: 100%;
+    max-width: $sequenceWidth;
+    margin: 0 auto;
+    padding: 0;
+    pointer-events: none;
+    border: none;
+  }
+
+  .seq-next,
+  .seq-prev {
+    position: absolute;
+    top: 50%;
+    margin-top: -66px;
+    width: 66px;
+    height: 132px;
+    border: none;
+    cursor: pointer;
+    pointer-events: auto;
+    @include prefixed(transition-duration, ".2s");
+    @include prefixed(transform, "translate3d(0, 0, 0)");
+
+    /* Image replacement */
+    border: 0;
+    font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+  }
+
+  .seq-next {
+    right: 0;
+    background: url("../images/bt-next.png");
+
+    &:focus,
+    &:hover {
+      cursor: pointer;
+      @include prefixed(transform, "translate3d(6px, 0, 0)");
+    }
+  }
+
+  .seq-prev {
+    left: 0;
+    background: url("../images/bt-prev.png");
+
+    &:focus,
+    &:hover {
+      cursor: pointer;
+      @include prefixed(transform, "translate3d(-6px, 0, 0)");
+    }
+  }
+
+  .seq-model,
+  .seq-title {
+    position: absolute;
+  }
+
+  .seq-title {
+    bottom: 5%;
+    margin: 0 2.5%;
+    width: 95%;
+  }
+
+  .seq-model {
+    bottom: 15%;
+    height: 75%;
+    width: 100%;
+    /* Don't allow the image to exceed its original height */
+    max-height: $imageHeight;
+
+    img {
+      /* Don't allow the image to exceed its original height */
+      max-height: $imageHeight;
+      display: block;
+      height: 90%;
+      width: auto;
+      margin: 0 auto;
+      opacity: 0;
+      @include prefixed(transform, "translate3d(60px, 0, 0)");
+      @include prefixed(transition-duration, ".3s");
+      @include prefixed(transition-properties, "transform, opacity");
+      @include prefixed(transition-timing-function, "ease-out !important");
+    }
+  }
+
+  .seq-title {
+
+    h2 {
+      margin-bottom: 10px;
+      font-size: 30px;
+      color: $white;
+      padding: 8px 15px;
+      border-top: 2px solid $white;
+      border-bottom: 2px solid $white;
+      @include prefixed(transform, "translate3d(-120px, 0, 0)");
+    }
+
+    h2,
+    p {
+      display: block;
+      color: $white;
+      width: 60%;
+      vertical-align: middle;
+      text-align: center;
+      margin: 0 auto;
+      opacity: 0;
+      font-size: 18px;
+      @include prefixed(transition-duration, ".3s");
+      @include prefixed(transition-properties, "opacity");
+    }
+
+
+    p {
+      display: none;
+      clear: left;
+    }
+  }
+
+  .seq-in {
+    /* Animate in positions for content */
+
+    .seq-model img {
+      @include prefixed(transform, "translate3d(0, 0, 0)");
+      opacity: 1;
+    }
+
+    .seq-title {
+      h2,
+      p {
+        opacity: 1;
+        @include prefixed(transform, "translate3d(0, 0, 0)");
+      }
+    }
+  }
+
+  .seq-out {
+    /* Animate out positions for content */
+
+    .seq-model img {
+      @include prefixed(transform, "translate3d(-60px, 0, 0)");
+      opacity: 0;
+    }
+
+    .seq-title {
+      h2,
+      p {
+        opacity: 0;
+        @include prefixed(transform, "translate3d(0, 0, 0)");
+      }
+    }
+  }
+
+
+// =========================================================================================
+
+//                                      MEDIA QUERIES
+
+// =========================================================================================
+
+  @media only screen and (min-width: 640px) {
+
+    /* Make the container 16:9 but no bigger than 90% of the screen height */
+    @include aspect-ratio(16, 9);
+    height: 100%;
+    max-height: 90vh;
+    min-height: $sequenceMobileHeight;
+
+    /* Move the background radial to the left */
+    background-position: 50% 100%;
+
+    .seq-canvas > *:before {
+      /* Vertically align the content using a :before element */
+      content: "";
+      height: 100%;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .seq-model,
+    .seq-title {
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 5% 0 2.5%;
+    }
+
+    .seq-model {
+      top: 0;
+      bottom: 0;
+      width: 25%;
+      margin-left: 12.5%;
+      perspective: 1000px;
+      img {
+        float: right;
+        opacity: 0;
+        transform: rotateY(40deg);
+        @include prefixed(transform, "translate3d(60px, 0, 0)");
+        @include prefixed(transition-properties, "transform, opacity");
+      }
+    }
+
+
+    .seq-title {
+      bottom: 0;
+      width: 40%;
+      margin-right: 12.5%;
+
+      h2,
+      p {
+        display: inline-block;
+        width: auto;
+        margin: 0;
+        opacity: 0;
+        text-align: left;
+        @include prefixed(transition-duration, ".3s");
+        @include prefixed(transition-properties, "transform, opacity");
+      }
+
+      h2 {
+        margin-bottom: 15px;
+        font-size: 30px;
+        padding: 5px 15px;
+        @include prefixed(transform, "translate3d(-120px, 0, 0)");
+      }
+
+      p {
+        display: block;
+        font-size: 15px;
+        @include prefixed(transform, "translate3d(120px, 0, 0)");
+      }
+    }
+
+    .seq-in {
+      /* Animate in positions for content */
+
+      .seq-model img {
+        @include prefixed(transform, "translate3d(0, 0, 0)");
+        opacity: 1;
+      }
+    }
+
+    .seq-out {
+      /* Animate out positions for content */
+
+      .seq-model img {
+        @include prefixed(transform, "translate3d(-60px, 0, 0)");
+      }
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+
+
+  }
+
+  @media only screen and (min-width: 860px) {
+
+    .seq-model {
+      margin-left: 10%;
+      width: 27.5%;
+    }
+
+    .seq-title {
+      width: 42.5%;
+      margin-right: 10%;
+
+      br {
+        display: inline-block;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1020px) {
+    .seq-model {
+      margin-left: 5%;
+      width: 32.5%;
+    }
+
+    .seq-title {
+      width: 47.5%;
+      margin-right: 5%;
+    }
+  }
+
+  @media only screen and (min-width: 1120px) {
+    .seq-model {
+      margin-left: 0;
+      width: 37%;
+    }
+
+    .seq-title {
+      width: 50%;
+      margin-right: 0;
+      & p {
+        font-size: 20px;
+      }
+    }
+
+  }
+
+  @media only screen and (min-width: 1120px) {
+
+    .seq-title h2 {
+      font-size: 36px;
+    }
+
+    .seq-title p {
+      font-size: 24px;
+    }
+
+  }
+
+
+  @media (min--moz-device-pixel-ratio: 1.5),
+         (-o-min-device-pixel-ratio: 3/2),
+         (-webkit-min-device-pixel-ratio: 1.5),
+         (min-device-pixel-ratio: 1.5),
+         (min-resolution: 144dpi),
+         (min-resolution: 1.5dppx) {
+          /* Apply Retina (@2x) Images */
+
+          .seq-next {
+            background: url("../images/bt-next.png");
+            background-size: 66px 132px;
+          }
+
+          .seq-prev {
+            background: url("../images/bt-prev.png");
+            background-size: 66px 132px;
+          }
+  }
+}

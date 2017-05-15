@@ -1,0 +1,84 @@
+//-----------------------
+//----- Basic Styles ----
+//-----------------------
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  color: $main-1;
+  overflow-x: hidden;
+}
+
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+a {
+  color: $main-3;
+  text-decoration: none;
+  &:hover {
+    color: $main-3;
+    text-decoration: underline;
+  }
+  &:focus {
+    color: $main-3;
+    text-decoration: underline;
+    outline: none;
+  }
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.hidden {
+  display: none;
+}
+
+//-------------------------
+//----- Typo Styles -------
+//-------------------------
+
+// h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+//   font-weight: 300;
+// }
+
+
+h1  {font-size: 3em; color: $main-1; font-weight: 700;}
+h2  {font-size: 2.5em;}
+h3  {font-size: 2em;}
+h4  {font-size: 1.5em;}
+p   {font-size: 1em; color: $main-3; font-weight: 300;}
+
+h1, h2, h3, h4, p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+#contact h1 {
+  margin-bottom: 0 !important;
+}
+
+.txtTitle {
+  margin: 0 auto;
+  font-weight: 600;
+  color: $white;
+  display: table;
+  padding: 5px 10px;
+  margin-bottom: 30px;
+  position: relative;
+  border: 5px solid $white;
+  background: $main-1;
+}
+
+//*** Fixed height classes ***
+
+.div100 {height: 100px;}
+.div150 {height: 150px;}
+.div200 {height: 200px;}
+.div250 {height: 250px;}
+.div300 {height: 300px;}
+.div350 {height: 350px;}
+.div400 {height: 400px;}
+.div450 {height: 450px;}
+.div500 {height: 500px;}

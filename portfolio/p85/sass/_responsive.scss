@@ -1,0 +1,255 @@
+//*****************************************************************************************************
+
+//                                            MEDIA QUERIES
+
+//*****************************************************************************************************
+
+
+@media (max-width: 1199px) {
+  #gmap {
+    height: 460px;
+  }
+  #contact .contact-text {
+    font-size: 13pt;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 991px) {
+  .big-text {
+    font-size: 30pt;
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+  #about .image {
+    width: 250px;
+  }
+  .chart {
+    margin-bottom: 60px;
+  }
+  .skill10 p, .chart p {
+    font-size: 24pt;
+  }
+  #gmapMobil {
+    height: 300px;
+    width: 100%;
+  }
+  #main-footer {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    position: relative;
+    .container {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+    }
+    p {
+      color: $white;
+      a {
+        color: $white;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .big-text {
+    font-size: 26pt;
+  }
+  body {
+    font-size: 12pt;
+  }
+  #main-nav.scrolled .navbar-toggle {
+    border-color: transparent;
+    .icon-bar {
+      background: $main-1;
+      width: 30px;
+      height: 4px;
+    }
+    .icon-bar+.icon-bar {
+      margin-top: 5px;
+    }
+  }
+  #home {
+    p {
+      font-size: 16pt;
+    }
+    h1 {
+      font-size: 20pt;
+    }
+    h2 {
+      font-size: 20pt;
+      left: 0px;
+    }
+  }
+  #about {
+    .about-text {
+      font-size: 14pt;
+    }
+    .timeline {
+      margin-left: 35px;
+    }
+    .imageCont {
+      text-align: center;
+      padding-top: 30px;
+      padding-bottom: 60px;
+      -ms-transform: rotate(0deg);
+      /* IE 9 */
+      -webkit-transform: rotate(0deg);
+      /* Chrome, Safari, Opera */
+      transform: rotate(0deg);
+    }
+  }
+  #skills .skill10 {
+    font-size: 16pt;
+  }
+  #filter-works ul li {
+    display: block;
+    margin: 0px;
+    a {
+      padding: 5px 0px;
+    }
+  }
+  #projects-container .project-item {
+    width: 350px;
+  }
+  .modal-header h4 {
+    margin: 10px;
+    font-size: 10pt;
+    span {
+      font-size: 9pt;
+    }
+  }
+  #contact {
+    .contact-text {
+      font-size: 14pt;
+      line-height: 24px;
+    }
+    .contact-list li {
+      font-size: 14pt;
+    }
+  }
+}
+
+
+
+// Extra Small Devices, Phones
+@media only screen and (min-width: 480px) {
+
+
+}
+
+// Small Devices, Tablets
+@media only screen and (min-width: 768px) {
+
+  .modal-dialog {
+    width: 700px;
+    margin: 79px auto;
+  }
+
+  .bg1 {
+    background: $white url('../images/bg-3.jpg') no-repeat fixed;
+  }
+
+  .aboutme {
+    & .icon-custom {
+      width: 250px;
+      height: 250px;
+      & img {
+        width: 200px;
+      }
+    }
+  }  
+
+}
+
+// Medium Devices, Desktops
+@media only screen and (min-width: 992px) {
+
+  .modal-dialog {
+    width: 900px;
+  }
+
+  #skills {
+    padding-top: 100px;
+  }
+
+}
+
+
+
+// Large Devices, Wide Screens
+@media only screen and (min-width: 1200px) {
+  #about {
+    height: 100vh;
+  }
+
+  .seq-active .seq-pagination {
+    /* Show navigation and pagination if JS is enabled */
+    display: block;
+  }
+
+  .seq-pagination {
+    pointer-events: none;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 20px;
+    bottom: 40px;
+    margin: 0 auto;
+    padding: 0 20px;
+    // Container width - (padding-left + padding-right)
+    max-width: $sequenceWidth;
+    text-align: center;
+
+    li {
+      display: inline-block;
+      list-style: none;
+      margin: 0 5px;
+      padding: 0;
+      cursor: pointer;
+    }
+
+    li img {
+      opacity: .4;
+      pointer-events: auto;
+      @include prefixed(transform, "translate3d(0, 0, 0)");
+      @include prefixed(transition-duration, ".2s");
+      @include prefixed(transition-properties, "transform, opacity");
+      width: 50px;
+    }
+
+    li.seq-current img {
+      opacity: 1;
+    }
+
+    li:focus img,
+    li:hover img {
+      @include prefixed(transform, "translate3d(0, -4px, 0)");
+    }
+  }
+
+}
+
+
+
+
+@media only screen and (min-width: 1300px) {
+	.container {
+    width: 1280px;
+  }
+
+  .modal-dialog {
+    width: 1280px;
+  }
+
+}
+
+
+// Very Large Wide Screens
+
+@media only screen and (min-width: 1500px) {
+}
+
+
+

@@ -1,0 +1,136 @@
+/*-----------------------
+---- Menu Styles ----
+-------------------------*/
+
+#main-nav {
+  .container {
+    padding: 0 0 20px;
+  }
+  .navbar-brand {
+    display: inline-block;
+    font-size: 24pt;
+    font-weight: 700;
+    color: $white;
+    line-height: 54px;
+  }
+}
+
+#portfolio-nav {
+  .container {
+    padding: 0 0 20px;
+  }
+  .navbar-brand {
+    display: inline-block;
+    font-size: 24pt;
+    font-weight: 700;
+    color: $main-3;
+    line-height: 54px;
+  }
+}
+
+.navbar-brand {
+  padding: 0 10px;
+  font-size: 30pt;
+  line-height: 30px;
+  font-weight: normal;
+  color: $white;
+  &:hover, &:active, &:focus {
+    padding: 0 10px;
+    font-size: 30pt;
+    line-height: 30px;
+    font-weight: normal;
+    color: $white;
+  }
+  span {
+    font-size: 24pt;
+    font-weight: 300;
+  }
+}
+
+#main-nav, #portfolio-nav {
+  &.scrolled {
+    z-index: 1090;
+    .navbar-brand {
+      color: #6d6d6d;
+    }
+    background: $white;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    .navbar-toggle {
+      color: #74c7d5;
+      border-color: #74c7d5;
+      .icon-bar {
+        background: #74c7d5;
+      }
+    }
+  }
+  background: transparent;
+  color: $white;
+  box-shadow: 0 0 0px transparent;
+  -webkit-transition: background 0.3s ease-out;
+  transition: background 0.3s ease-out;
+  .container {
+    padding: 30px 20px;
+    -webkit-transition: padding 0.5s ease-out;
+    transition: padding 0.5s ease-out;
+  }
+  &.scrolled .container {
+    padding: 10px 20px;
+  }
+  .nav a {
+    padding: 0px 10px;
+    font-size: 14pt;
+    line-height: 54px;
+    font-weight: 400;
+    background: transparent;
+    color: $white;
+    transition: color .2s ease-in;
+    &:active, &:hover {
+      padding: 0px 10px;
+      font-size: 14pt;
+      line-height: 54px;
+      font-weight: 400;
+      background: transparent;
+      color: $white;
+      transition: color .2s ease-in;
+    }
+  }
+  &.scrolled .nav a {
+    color: #6d6d6d;
+    &:active, &:hover {
+      color: #6d6d6d;
+    }
+  }
+  li {
+    background: transparent;
+    margin: 0 10px;
+    border: 2px solid transparent;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &.scrolled .nav {
+    li.active a, a:hover {
+      color: #3D4456;
+    }
+  }
+  i {
+    font-size: 20pt;
+    margin-right: 10px;
+  }
+}
+
+
+// MOBILE
+
+#main-nav.scrolled .navbar-toggle, #portfolio-nav.scrolled .navbar-toggle {
+  color: $main-3;
+  border-color: transparent;
+}
+
+#main-nav.scrolled .navbar-toggle .icon-bar, #portfolio-nav.scrolled .navbar-toggle .icon-bar {
+  background: $main-3;
+}
+
+
+
+
