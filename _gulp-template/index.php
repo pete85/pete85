@@ -5,11 +5,11 @@
     <?php include('include/head.php') ?>
 </head>
 
-<body>
+<body id="page-top" data-spy="scroll" data-target=".navbar-right">
 
     <!-- Navigation -->
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-    <nav id="sidebar-wrapper">
+    <nav id="sidebar-wrapper" class="navbar navbar-custom navbar-right">
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
             <li class="sidebar-brand">
