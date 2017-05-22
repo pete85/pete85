@@ -8,27 +8,17 @@
 		this.products = gems;
 	});
 
-
-
-
-
-	// // DEPENDENCY INJECTION
 	// app.controller('StoreController', ['$http', function($http){
-
 	// 	var store = this;
 
-	// 	store.products = [ ];
+	// 	store.products = [];
 
 	// 	$http.get('/products.json').success(function(data){
 	// 		store.products = data;
 	// 	});
 	// }]);
 
-
-
-
-
-	app.controller('PanelController', function(){
+ 	app.controller('PanelController', function(){
 		this.tab = 1;
 
 		this.selectTab = function(setTab){
@@ -60,14 +50,18 @@
 			{
 				full: 'http://placehold.it/400x200/A92222/FFFFFF',
 				thumb: 'http://placehold.it/100x50/A92222/FFFFFF',			
+			},
+			{
+				full: 'http://placehold.it/400x200/E3E2E1/FFFFFF',
+				thumb: 'http://placehold.it/100x50/E3E2E1/FFFFFF',			
 			}
 		],
 		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum et malesuada fames ac ante ipsum primis in faucibus.',
 		spec: 'EWFWEf ever gwWvw',
 		reviews: [
 			{
-				stars: 5,
-				body: "Great product",
+				stars: 3,
+				body: "Average product",
 				author: "test@test.com"
 			}
 		],
@@ -81,8 +75,11 @@
 			{
 				full: 'http://placehold.it/400x200/147291/FFFFFF',
 				thumb: 'http://placehold.it/100x50/147291/FFFFFF',				
+			},
+			{
+				full: 'http://placehold.it/400x200/E3E2E1/FFFFFF',
+				thumb: 'http://placehold.it/100x50/E3E2E1/FFFFFF',			
 			}
-
 		],
 		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
 		spec: 'EWEf DFGERr gwWvw',
@@ -90,7 +87,7 @@
 			{
 				stars: 5,
 				body: "Great product",
-				author: "test@test.com"
+				author: "test2@test.com"
 			}
 		],
 	},
@@ -110,9 +107,9 @@
 		spec: 'AsfergEf ever gwWvw',
 		reviews: [
 			{
-				stars: 5,
-				body: "Great product",
-				author: "test@test.com"
+				stars: 2,
+				body: "Poor quality product",
+				author: "test3@test.com"
 			}
 		],
 	}
@@ -121,6 +118,10 @@
 
 
 })();
+
+
+
+// TO DO
 
 (function(){
 

@@ -1,68 +1,68 @@
-[
+{
 
 	{
-		name: 'Red',
-		price: 2.95,
-		canPurchase: true,
-		images: [
+		"name": "Red",
+		"price": 2.95,
+		"canPurchase": true,
+		"images": [
 			{
-				full: 'http://placehold.it/400x200/A92222/FFFFFF',
-				thumb: 'http://placehold.it/100x50/A92222/FFFFFF',			
+				"full": "http://placehold.it/400x200/A92222/FFFFFF",
+				"thumb": "http://placehold.it/100x50/A92222/FFFFFF",			
 			}
 		],
-		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum et malesuada fames ac ante ipsum primis in faucibus.',
-		spec: 'EWFWEf ever gwWvw',
-		reviews: [
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum et malesuada fames ac ante ipsum primis in faucibus.",
+		"spec": "EWFWEf ever gwWvw",
+		"reviews": [
 			{
-				stars: 5,
-				body: "Great product",
-				author: "test@test.com"
+				"stars": 5,
+				"body": "Great product",
+				"author": "test@test.com"
 			}
 		],
 	},
 
 	{
-		name: 'Blue',
-		price: 3,
-		canPurchase: true,
-		images: [
+		"name": "Blue",
+		"price": 3,
+		"canPurchase": true,
+		"images": [
 			{
-				full: 'http://placehold.it/400x200/147291/FFFFFF',
-				thumb: 'http://placehold.it/100x50/147291/FFFFFF',				
+				"full": "http://placehold.it/400x200/147291/FFFFFF",
+				"thumb": "http://placehold.it/100x50/147291/FFFFFF",				
 			}
 
 		],
-		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-		spec: 'EWEf DFGERr gwWvw',
-		reviews: [
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+		"spec": "EWEf DFGERr gwWvw",
+		"reviews": [
 			{
-				stars: 5,
-				body: "Great product",
-				author: "test@test.com"
+				"stars": 5,
+				"body": "Great product",
+				"author": "test@test.com"
 			}
 		],
 	},
 
 	{
-		name: 'Green',
-		price: 4.95,
-		canPurchase: true,
-		images: [
+		"name": "Green",
+		"price": 4.95,
+		"canPurchase": true,
+		"images": [
 			{
-				full: 'http://placehold.it/400x200/50AD67/FFFFFF',
-				thumb: 'http://placehold.it/100x50/50AD67/FFFFFF',				
+				"full": "http://placehold.it/400x200/50AD67/FFFFFF",
+				"thumb": "http://placehold.it/100x50/50AD67/FFFFFF",				
 			}
 
 		],
-		description: 'Suscipit tempus massa sed pharetra. Interdum et malesuada fames ac ante ipsum primis in faucibus.',
-		spec: 'AsfergEf ever gwWvw',
-		reviews: [
+		"description": "Suscipit tempus massa sed pharetra. Interdum et malesuada fames ac ante ipsum primis in faucibus.",
+		"spec": "AsfergEf ever gwWvw",
+		"reviews": [
 			{
-				stars: 5,
-				body: "Great product",
-				author: "test@test.com"
+				"stars": 5,
+				"body": "Great product",
+				"author": "test@test.com"
 			}
 		],
 	}
 
-]
+}

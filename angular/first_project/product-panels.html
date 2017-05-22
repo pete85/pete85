@@ -9,10 +9,12 @@
 		<h4>Description</h4>
 		<p>{{product.description}}</p> <!-- Attribute directive definition -->
 	</div>
+
 	<div class="panel animated fadeIn" ng-show="panel.isSelected(2)">
 		<h4>Spec</h4>
 		<p>{{product.spec}}</p>
 	</div>
+	
 	<div class="panel animated fadeIn" ng-show="panel.isSelected(3)">
 		<h4>Reviews</h4>
 		<blockquote ng-repeat="review in product.reviews">
