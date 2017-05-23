@@ -19,4 +19,4 @@
     </script>
 
     <!-- Stream JavaScript -->
-    <script src="js/scripts.js"></script>
+    <script src="js/app.js"></script>
