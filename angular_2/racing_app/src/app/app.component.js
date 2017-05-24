@@ -14,28 +14,39 @@ var AppComponent = (function () {
                 "id": 1,
                 "name": "Battery",
                 "description": "Bosch car battery",
-                "inStock": 5
+                "inStock": 5,
+                "price": 79.99
             },
             {
                 "id": 2,
                 "name": "Tyres set",
                 "description": "Sports Tyres",
-                "inStock": 3
+                "inStock": 3,
+                "price": 289.99
             },
             {
                 "id": 3,
                 "name": "Turbo charger",
                 "description": "Sports Turbo charger",
-                "inStock": 0
+                "inStock": 0,
+                "price": 649.99
             }
         ];
     }
+    AppComponent.prototype.totalCarParts = function () {
+        var sum = 0;
+        for (var _i = 0, _a = this.carParts; _i < _a.length; _i++) {
+            var carPart = _a[_i];
+            sum += carPart.inStock;
+        }
+        return sum;
+    };
     return AppComponent;
 }());
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: "\t<h1>{{title}}</h1>\n\n  \t\t\t\t<ul>\n  \t\t\t\t\t<li *ngFor=\"let carPart of carParts\">\n\t\t\t\t\t\t<h3>Product: {{carPart.name}}</h3>\n\t\t\t\t\t\t<p>Description: {{carPart.description}}</p>\n\t\t\t\t\t\t<p *ngIf=\"carPart.inStock > 0\">In stock: {{carPart.inStock}}</p>\n\t\t\t\t\t\t<p *ngIf=\"carPart.inStock === 0\">Out of stock</p>\n\t\t\t\t\t</li>\n\t\t\t\t</ul>"
+        template: "\t<h1>{{title}}</h1>\n\n  \t\t\t\t<p>There are {{totalCarParts()}} total parts in stock.</p>\n\n  \t\t\t\t<ul>\n  \t\t\t\t\t<li *ngFor=\"let carPart of carParts\">\n\t\t\t\t\t\t<h3>Product: {{carPart.name | uppercase}}</h3>\n\t\t\t\t\t\t<p>Description: {{carPart.description}}</p>\n\t\t\t\t\t\t<p>Price: {{carPart.price | currency:'GBP':true}}\n\t\t\t\t\t\t<p *ngIf=\"carPart.inStock > 0\">In stock: {{carPart.inStock}}</p>\n\t\t\t\t\t\t<p *ngIf=\"carPart.inStock === 0\">Out of stock</p>\n\t\t\t\t\t</li>\n\t\t\t\t</ul>"
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;
