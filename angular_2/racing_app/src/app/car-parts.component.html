@@ -1,0 +1,13 @@
+<div class="container">
+	<p>There are {{totalCarParts()}} total parts in stock.</p>
+
+	<ul>
+		<li class="list-group-item" *ngFor="let carPart of carParts">
+			<h3>Product: {{carPart.name | uppercase}}</h3>
+			<p>Description: {{carPart.description}}</p>
+			<p>Price: <span class="italic">{{carPart.price | currency:'GBP':true}}</span></p>
+			<p *ngIf="carPart.inStock > 0">In stock: {{carPart.inStock}}</p>
+			<p *ngIf="carPart.inStock === 0">Out of stock</p>
+		</li>
+	</ul>	
+</div>
