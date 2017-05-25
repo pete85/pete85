@@ -22,6 +22,20 @@ export const CARPARTS: CarPart[] = [
 		"description": "Sports Turbo charger",
 		"inStock": 0,
 		"price": 649.99
+	},
+	{
+		"id": 4,
+		"name": "Shock absorbers",
+		"description": "Tuning shock absorbers (set of 2)",
+		"inStock": 4,
+		"price": 399.99
+	},
+	{
+		"id": 5,
+		"name": "Air filter",
+		"description": "Sports air filter",
+		"inStock": 12,
+		"price": 55.99
 	}
 
 ];

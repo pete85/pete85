@@ -1,4 +1,11 @@
+/* Car Parts component styling */
+
 .italic {
 	color: #A92222;
 	font-style: italic;
+}
+
+#partsInfo {
+	margin: 0 auto;
+	padding: 0 0 20px 0;
 }

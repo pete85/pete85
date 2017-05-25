@@ -1,0 +1,18 @@
+body {
+	background-color: #E3E2E1;
+	font-size: 16px;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+.container {
+	background-color: #FFFFFF;
+}
+
+.row {
+	margin: 0 auto;
+}
+
+h1 {
+  color: #369;
+  font-size: 3em;
+}
