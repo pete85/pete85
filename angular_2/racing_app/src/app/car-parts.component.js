@@ -6,13 +6,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var mocks_1 = require("./mocks");
+var racing_data_service_1 = require("./racing-data.service");
 var CarPartsComponent = (function () {
     function CarPartsComponent() {
     }
     CarPartsComponent.prototype.ngOnInit = function () {
-        this.carParts = mocks_1.CARPARTS;
+        var racingDataService = new racing_data_service_1.RacingDataService();
+        this.carParts = racingDataService.getCarParts();
     };
+    // or
+    // ngOnInit() {
+    // 	this.carParts = CARPARTS;
+    // }
     CarPartsComponent.prototype.totalCarParts = function () {
         var sum = 0;
         for (var _i = 0, _a = this.carParts; _i < _a.length; _i++) {
@@ -20,6 +25,14 @@ var CarPartsComponent = (function () {
             sum += carPart.inStock;
         }
         return sum;
+    };
+    CarPartsComponent.prototype.upQuantity = function (carPart) {
+        if (carPart.quantity < carPart.inStock)
+            carPart.quantity++;
+    };
+    CarPartsComponent.prototype.downQuantity = function (carPart) {
+        if (carPart.quantity != 0)
+            carPart.quantity--;
     };
     return CarPartsComponent;
 }());

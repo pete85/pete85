@@ -3,12 +3,15 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'my-app',
   template: `	<div class="container">
-  					<h1>{{title}}</h1>
+  					<div class="text-center headerBlock">
+						<img src="{{imgHeader}}" alt="Header image">
+					</div>
   				</div>
 
   				<car-parts></car-parts>`
 })
 
 export class AppComponent  { 
-	title = 'Racing App';
+	title = 'Racing Parts';
+	imgHeader = 'images/header.png'; 
 }

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CarPart } from './car-parts';
-import { CARPARTS } from './mocks'
+import { CARPARTS } from './mocks';
+import { RacingDataService } from './racing-data.service';
 
 @Component({
   selector: 'car-parts',
@@ -11,9 +12,18 @@ import { CARPARTS } from './mocks'
 export class CarPartsComponent {
 	carParts: CarPart[];
 
+	constructor
+
 	ngOnInit() {
-		this.carParts = CARPARTS;
+		let racingDataService = new RacingDataService();
+		this.carParts = racingDataService.getCarParts();
 	}
+
+	// or
+
+	// ngOnInit() {
+	// 	this.carParts = CARPARTS;
+	// }
 
 	totalCarParts(){
 		let sum = 0;
@@ -23,5 +33,13 @@ export class CarPartsComponent {
 		}
 
 		return sum;
+	}
+
+	upQuantity(carPart) {
+		if (carPart.quantity < carPart.inStock) carPart.quantity++;
+	}
+
+	downQuantity(carPart) {
+		if (carPart.quantity != 0) carPart.quantity--;
 	}
 }

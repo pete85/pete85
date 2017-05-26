@@ -9,3 +9,22 @@
 	margin: 0 auto;
 	padding: 0 0 20px 0;
 }
+
+.list-group-item {
+	overflow: hidden;
+	background-color: rgba(227, 226, 225, 0.5);
+}
+
+.list-group-item img {
+	width: 80%;
+	max-width: 100%;
+}
+
+.featured {
+	background-color: rgba(161, 201, 214, 0.5);
+}
+
+.qAdjust button, .qAdjust h3 {
+	display: inline-block;
+	margin: 5px;
+}
