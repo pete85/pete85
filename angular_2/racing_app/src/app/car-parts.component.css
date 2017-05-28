@@ -28,3 +28,14 @@
 	display: inline-block;
 	margin: 5px;
 }
+
+.outOfStock h3 {
+	color: #A92222;
+	font-weight: 700;
+}
+
+.btn-checkout {
+	margin: 30px;
+	font-size: 20px;
+	padding: 10px 20px; 
+}

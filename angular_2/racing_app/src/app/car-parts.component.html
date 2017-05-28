@@ -6,9 +6,6 @@
 		<ul id="partsInfo">
 			<li class="list-group-item" *ngFor="let carPart of carParts" [class.featured]="carPart.featured">
 				<div class="col-sm-8">
-
-
-
 					<table style="width: 100%;"  cellpadding="2">
 						<tbody>
 							<tr>
@@ -26,7 +23,7 @@
 								<td><h3>{{carPart.inStock}}</h3></td>
 							</tr>
 							<tr *ngIf="carPart.inStock === 0">
-								<td colspan="2"><h3>Out of stock</h3></td>
+								<td colspan="2" class="outOfStock"><h3>Out of stock</h3></td>
 							</tr>
 
 							<tr>
@@ -38,9 +35,15 @@
 								<td>&nbsp;</td>
 								<td class="qAdjust">
 									<button class="increase" (click)="upQuantity(carPart)"><i class="fa fa-plus" aria-hidden="true"></i></button>
+
 									<input type="text" class="number" [(ngModel)] = "carPart.quantity">
+
 									<button class="decrease" (click)="downQuantity(carPart)"><i class="fa fa-minus" aria-hidden="true"></i></button>
 								</td>
+							</tr>
+							<tr>
+								<td><h3>To pay:</h3></td>
+								<td>{{carPart.price * carPart.quantity | currency:'GBP':true}}</td>
 							</tr>
 						</tbody>
 					</table>
@@ -50,5 +53,9 @@
 				</div>
 			</li>
 		</ul>
-	</div>	
+	</div>
+<!-- 	<div class="row text-center" *ngIf="totalCost > 0">
+		<h3>Total price: </h3>
+		<button class="btn btn-success btn-checkout" (click)="totalCost(carParts)">Checkout</button>
+	</div> -->
 </div>

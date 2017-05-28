@@ -1,7 +1,3 @@
-// import { Component } from '@angular/core';
-// import { CarPart } from './car-parts';
-// import { CARPARTS } from './mocks';
-// import { RacingDataService } from './racing-data.service';
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -12,35 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-// @Component({
-//   selector: 'car-parts',
-//   templateUrl: 'app/car-parts.component.html',
-//   styleUrls: ['app/car-parts.component.css']
-// })
-// export class CarPartsComponent {
-// 	carParts: CarPart[];
-// 	constructor(private racingDataService: RacingDataService) { }
-// 	ngOnInit() {
-// 		this.carParts = this.racingDataService.getCarParts();
-// 	}
-// 	// or
-// 	// ngOnInit() {
-// 	// 	this.carParts = CARPARTS;
-// 	// }
-// 	totalCarParts(){
-// 		let sum = 0;
-// 		for (let carPart of this.carParts) {
-// 			sum += carPart.inStock;
-// 		}
-// 		return sum;
-// 	}
-// 	upQuantity(carPart) {
-// 		if (carPart.quantity < carPart.inStock) carPart.quantity++;
-// 	}
-// 	downQuantity(carPart) {
-// 		if (carPart.quantity != 0) carPart.quantity--;
-// 	}
-// }
+Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var racing_data_service_1 = require("./racing-data.service");
 var CarPartsComponent = (function () {
@@ -52,10 +20,6 @@ var CarPartsComponent = (function () {
         this.racingDataService.getCarParts()
             .subscribe(function (carParts) { return _this.carParts = carParts; });
     };
-    // or
-    // ngOnInit() {
-    // 	this.carParts = CARPARTS;
-    // }
     CarPartsComponent.prototype.totalCarParts = function () {
         var sum = 0;
         if (Array.isArray(this.carParts)) {
