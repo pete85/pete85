@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  mouseOver() {
+    document.getElementById("faceIcon").style.color = "#A92222";
+  }
+
+  mouseOut() {
+    document.getElementById("faceIcon").style.color = "#E3E2E1";
+  }
 }
