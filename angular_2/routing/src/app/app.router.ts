@@ -1,4 +1,5 @@
 import { ModuleWithProviders } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
@@ -9,7 +10,8 @@ import { ServicesComponent } from './services/services.component';
 export const router: Routes = [
   { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent },
-  { path: 'services', component: ServicesComponent }
+  { path: 'services', component: ServicesComponent },
+  { path: '**', pathMatch: 'full', component: HomeComponent }
 ];
 
 export const routes: ModuleWithProviders = RouterModule.forRoot(router);
