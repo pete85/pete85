@@ -1,4 +1,4 @@
-import 'rxjs/add/operator/switchMap';
+import 'rxjs/add/operator/switchMap'; // switch map operator
 import { Component, OnInit }      from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location }               from '@angular/common';
