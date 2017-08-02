@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {Employee} from '../models/employee.model';
 
 @Component({
   selector: 'app-forms',
@@ -8,8 +9,10 @@ import { Component, OnInit } from '@angular/core';
 export class FormsComponent implements OnInit {
 
   languages = ['English', 'Polish', 'Spanish'];
+  model = new Employee('John', 'Smith');
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }
