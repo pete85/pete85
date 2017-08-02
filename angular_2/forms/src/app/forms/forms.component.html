@@ -5,40 +5,47 @@
 
     <div class="form-group">
       <label for="firstName">First Name</label>
-      <input class="form-control" type="text" required placeholder="First Name" name="firstName" id="firstName" [(ngModel)]="model.firstName">
+
+      <!--Using this approach for 2-way data binding function can be called-->
+      <input class="form-control" type="text" required placeholder="First Name" name="firstName" id="firstName"
+             [ngModel]="model.firstName" (ngModelChange)="model.firstName=$event">
+
+      <!--Banana in a box 2-way binding does not allow function calls -->
+      <!--<input class="form-control" type="text" required placeholder="First Name" name="firstName" id="firstName" [(ngModel)]="model.firstName">-->
+
     </div>
 
-    <!--<div class="form-group">-->
-      <!--<label for="lastName">Last Name</label>-->
-      <!--<input class="form-control" type="text" required placeholder="Last Name" name="lastName" id="lastName" ngModel>-->
-    <!--</div>-->
+    <div class="form-group">
+      <label for="lastName">Last Name</label>
+      <input class="form-control" type="text" required placeholder="Last Name" name="lastName" id="lastName" [(ngModel)]="model.lastName">
+    </div>
 
-    <!--<div class="checkbox">-->
-      <!--<label>-->
-        <!--<input type="checkbox" name="is-full-time" ngModel> Full Time Employee-->
-      <!--</label>-->
-    <!--</div>-->
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" checked name="is-full-time" [(ngModel)]="model.isFullTime"> Full Time Employee
+      </label>
+    </div>
 
-    <!--<label>Payment Type</label>-->
+    <label>Payment Type</label>
 
-    <!--<div class="radio">-->
-      <!--<label>-->
-        <!--<input type="radio" name="pay-type" value="w1" checked> W1-->
-      <!--</label>-->
-    <!--</div>-->
+    <div class="radio">
+      <label>
+        <input type="radio" name="paymentType" value="w1" checked [(ngModel)]="model.paymentType"> W1
+      </label>
+    </div>
 
-    <!--<div class="radio">-->
-      <!--<label>-->
-        <!--<input type="radio" name="pay-type" value="w2"> W2-->
-      <!--</label>-->
-    <!--</div>-->
+    <div class="radio">
+      <label>
+        <input type="radio" name="paymentType" value="w2" [(ngModel)]="model.paymentType"> W2
+      </label>
+    </div>
 
-    <!--<div class="form-group">-->
-      <!--<label for="language">First Name</label>-->
-      <!--<select name="language" id="language" class="form-control">-->
-        <!--<option *ngFor="let language of languages">{{language}}</option>-->
-      <!--</select>-->
-    <!--</div>-->
+    <div class="form-group">
+      <label for="language">First Name</label>
+      <select name="language" id="language" class="form-control" [(ngModel)]="model.language">
+        <option *ngFor="let language of languages">{{language}}</option>
+      </select>
+    </div>
 
     <button class="btn btn-primary" type="submit">OK</button>
   </form>

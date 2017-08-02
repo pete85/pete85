@@ -9,12 +9,11 @@ import {Employee} from '../models/employee.model';
 export class FormsComponent implements OnInit {
 
   languages = ['English', 'Polish', 'Spanish'];
-  model = new Employee('John', 'Smith');
+  model = new Employee('John', 'Smith', true, 'w1', 'English');
 
   constructor() {
   }
 
   ngOnInit() {
   }
-
 }
