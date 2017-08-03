@@ -1,4 +1,4 @@
-# [Stream Ltd](http://stream-ltd.com/)
+# [pete85](http://pete85.com/)
 
 
 
@@ -10,4 +10,4 @@
 
 ## Copyright and License
 
-Copyright 2017 Stream Ltd
+Copyright 2017 Piotr Furmanek
