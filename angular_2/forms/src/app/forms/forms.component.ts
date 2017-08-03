@@ -11,11 +11,16 @@ import {Observable} from 'rxjs/Observable';
 })
 export class FormsComponent implements OnInit {
 
-  languages = ['English', 'Polish', 'Spanish'];
+  languages = [];
   model = new Employee('', '', '', true, 'w1', 'default');
   hasLanguageError = false;
 
   constructor(private formPosterService: FormPosterService) {
+    this.formPosterService.getLanguages()
+      .subscribe(
+        data => this.languages = data.languages,
+        err => console.log('get error: ', err)
+      );
   }
 
   ngOnInit() {

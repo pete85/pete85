@@ -11,6 +11,25 @@ var server = http.createServer(function (req, res) {
         return;
     }
 
+    if (req.method.toLowerCase() == 'get') {
+        var data = {
+            data: {
+                languages: [
+                    'English',
+                    'Polish',
+                    'Spanish',
+                    'Italian',
+                    'Other'
+                ]
+            }
+        };
+
+        var responseData = JSON.stringify(data);
+        res.end(responseData);
+        console.log("get: ", responseData);
+        return;
+    }
+
     res.end();
 
 });
@@ -19,6 +38,8 @@ function processForm(req, res) {
     var form = new formidable.IncomingForm();
 
     form.parse(req, function (err, fields) {
+
+        fields.id = 'ABC123'
 
         res.writeHead(200, {
             'content-type': 'text/plain'
