@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {Employee} from '../models/employee.model';
 import {FormPosterService} from '../services/form-poster.service';
 import {NgForm} from '@angular/forms';
+import {Observable} from 'rxjs/Observable';
 
 @Component({
   selector: 'app-forms',
@@ -26,7 +27,13 @@ export class FormsComponent implements OnInit {
     if (this.hasLanguageError)
       return;
 
-    this.formPosterService.postEmployeeForm(this.model);
+    // Call model
+    this.formPosterService.postEmployeeForm(this.model)
+      .subscribe(
+        data => console.log('Success: ', data),
+        err => console.log('Error: ', err)
+      )
+
   }
 
   validateLanguage(value) {
@@ -34,7 +41,7 @@ export class FormsComponent implements OnInit {
       this.hasLanguageError = true;
     else
       this.hasLanguageError = false;
-    console.log(this.hasLanguageError);
+    // console.log(this.hasLanguageError);
   }
 
 }
