@@ -15,6 +15,15 @@ export class FormsComponent implements OnInit {
   model = new Employee('', '', '', true, 'w1', 'default');
   hasLanguageError = false;
 
+  paymentType: string;
+
+  payments = [
+    'W1',
+    'W2',
+    'T1',
+    'T2',
+  ];
+
   constructor(private formPosterService: FormPosterService) {
     this.formPosterService.getLanguages()
       .subscribe(

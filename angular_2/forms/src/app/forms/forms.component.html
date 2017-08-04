@@ -1,91 +1,96 @@
 <div class="container" *ngIf="languages.length == 0">
   <h3>Form loading...</h3>
 </div>
-<div class="container" *ngIf="languages.length > 0">
+<div class="form-container" *ngIf="languages.length > 0">
   <h2>Angular Forms</h2>
 
-  <form #form="ngForm" novalidate (submit)="submitForm(form)">
+  <form #form="ngForm" novalidate (submit)="submitForm(form)" class="example-form">
 
+
+    <h3>Personal details</h3>
     <!-- FIRST NAME -->
-    <div class="form-group" [class.has-error]="firstName.invalid && firstName.touched" [class.has-success]="firstName.valid">
-      <!--Banana in a box 2-way binding does not allow function calls -->
-      <!--<input class="form-control" type="text" required placeholder="First Name" name="firstName" id="firstName" [(ngModel)]="model.firstName">-->
-      <!--Using this approach for 2-way data binding function can be called-->
-      <label class="control-label" for="firstName">First Name</label>
-      <input
-        #firstName="ngModel"
-        class="form-control"
-        required
-        type="text"
-        placeholder="First Name"
-        name="firstName"
-        id="firstName"
-        [ngModel]="model.firstName"
-        (ngModelChange)="model.firstName=$event"
-      >
-      <div *ngIf="firstName.invalid && firstName.touched" class="alert alert-danger">
-        <b>First Name</b> is required.
-      </div>
-    </div>
+    <p>
+      <md-input-container class="example-full-width" [class.has-error]="firstName.invalid && firstName.touched" [class.has-success]="firstName.valid">
+        <!--Banana in a box 2-way binding does not allow function calls -->
+        <!--<input class="form-control" type="text" required placeholder="First Name" name="firstName" id="firstName" [(ngModel)]="model.firstName">-->
+        <!--Using this approach for 2-way data binding function can be called-->
+        <input
+          mdInput
+          #firstName="ngModel"
+          required
+          type="text"
+          placeholder="First Name"
+          name="firstName"
+          id="firstName"
+          [ngModel]="model.firstName"
+          (ngModelChange)="model.firstName=$event"
+        >
+        <div *ngIf="firstName.invalid && firstName.touched" class="alertMessage">
+          <b>First Name</b> is required.
+        </div>
+      </md-input-container>
+    </p>
 
     <!-- LAST NAME -->
-    <div class="form-group" [class.has-error]="lastName.invalid && lastName.touched" [class.has-success]="lastName.valid">
-      <label class="control-label" for="lastName">Last Name</label>
-      <input
-        #lastName="ngModel"
-        class="form-control"
-        required
-        type="text"
-        placeholder="Last Name"
-        name="lastName"
-        id="lastName"
-        [(ngModel)]="model.lastName"
-      >
-      <div *ngIf="lastName.invalid && lastName.touched" class="alert alert-danger">
-        <b>Last Name</b> is required.
-      </div>
-    </div>
+    <p>
+      <md-input-container class="example-full-width" [class.has-error]="lastName.invalid && lastName.touched" [class.has-success]="lastName.valid">
+        <input
+          mdInput
+          #lastName="ngModel"
+          required
+          type="text"
+          placeholder="Last Name"
+          name="lastName"
+          id="lastName"
+          [(ngModel)]="model.lastName"
+        >
+        <div *ngIf="lastName.invalid && lastName.touched" class="alertMessage">
+          <b>Last Name</b> is required.
+        </div>
+      </md-input-container>
+    </p>
 
     <!-- EMAIL -->
-    <div class="form-group" [class.has-error]="email.invalid && email.touched" [class.has-success]="email.valid">
-      <label class="control-label" for="lastName">Email</label>
-      <input
-        #email="ngModel"
-        class="form-control"
-        required
-        type="email"
-        placeholder="Email"
-        name="email"
-        id="email"
-        [(ngModel)]="model.email"
-        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-      >
-      <div *ngIf="email.invalid && email.touched" class="alert alert-danger">
-        <b>Valid email address</b> is required.
-      </div>
-    </div>
+    <p>
+      <md-input-container class="example-full-width" [class.has-error]="email.invalid && email.touched" [class.has-success]="email.valid">
+        <input
+          mdInput
+          #email="ngModel"
+          required
+          type="email"
+          placeholder="Email"
+          name="email"
+          id="email"
+          [(ngModel)]="model.email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+        >
+        <div *ngIf="email.invalid && email.touched" class="alertMessage">
+          <b>Valid email address</b> is required.
+        </div>
+      </md-input-container>
+    </p>
+
+    <hr/>
+    <h3>Employment status</h3>
 
     <!-- CHECKBOX -->
-    <div class="checkbox">
-      <label class="control-label">
-        <input type="checkbox" checked name="is-full-time" [(ngModel)]="model.isFullTime"> Full Time Employee
-      </label>
+    <div class="example-section">
+      <md-checkbox class="example-margin" name="is-full-time" [(ngModel)]="model.isFullTime">
+        Full Time Employee
+      </md-checkbox>
     </div>
 
+    <p>Tax code</p>
     <!-- RADIO BUTTONS -->
-    <label class="control-label">Payment Type</label>
-
-    <div class="radio">
-      <label class="control-label">
-        <input type="radio" name="paymentType" value="w1" checked [(ngModel)]="model.paymentType"> W1
-      </label>
-    </div>
-
-    <div class="radio">
-      <label class="control-label">
-        <input type="radio" name="paymentType" value="w2" [(ngModel)]="model.paymentType"> W2
-      </label>
-    </div>
+    <md-radio-group class="example-radio-group" name="paymentType" [(ngModel)]="model.paymentType">
+      <md-radio-button
+        class="example-radio-button"
+        *ngFor="let payment of payments"
+        [value]="payment"
+      >
+        {{payment}}
+      </md-radio-button>
+    </md-radio-group>
 
     <!-- DROP DOWN -->
     <div class="form-group" [class.has-error]="hasLanguageError" [class.has-success]="hasLanguageError == false">
@@ -102,13 +107,13 @@
         <option value="default">Select a language...</option>
         <option *ngFor="let language of languages">{{language}}</option>
       </select>
-      <!--<div *ngIf="languages.invalid && lastName.touched" class="alert alert-danger">-->
+      <!--<div *ngIf="languages.invalid && lastName.touched" class="alertMessage">-->
         <!--<b>Last Name</b> is required.-->
       <!--</div>-->
     </div>
 
     <button
-      class="btn btn-primary"
+      md-raised-button
       type="submit"
       [disabled]="form.invalid"
     >OK</button>
