@@ -11,6 +11,7 @@ import {Observable} from 'rxjs/Observable';
 })
 export class FormsComponent implements OnInit {
 
+  selectedValue: string;
   languages = [];
   model = new Employee('', '', '', true, 'w1', 'default');
   hasLanguageError = false;
@@ -23,6 +24,12 @@ export class FormsComponent implements OnInit {
     'T1',
     'T2',
   ];
+
+  // languages = [
+  //   {value: 'pl', viewValue: 'Polish'},
+  //   {value: 'en', viewValue: 'English'},
+  //   {value: 'es', viewValue: 'Spanish'}
+  // ];
 
   constructor(private formPosterService: FormPosterService) {
     this.formPosterService.getLanguages()

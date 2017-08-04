@@ -17,7 +17,7 @@
 
 .example-radio-group {
   display: inline-flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .example-radio-button {
@@ -26,6 +26,10 @@
 
 .example-selected-value {
   margin: 15px 0;
+}
+
+#btnSubmit {
+  margin-top: 30px;
 }
 
 /*** ANGULAR MATERIAL CUSTOM THEME ***/

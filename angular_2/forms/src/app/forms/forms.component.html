@@ -92,7 +92,7 @@
       </md-radio-button>
     </md-radio-group>
 
-    <!-- DROP DOWN -->
+     <!--DROP DOWN-->
     <div class="form-group" [class.has-error]="hasLanguageError" [class.has-success]="hasLanguageError == false">
       <label class="control-label" for="language">Language</label>
       <select
@@ -112,9 +112,16 @@
       <!--</div>-->
     </div>
 
+    <!--<md-select placeholder="Language" name="language">-->
+      <!--<md-option *ngFor="let language of languages" value="language.value">-->
+        <!--{{language.viewValue}}-->
+      <!--</md-option>-->
+    <!--</md-select>-->
+
     <button
       md-raised-button
       type="submit"
+      id="btnSubmit"
       [disabled]="form.invalid"
     >OK</button>
 
