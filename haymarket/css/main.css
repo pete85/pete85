@@ -119,11 +119,11 @@ section {
 }
 
 /* Large Devices, Wide Screens */
-@media only screen and (min-width : 1170px) {
+@media only screen and (min-width : 768px) {
 
     .container {
-        width: 1170px;
-        padding: 20px;
+        width: 768px;
+        padding: 10px;
     }
 
 }
@@ -140,13 +140,6 @@ section {
     position: relative;
     width: 100%;
     text-align: center;
-}
-
-#slider .picture {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
 }
 
 #slider .picture img {

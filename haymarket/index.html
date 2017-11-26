@@ -10,12 +10,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
 
     </head>
     <!--<body>-->
-    <body onload="buildArray()">
+    <body onload="getArticles()">
         <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
@@ -33,38 +34,22 @@
                     </div>
 
                     <div id="slider-nav" class="row">
-                        <a href="#" class="active">1</a>
+                        <a href="#" onclick="previous()" class="active">
+                            <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+                        </a>
                         <a href="#" class="">2</a>
-                        <a href="#" class="">3</a>
+                        <a href="#" onclick="next()" class="">
+                            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                        </a>
                     </div>
 
                     <div id="slider" class="row">
                         <div class="picture">
-                            <img src="http://via.placeholder.com/1200x600/000000/ffffff"/>
+                            <img id="imgSlider" src=""/>
                         </div>
-
-                        <div class="picture hide">
-                            <img src="http://via.placeholder.com/1200x600/a92222/ffffff"/>
-                        </div>
-
-                        <div class="picture hide">
-                            <img src="http://via.placeholder.com/1200x600/e3e2e1/ffffff"/>
-                        </div>
-                        <a href="https://placeholder.com"><img src="http://via.placeholder.com/1200x600/000000/ffffff"></a>
                     </div>
 
-                    <div class="row content">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquet hendrerit tellus vitae condimentum. Donec iaculis tellus ut ante fringilla egestas. Quisque sit amet magna in augue maximus commodo. Curabitur tempor mauris sit amet luctus accumsan. Sed feugiat ultrices pulvinar. Fusce vitae elit maximus, elementum lorem tincidunt, cursus nibh. Maecenas ac interdum tortor. Ut auctor consectetur mauris ac cursus. Aenean sodales dolor nec justo lobortis feugiat. Nulla tristique viverra iaculis. Donec at ante et velit elementum posuere at eu odio. Praesent ut massa vel magna semper elementum luctus vitae nunc. In ac lacinia tellus, eu pretium dolor.
-                        </p>
-
-                        <p>
-                            Sed suscipit iaculis nunc, eu placerat lectus hendrerit a. Aliquam sagittis erat sapien, ut convallis justo scelerisque eu. Nullam malesuada, arcu sed interdum tempus, metus lectus semper neque, id eleifend ex ligula a erat. Ut orci arcu, pharetra in arcu quis, malesuada tincidunt sem. Nulla vulputate, enim in tincidunt consectetur, dolor diam dictum odio, nec facilisis libero lacus nec velit. Aliquam at tellus tincidunt augue tempor laoreet in quis ligula. Donec iaculis posuere purus, at varius orci cursus eu. Curabitur convallis non massa sollicitudin tincidunt. Integer pellentesque, erat nec bibendum eleifend, leo lectus aliquet diam, id egestas nibh ante nec lacus. Phasellus fermentum mollis est, eget molestie libero. Cras in facilisis sapien. Curabitur tempus, est id pretium pharetra, tellus nulla ullamcorper nisi, quis laoreet dui justo non justo. Nunc ligula arcu, viverra et risus quis, ultrices bibendum orci. Suspendisse potenti. Nunc id aliquet urna.
-                        </p>
-                    </div>
-
-
-
+                    <div class="row" id="content"></div>
                 </div>
             </section>
         </main>

@@ -1,64 +1,86 @@
 'use strict';
 
-// class Article {
-//     constructor(art_id, image, content) {
-//         this.art_id = art_id
-//         this.image = image
-//         this.content = content
-//     }
-//
-//     getArticle() {
-//         console.log(this.art_id);
-//         return this.art_id;
-//     };
-//
-// }
+var articles = [];
+var sliderImage = document.getElementById('imgSlider');
+var artContent = document.getElementById('content');
+var x;
 
-var articlesNew = [];
-
-function createArticle(title, image, content) {
+function createArticle(image, content) {
     return {
-        Title: title,
         Image: image,
         Content: content
     };
 }
 
 var art1 = createArticle(
-    'Title 1',
-    'url',
+    'img/gallery-slide-1.jpg',
     [
-        {p1: 'text1'},
-        {p2: 'text2'},
-        {p3: 'text3'}
-        ]
+        {paragraph: 'text1'},
+        {paragraph: 'text2'},
+        {paragraph: 'text3'}
+    ]
 );
 
 var art2 = createArticle(
-    'Title 2',
-    'url',
+    'img/gallery-slide-2.jpg',
     [
-        {p1: 'text1'},
-        {p2: 'text2'},
-        {p3: 'text3'}
+        {paragraph: 'text4'},
+        {paragraph: 'text5'},
+        {paragraph: 'text6'}
     ]
 );
 
 var art3 = createArticle(
-    'Title 3',
-    'url',
+    'img/gallery-slide-3.jpg',
     [
-        {p1: 'text1'},
-        {p2: 'text2'},
-        {p3: 'text3'}
+        {paragraph: 'text7'},
+        {paragraph: 'text8'},
+        {paragraph: ''}
     ]
 );
 
-console.log('Article 1: ', art1);
+function getArticles() {
 
-function buildArray() {
-    articlesNew.push(art1, art2, art3);
+    // Array of objects
+    articles.push(art1, art2, art3);
 
-    console.log(articlesNew);
-    return articlesNew;
+    // First image
+    sliderImage.src = articles[0].Image;
+
+    // First article content
+    for (x in articles[0].Content) {
+
+        var paragraph = document.createElement("p");
+        paragraph.innerHTML = articles[0].Content[x].paragraph;
+        artContent.appendChild(paragraph);
+    }
+
+    return articles;
 };
+
+// Previous article
+function previous() {
+
+    var i;
+
+    for (i = 0; i < articles.length; i++) {
+        console.log('test');
+    }
+}
+
+// Next article
+function next() {
+
+    // First image
+    sliderImage.src = articles[1].Image;
+
+    // First article content
+    for (x in articles[1].Content) {
+
+        var paragraph = document.createElement('p');
+        paragraph.innerHTML = '';
+        paragraph.innerHTML = articles[1].Content[x].paragraph;
+        artContent.appendChild(paragraph);
+    }
+
+}
