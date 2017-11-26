@@ -3,7 +3,12 @@
 var articles = [];
 var sliderImage = document.getElementById('imgSlider');
 var artContent = document.getElementById('content');
+var artCurrent = document.getElementById('artCurrent');
+var artTotal = document.getElementById('artTotal');
+var prevPage = document.getElementById('previousPage');
+var nextPage = document.getElementById('nextPage');
 var x;
+var i = 0;
 
 function createArticle(image, content) {
     return {
@@ -45,15 +50,21 @@ function getArticles() {
     articles.push(art1, art2, art3);
 
     // First image
-    sliderImage.src = articles[0].Image;
+    sliderImage.src = articles[i].Image;
 
     // First article content
-    for (x in articles[0].Content) {
+    for (x in articles[i].Content) {
 
         var paragraph = document.createElement("p");
-        paragraph.innerHTML = articles[0].Content[x].paragraph;
+        paragraph.innerHTML = articles[i].Content[x].paragraph;
         artContent.appendChild(paragraph);
     }
+
+    // Total number of articles
+    artTotal.innerHTML = articles.length;
+
+    // Initial article
+    artCurrent.innerHTML = 1;
 
     return articles;
 };
@@ -66,6 +77,19 @@ function previous() {
     for (i = 0; i < articles.length; i++) {
         console.log('test');
     }
+
+    // Current page
+    if (parseInt(artCurrent.innerHTML) !== 1) {
+        artCurrent.innerHTML = parseInt(artCurrent.innerHTML) - 1;
+        if (nextPage.classList.contains('disabled')) {
+            nextPage.classList.remove('disabled');
+        } else {
+        }
+    } else {
+        prevPage.classList.add('disabled');
+    }
+
+    console.log('current page: ', parseInt(artCurrent.innerHTML));
 }
 
 // Next article
@@ -81,6 +105,17 @@ function next() {
         paragraph.innerHTML = '';
         paragraph.innerHTML = articles[1].Content[x].paragraph;
         artContent.appendChild(paragraph);
+    }
+
+    // Current page
+    if (parseInt(artCurrent.innerHTML) < parseInt(artTotal.innerHTML)) {
+        artCurrent.innerHTML = parseInt(artCurrent.innerHTML) + 1;
+        if (prevPage.classList.contains('disabled')) {
+            prevPage.classList.remove('disabled');
+        } else {
+        }
+    } else {
+        nextPage.classList.add('disabled');
     }
 
 }

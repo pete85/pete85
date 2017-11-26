@@ -87,6 +87,74 @@ section {
     display: block;
 }
 
+.hideSmall {
+    display: none;
+}
+
+.content {
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 15px;
+}
+
+a.disabled {
+    pointer-events: none;
+}
+
+/*SLIDER*/
+
+#slider {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+#slider .picture img {
+    width: 100%;
+    max-width: 100%;
+}
+
+#sliderNavContainer {
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1em;
+    width: 100%;
+    background-color: #EEEEEE;
+}
+
+#sliderNav {
+    display: inline-flex;
+}
+
+#sliderNav a {
+    display: inline-block;
+    color: #555555;
+    font-size: 1em;
+    text-decoration: none;
+    margin: 1em;
+}
+
+#sliderNav a:hover {
+    color: #A92222;
+}
+
+.hide {
+    opacity: 0;
+}
+
+.fadeOut {
+    /*opacity: 2s;*/
+}
+
+.link {
+    color: #D18891;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+/*MEDIA QUERIES*/
+
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
 
@@ -101,10 +169,13 @@ section {
         overflow: hidden;
     }
 
-}
+    .hideSmall {
+        display: inline-block;
+    }
 
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px) {
+    #sliderNavContainer {
+        text-align: right;
+    }
 
 }
 
@@ -127,61 +198,6 @@ section {
     }
 
 }
-
-.content {
-    text-align: justify;
-    text-justify: inter-word;
-    padding: 15px;
-}
-
-/*SLIDER*/
-
-#slider {
-    position: relative;
-    width: 100%;
-    text-align: center;
-}
-
-#slider .picture img {
-    width: 100%;
-    max-width: 100%;
-}
-
-#slider-nav {
-    margin: 0 auto;
-    text-align: center;
-    margin-bottom: 2em;
-}
-
-#slider-nav a {
-    display: inline-block;
-    color: #555555;
-    background-color: rgba(227,226,225,0.3);
-    font-size: 1em;
-    line-height: 1em;
-    font-weight: 800;
-    width: 1em;
-    height: 1em;
-    text-decoration: none;
-    border: 2px solid #E3E2E1;
-    padding: 1em;
-    margin: 1em;
-}
-
-#slider-nav a.active {
-    color: #A92222;
-    background-color: rgba(169,34,34,0.1);
-    border: 2px solid #A92222;
-}
-
-.hide {
-    opacity: 0;
-}
-
-.fadeOut {
-    /*opacity: 2s;*/
-}
-
 
 
 
