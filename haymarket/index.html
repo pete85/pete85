@@ -17,20 +17,19 @@
     </head>
     <!--<body>-->
     <body onload="getArticles()">
-        <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
-
-        <header>
-
-        </header>
 
         <main>
             <section>
                 <div class="container">
 
                     <div class="row">
-                        <h2>Test header</h2>
+                        <h2>
+                            <span id="pageNo"></span>
+                            <span> - Fusce lacus magna, vulputate vestibulum faucibus ut, facilisis non libero.</span>
+                        </h2>
+                        <p id="intro">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget finibus leo, at porttitor lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lacus magna, vulputate vestibulum faucibus ut, facilisis non libero.
+                        </p>
                     </div>
 
                     <div id="sliderNavContainer">
@@ -58,6 +57,15 @@
                     </div>
 
                     <div class="row" id="content"></div>
+
+                    <div class="row" id="tags">
+                        <p class="txtSmall">Tags</p>
+                        <a href="#" class="link">donec</a>
+                        <span class="link">&nbsp;|&nbsp;</span>
+                        <a href="#" class="link">phasellus</a>
+                        <span class="link">&nbsp;|&nbsp;</span>
+                        <a href="#" class="link">lobortis</a>
+                    </div>
                 </div>
             </section>
         </main>

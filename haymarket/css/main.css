@@ -138,6 +138,17 @@ a.disabled {
     color: #A92222;
 }
 
+/*SLIDER END*/
+
+#tags {
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+.txtSmall {
+    font-size: 12px;
+}
+
 .hide {
     opacity: 0;
 }
