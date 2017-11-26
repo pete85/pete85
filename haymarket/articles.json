@@ -1,0 +1,34 @@
+data = "[{
+            "art_id": "1",
+            "image": "url",
+            "content": [
+                {
+                    "par1": "text",
+                    "par2": "text",
+                    "par3": "text"
+                }
+            ]
+        },
+        {
+            "art_id": "2",
+            "image": "url",
+            "content": [
+                {
+                    "par1": "text",
+                    "par2": "text",
+                    "par3": "text"
+                }
+            ]
+        },
+        {
+            "art_id": "2",
+            "image": "url",
+            "content": [
+                {
+                    "par1": "text",
+                    "par2": "text",
+                    "par3": "text"
+                }
+            ]
+        }
+    ]";

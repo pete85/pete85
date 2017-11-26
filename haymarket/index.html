@@ -14,7 +14,8 @@
         <link rel="stylesheet" href="css/main.css">
 
     </head>
-    <body>
+    <!--<body>-->
+    <body onload="buildArray()">
         <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
@@ -31,8 +32,25 @@
                         <h2>Test header</h2>
                     </div>
 
-                    <div class="row slider">
-                        <a href="https://placeholder.com"><img src="http://via.placeholder.com/1200x600"></a>
+                    <div id="slider-nav" class="row">
+                        <a href="#" class="active">1</a>
+                        <a href="#" class="">2</a>
+                        <a href="#" class="">3</a>
+                    </div>
+
+                    <div id="slider" class="row">
+                        <div class="picture">
+                            <img src="http://via.placeholder.com/1200x600/000000/ffffff"/>
+                        </div>
+
+                        <div class="picture hide">
+                            <img src="http://via.placeholder.com/1200x600/a92222/ffffff"/>
+                        </div>
+
+                        <div class="picture hide">
+                            <img src="http://via.placeholder.com/1200x600/e3e2e1/ffffff"/>
+                        </div>
+                        <a href="https://placeholder.com"><img src="http://via.placeholder.com/1200x600/000000/ffffff"></a>
                     </div>
 
                     <div class="row content">
