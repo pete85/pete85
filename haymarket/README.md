@@ -1,6 +1,9 @@
 # Haymarket Test
 
 ## Technologies used
+* HTML5
+* CSS3
+* JavaScript
 
 ## Approach
 As this is a test project, I have decided not to use any frameworks or plugins, i.e. Bootstrap.
