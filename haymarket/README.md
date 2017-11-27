@@ -8,6 +8,7 @@
 ## Tools
 * WebStorm
 * Photoshop
+* Github
 * [Online image compressor](https://compressor.io/)
 
 ## Assumptions
