@@ -2,6 +2,8 @@
 
 var articles = [];
 var sliderImage = document.getElementById('imgSlider');
+var previewSection = document.getElementById('preview');
+var imgPreview = document.getElementById('imgPreview');
 var artContent = document.getElementById('content');
 var pageNo = document.getElementById('pageNo');
 var artCurrent = document.getElementById('artCurrent');
@@ -76,31 +78,25 @@ function getArticles() {
     return articles;
 };
 
-// Previous article
+// Previous page
 function previous() {
-
-    i = i - 1;
-
-    // First image
-    sliderImage.src = articles[i].Image;
-
-    // article content
-
-    pageNo.innerHTML = articles[i].PageNo;
 
     while(artContent.firstChild) {
         artContent.removeChild(artContent.firstChild);
     }
 
-    for (x in articles[i].Content) {
+    if (i !== 0) {
 
-        var paragraph = document.createElement('p');
-        paragraph.innerHTML = articles[i].Content[x].paragraph;
-        artContent.appendChild(paragraph);
-    }
+        i = i - 1;
+        sliderImage.src = articles[i].Image;
+        pageNo.innerHTML = articles[i].PageNo;
+        for (x in articles[i].Content) {
 
-    // Current page
-    if (parseInt(artCurrent.innerHTML) !== 1) {
+            var paragraph = document.createElement('p');
+            paragraph.innerHTML = articles[i].Content[x].paragraph;
+            artContent.appendChild(paragraph);
+        }
+
         artCurrent.innerHTML = parseInt(artCurrent.innerHTML) - 1;
         if (nextPage.classList.contains('disabled')) {
             nextPage.classList.remove('disabled');
@@ -112,38 +108,48 @@ function previous() {
 
 }
 
-// Next article
+// Next page
 function next() {
-
-    i = i + 1;
-
-    // First image
-    sliderImage.src = articles[i].Image;
-
-    // article content
-
-    pageNo.innerHTML = articles[i].PageNo;
 
     while(artContent.firstChild) {
         artContent.removeChild(artContent.firstChild);
     }
 
-    for (x in articles[i].Content) {
+    if (i < parseInt(artTotal.innerHTML) - 1) {
+        i = i + 1;
+        sliderImage.src = articles[i].Image;
+        pageNo.innerHTML = articles[i].PageNo;
+        for (x in articles[i].Content) {
 
-        var paragraph = document.createElement('p');
-        paragraph.innerHTML = articles[i].Content[x].paragraph;
-        artContent.appendChild(paragraph);
-    }
+            var paragraph = document.createElement('p');
+            paragraph.innerHTML = articles[i].Content[x].paragraph;
+            artContent.appendChild(paragraph);
+        }
 
-    // Current page
-    if (parseInt(artCurrent.innerHTML) < parseInt(artTotal.innerHTML)) {
         artCurrent.innerHTML = parseInt(artCurrent.innerHTML) + 1;
         if (prevPage.classList.contains('disabled')) {
             prevPage.classList.remove('disabled');
         } else {
         }
+
     } else {
         nextPage.classList.add('disabled');
     }
 
+}
+
+
+// PREVIEW IMAGE
+
+function openPreview() {
+    previewSection.classList.remove('hidden');
+    imgPreview.src = articles[i].Image;
+    previewSection.classList.remove('fadeOut');
+    previewSection.classList.add('fadeIn');
+}
+
+function closePreview() {
+    previewSection.classList.remove('fadeIn');
+    previewSection.classList.add('fadeOut');
+    previewSection.classList.add('hidden');
 }
