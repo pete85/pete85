@@ -190,7 +190,7 @@ a.disabled {
     background-color: rgba(51,51,51,0.8);
     z-index: 1000;
     text-align: center;
-    padding-top: 5em;
+    padding-top: 2em;
 }
 
 #preview .btnClose {
@@ -199,6 +199,7 @@ a.disabled {
     right: 15px;
     top: 15px;
     transition: all 1s;
+    font-size: 2em;
 }
 
 #preview .btnClose:hover {
@@ -206,7 +207,8 @@ a.disabled {
 }
 
 #preview img {
-    max-width: 95%;
+    max-height: 95%;
+    max-width: 90%;
 }
 
 .enlargeImage {
