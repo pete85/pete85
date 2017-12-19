@@ -41,3 +41,6 @@ export class FormPosterService {
       .catch(this.handleError);
   }
 }
+
+// RUN node server.js every time !!!
+// P:\GitHub\pete85\angular\server>node server.js
