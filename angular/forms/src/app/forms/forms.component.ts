@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, DoCheck} from '@angular/core';
 import {Employee} from '../models/employee.model';
 import {FormPosterService} from '../services/form-poster.service';
 import {NgForm} from '@angular/forms';
@@ -9,14 +9,12 @@ import {Observable} from 'rxjs/Observable';
   templateUrl: './forms.component.html',
   styleUrls: ['./forms.component.css']
 })
-export class FormsComponent implements OnInit {
+export class FormsComponent implements OnInit, DoCheck {
 
   selectedValue: string;
-  languages = [];
   model = new Employee('', '', '', true, 'w1', 'default');
   hasLanguageError = false;
-
-  paymentType: string;
+  submitted: boolean;
 
   payments = [
     'W1',
@@ -25,36 +23,52 @@ export class FormsComponent implements OnInit {
     'T2',
   ];
 
-  // languages = [
-  //   {value: 'pl', viewValue: 'Polish'},
-  //   {value: 'en', viewValue: 'English'},
-  //   {value: 'es', viewValue: 'Spanish'}
-  // ];
+  paymentType: string;
+
+  // languages = [];
+
+  languages = ['English', 'Polish', 'Spanish'];
 
   constructor(private formPosterService: FormPosterService) {
-    this.formPosterService.getLanguages()
-      .subscribe(
-        data => this.languages = data.languages,
-        err => console.log('get error: ', err)
-      );
+    // this.formPosterService.getLanguages()
+    //   .subscribe(
+    //     data => this.languages = data.languages,
+    //     err => console.log('get error: ', err)
+    //   );
   }
 
   ngOnInit() {
+    this.submitted = false;
+    this.hasLanguageError = true;
   }
 
+  ngDoCheck() {
+    console.log('Submitted: ' + this.submitted);
+  }
+
+  // submitForm(form: NgForm) {
+  //   this.submitted = true;
+  //   // validate form
+  //   this.validateLanguage(this.model.language);
+  //   if (this.hasLanguageError)
+  //     return;
+  //
+  //   // Call model
+  //   this.formPosterService.postEmployeeForm(this.model)
+  //     .subscribe(
+  //       data => console.log('Success: ', data),
+  //       err => console.log('Error: ', err)
+  //     )
+  //
+  // }
+
   submitForm(form: NgForm) {
-    // validate form
-    this.validateLanguage(this.model.language);
-    if (this.hasLanguageError)
-      return;
+    this.submitted = true;
+    console.log('has Error ' + this.hasLanguageError);
+  }
 
-    // Call model
-    this.formPosterService.postEmployeeForm(this.model)
-      .subscribe(
-        data => console.log('Success: ', data),
-        err => console.log('Error: ', err)
-      )
-
+  backToForm(form: NgForm) {
+    this.submitted = false;
   }
 
   validateLanguage(value) {
