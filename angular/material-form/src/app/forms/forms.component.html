@@ -127,7 +127,7 @@
         <!--</md-radio-button>-->
       <!--</md-radio-group>-->
 
-      <md-radio-group class="example-radio-group margin-tb-15" name="paymentType" [(ngModel)]="paymentType">
+      <md-radio-group class="example-radio-group margin-tb-15" name="paymentType" [(ngModel)]="model.paymentType">
         <label class="control-label">Tax code</label>
         <md-radio-button
           class="example-radio-button"
@@ -164,7 +164,7 @@
         <h3>{{model.email}}</h3>
         <h3>{{model.language}}</h3>
         <h3>{{model.isFullTime?'Yes':'No'}}</h3>
-        <h3>{{this.paymentType}}</h3>
+        <h3>{{model.paymentType}}</h3>
       </div>
 
     </div>
